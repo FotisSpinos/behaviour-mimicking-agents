@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 12
+  controlID: 104
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,7 +149,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 13
+  controlID: 105
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 59
+  controlID: 106
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,21 +336,21 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Vehicle_Test/Scripts
+    - Assets/Environment_Events
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Vehicle_Test/Scripts
+  - Assets/Environment_Events
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Fotis\Development\AI Year 4 project\Year-4-AI\AI Year
     4 Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 240e0000
-    m_LastClickedID: 3620
-    m_ExpandedIDs: 00000000660c0000380d0000680e0000960e00005e0f0000900f000000ca9a3b
+    scrollPos: {x: 0, y: 54}
+    m_SelectedIDs: d80c0000
+    m_LastClickedID: 3288
+    m_ExpandedIDs: 000000006e0c0000420d0000740e0000a20e00006c0f00009e0f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -378,7 +378,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000660c0000380d0000680e0000960e00005e0f0000900f0000
+    m_ExpandedIDs: 000000006e0c0000420d0000740e0000a20e00006c0f00009e0f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -405,8 +405,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,25 +497,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0fbffff
-      m_LastClickedID: -1104
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: b2fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Cube
+        m_OriginalName: Cube
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 4078
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.4119525, y: 1.5473852, z: 0.5768757}
+    m_Target: {x: -28.40347, y: 8.340416, z: -33.688866}
     speed: 2
-    m_Value: {x: 0.4119525, y: 1.5473852, z: 0.5768757}
+    m_Value: {x: -28.40347, y: 8.340416, z: -33.688866}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -584,13 +584,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.071317084, y: 0.92357564, z: -0.3120297, w: -0.2110913}
+    m_Target: {x: 0.2340396, y: -0.23914072, z: 0.059511166, w: 0.9404763}
     speed: 2
-    m_Value: {x: -0.071317084, y: 0.92357564, z: -0.3120297, w: -0.2110913}
+    m_Value: {x: 0.2340396, y: -0.23914072, z: 0.059511166, w: 0.9404763}
   m_Size:
-    m_Target: 22.552776
+    m_Target: 48.125313
     speed: 2
-    m_Value: 22.552776
+    m_Value: 48.125313
   m_Ortho:
     m_Target: 0
     speed: 2
