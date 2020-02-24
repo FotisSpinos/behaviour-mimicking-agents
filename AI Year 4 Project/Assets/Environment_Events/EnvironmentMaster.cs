@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Contains Scene information
+ * Allows to access objects significant for testing and training scenes
+ * Only one Game Object with this component should exist in a scene
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +12,7 @@ using UnityEngine;
 public class EnvironmentMaster : MonoBehaviour
 {
     private static EnvironmentMaster instance;
+
     [SerializeField] private GameObject physicsBoxPrefub;
     [SerializeField] private Rigidbody targetRig;
 
@@ -20,7 +27,6 @@ public class EnvironmentMaster : MonoBehaviour
         actionController = new TestActionController();
 
         actionController.InitActionController();
-
         actionController.InitAction();
     }
 
@@ -37,6 +43,11 @@ public class EnvironmentMaster : MonoBehaviour
 
     public static EnvironmentMaster GetInstance()
     {
+        if(instance == null)
+        {
+            GameObject envMasterGo = new GameObject();
+            instance = envMasterGo.AddComponent<EnvironmentMaster>();
+        }
         return instance;
     }
 

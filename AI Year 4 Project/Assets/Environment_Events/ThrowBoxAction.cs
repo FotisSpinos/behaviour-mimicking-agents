@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
 {
+    // The prefub used to instanciate chasing boxe objects
     private GameObject physicsBoxPrefub;
+
+    // A reference to the target's rig
     private Rigidbody targetRig;
 
-    private LinkedList<ChasingBox> chasingBoxes;
+    // A list of boxes currently chasing the target
+    private LinkedList<ChasingBox> chasingBoxes;    
+
 
     public ThrowBoxAction(GameObject physicsBoxPrefub, Rigidbody targetRig)
     {
+        // set variables
         this.physicsBoxPrefub = physicsBoxPrefub;
         this.targetRig = targetRig;
 
@@ -54,6 +60,7 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
                 current.Value.UpdateThrowBox();
             }
 
+            // Move to the next element in the list
             current = current.Next;
         }
     }

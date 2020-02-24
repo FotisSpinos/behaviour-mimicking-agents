@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TestActionController : EnvironmentActionController
 {
+    //environment action handled by the environment controller
     private EnvironmentAction envAction;
 
     public void ExcecuteAction()
