@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Environment_Events/EnvironmentAction_Scene.unity
+- path: Assets/Recording_Example/RecordingScene.unity
   isLoaded: 1
   isActive: 1

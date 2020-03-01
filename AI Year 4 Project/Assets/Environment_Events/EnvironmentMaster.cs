@@ -16,7 +16,10 @@ public class EnvironmentMaster : MonoBehaviour
     [SerializeField] private GameObject physicsBoxPrefub;
     [SerializeField] private Rigidbody targetRig;
 
+    [SerializeField] private bool record;
+
     EnvironmentActionController actionController;
+    private Recorder recorder;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +27,12 @@ public class EnvironmentMaster : MonoBehaviour
         instance = this;
 
         // TEMP CODE REMOVE LATER
-        actionController = new TestActionController();
+        actionController = new SimpleActionController();
 
         actionController.InitActionController();
         actionController.InitAction();
+
+        recorder = new Recorder(targetRig);
     }
 
     // Update is called once per frame
@@ -39,6 +44,12 @@ public class EnvironmentMaster : MonoBehaviour
         {
             actionController.ExcecuteAction();
         }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            recorder.SetRecording(!recorder.GetRecording());
+        }
+        recorder.UpdateRecorder();
     }
 
     public static EnvironmentMaster GetInstance()
