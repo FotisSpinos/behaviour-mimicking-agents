@@ -8,11 +8,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChasingBox
+public class ChasingBox : MonoBehaviour
 {
-    // The game object displayed on the scene. The class provides functionality to handled this object's behaviour
-    private GameObject throwBox;
-
     // A reference to the object's rigidbody
     private Rigidbody throwBoxRig;
 
@@ -29,17 +26,17 @@ public class ChasingBox
     private bool destroy;
 
     /// <summary>
-    /// Constructor spawning a box at a given location
+    /// Initializer spawning a box at a given location
     /// </summary>
     /// <param name="throwBoxPrefub">The prefub used to instanciate game objects in real time</param>
     /// <param name="cleanUpTimer">The amount of time before the object is deleted</param>
     /// <param name="position">The position used to spawn the game object</param>
-    public ChasingBox(GameObject throwBoxPrefub, float cleanUpTimer, Vector3 position, Rigidbody target)
+    public void init(float cleanUpTimer, Vector3 position, Rigidbody target)
     {
         this.cleanUpTimer = cleanUpTimer;
         this.targetRig = target;
 
-        Create(position, throwBoxPrefub);
+        Create(position);
     }
 
     // Sets the force applied to the object on each update
@@ -49,34 +46,37 @@ public class ChasingBox
     }
 
     // Used to instanciate a chasing box game object
-    public void Create(Vector3 position, GameObject prefub)
+    public void Create(Vector3 position)
     {
-        throwBox = GameObject.Instantiate(prefub, position, Quaternion.identity);
-        throwBox.name = "Chasing box";
+        gameObject.name = "Chasing box";
 
-        throwBoxRig = throwBox.GetComponent<Rigidbody>();
+        throwBoxRig = gameObject.GetComponent<Rigidbody>();
+
+        if (throwBoxRig == null)
+            throwBoxRig = gameObject.AddComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
-    public void UpdateThrowBox()
+    public void Update()
     {
         cleanUpTimer -= Time.deltaTime;
 
-        throwBoxRig.AddForce((targetRig.position - throwBox.transform.position).normalized * throwForce);
-    }
+        throwBoxRig.AddForce(((targetRig.position + targetRig.velocity * Vector3.Distance(targetRig.position, gameObject.transform.position) * Time.deltaTime) - 
+            gameObject.transform.position).normalized * throwForce);
 
-    // Returns true if the object has to be destroyed
-    public bool DestroyRequired()
-    {
         if (cleanUpTimer <= 0)
-            return true;
+            destroy = true;
 
-       return false;
+        if (destroy)
+            DestroyImmediate(this.gameObject);
     }
 
-    // Returns a reference of the instanciated game object
-    public GameObject GetThrowBox()
+    public void OnCollisionEnter(Collision collision)
     {
-        return this.throwBox;
+        if(collision.gameObject == targetRig.gameObject)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

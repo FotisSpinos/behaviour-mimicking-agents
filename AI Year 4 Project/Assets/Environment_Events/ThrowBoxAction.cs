@@ -13,7 +13,6 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
     // A list of boxes currently chasing the target
     private LinkedList<ChasingBox> chasingBoxes;    
 
-
     public ThrowBoxAction(GameObject physicsBoxPrefub, Rigidbody targetRig)
     {
         // set variables
@@ -31,7 +30,10 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
     public void ExcecuteAction()
     {
         // Spawn ThrowBox
-        ChasingBox throwBox = new ChasingBox(physicsBoxPrefub, 10.0f, new Vector3(0.0f, 10.0f, 0.0f), targetRig);
+        GameObject throwBoxGo = GameObject.Instantiate(physicsBoxPrefub, new Vector3(0.0f, 10.0f, 0.0f), Quaternion.identity);
+
+        ChasingBox throwBox = throwBoxGo.AddComponent<ChasingBox>();
+        throwBox.init(10.0f, new Vector3(0.0f, 10.0f, 0.0f), targetRig);
 
         // add element to the linked list
         chasingBoxes.AddLast(throwBox);
@@ -44,24 +46,6 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
 
     public void UpdateAction()
     {
-        LinkedListNode<ChasingBox> current = chasingBoxes.First;
 
-        //Iterate through the elements of the linked list
-        while(current != null)
-        {
-            if(current.Value.DestroyRequired()) // Destroy GO and ChasingBox
-            {
-                GameObject boxGoRef = current.Value.GetThrowBox();
-                chasingBoxes.RemoveFirst();
-                DestroyImmediate(boxGoRef, true);
-            }
-            else    //Update ChasingBox
-            {
-                current.Value.UpdateThrowBox();
-            }
-
-            // Move to the next element in the list
-            current = current.Next;
-        }
     }
 }
