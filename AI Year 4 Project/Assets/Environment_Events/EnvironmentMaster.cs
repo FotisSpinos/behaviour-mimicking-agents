@@ -21,7 +21,8 @@ public class EnvironmentMaster : MonoBehaviour
     EnvironmentActionController actionController;
     private Recorder recorder;
 
-    // Start is called before the first frame update
+    private VehicleController vehicleController;
+
     void Start()
     {
         instance = this;
@@ -33,9 +34,12 @@ public class EnvironmentMaster : MonoBehaviour
         actionController.InitAction();
 
         recorder = new Recorder(targetRig);
+
+        vehicleController = new TrainingVehicleController();
+        vehicleController.InitController(targetRig.GetComponent<AgentCar>());
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         actionController.UpdateAction();
@@ -49,7 +53,10 @@ public class EnvironmentMaster : MonoBehaviour
         {
             recorder.SetRecording(!recorder.GetRecording());
         }
+
         recorder.UpdateRecorder();
+
+        vehicleController.UpdateController();
     }
 
     public static EnvironmentMaster GetInstance()

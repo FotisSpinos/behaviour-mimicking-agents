@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &331884452 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7149447917630541244, guid: 71de47bb5bbede044bd13b233c5b5aec,
+    type: 3}
+  m_PrefabInstance: {fileID: 7149447916705329259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &734134532
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +210,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &754588953
+--- !u!1 &1022024572
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,54 +218,75 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 754588955}
-  - component: {fileID: 754588954}
+  - component: {fileID: 1022024574}
+  - component: {fileID: 1022024573}
   m_Layer: 0
-  m_Name: Vehicle_Test
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &754588954
+--- !u!114 &1022024573
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754588953}
+  m_GameObject: {fileID: 1022024572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdcfbf2b7b7e84540863b4086059c900, type: 3}
+  m_Script: {fileID: 11500000, guid: ad3c32deeda1599449197fa6df8affbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicle: {fileID: 1508310482}
---- !u!4 &754588955
+  physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
+    type: 3}
+  targetRig: {fileID: 331884452}
+  record: 0
+--- !u!4 &1022024574
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754588953}
+  m_GameObject: {fileID: 1022024572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.3674355, y: 12.301376, z: -4.1909637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1075522333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075522334}
+  m_Layer: 0
+  m_Name: VehicleController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075522334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075522333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -79.29735, y: 11.086021, z: -5.613701}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1508310482 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
-    type: 3}
-  m_PrefabInstance: {fileID: 7149447916705329259}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 145133635cf63f4478e8fae5d89cfc3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1683486284
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +448,17 @@ PrefabInstance:
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: maxAngularSpeed
-      value: 0.7
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
+        type: 3}
+      propertyPath: steerForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
+        type: 3}
+      propertyPath: forwardForce
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541242, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
@@ -436,7 +473,7 @@ PrefabInstance:
     - target: {fileID: 7149447917630541245, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.36
+      value: 0.39
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541245, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}

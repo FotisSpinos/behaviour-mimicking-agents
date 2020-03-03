@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(Rigidbody))]
-public class AgentCar : MonoBehaviour, VehicleInterface
+public class AgentCar : MonoBehaviour, Vehicle
 {
     [SerializeField] private Rigidbody rb;
 
@@ -78,5 +78,10 @@ public class AgentCar : MonoBehaviour, VehicleInterface
     public float GetMaxSpeed()
     {
         return maxSpeed;
+    }
+
+    public GameObject GetGameObject()
+    {
+        return gameObject;
     }
 }
