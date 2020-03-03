@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Recording_Example/RecordingScene.unity
+- path: Assets/XML/Scenes/XML_Scene.unity
   isLoaded: 1
   isActive: 1
