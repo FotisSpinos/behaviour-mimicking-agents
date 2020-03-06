@@ -5,19 +5,15 @@ using UnityEngine;
 public class Recorder
 {
     [SerializeField] private Rigidbody recordingObject;
-    private LinkedList<Vector3> positions;
-    private LinkedList<Vector3> rotations;
-    private LinkedList<Vector3> velocities;
+    private XML_Manager xml;
     private bool isRecording;
 
     public Recorder(Rigidbody recordingObject)
     {
-        positions = new LinkedList<Vector3>();
-        rotations = new LinkedList<Vector3>();
-        velocities = new LinkedList<Vector3>();
         isRecording = false;
-
         this.recordingObject = recordingObject;
+
+        xml = new XML_Manager();
     }
 
     public void SetRecording(bool isRecording)
@@ -35,35 +31,30 @@ public class Recorder
 
     private void RecordState()
     {
-        positions.AddLast(recordingObject.gameObject.transform.position);
-        rotations.AddLast(recordingObject.gameObject.transform.rotation.eulerAngles);
-        velocities.AddLast(recordingObject.velocity);
+        Agent_State state = new Agent_State();
+
+        state.position = recordingObject.transform.position;
+        state.rotation = recordingObject.transform.rotation.eulerAngles;
+        state.velocity = recordingObject.velocity;
+
+        xml.AddState(state);
 
         /* FOR DEBUGGING ONLY - REMOVE LATER */
-        /*
+        
         Debug.Log("position: " + recordingObject.gameObject.transform.position +
             "rotation: " + recordingObject.gameObject.transform.rotation.eulerAngles +
             "velocity: " + recordingObject.velocity);
-        */
+        
+    }
+
+    // stops recording and stores gathered data to xml file
+    public void StoreRecordedData()
+    {
+        isRecording = false;
+        xml.Save();
     }
 
     /* GETTERS */
-
-    public LinkedList<Vector3> GetPositions()
-    {
-        return positions;
-    }
-
-    public LinkedList<Vector3> GetRotations()
-    {
-        return rotations;
-    }
-
-    public LinkedList<Vector3> GetVelocities()
-    {
-        return velocities;
-    }
-
     public bool GetRecording()
     {
         return isRecording;

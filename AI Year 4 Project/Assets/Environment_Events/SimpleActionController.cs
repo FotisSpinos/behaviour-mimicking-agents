@@ -6,6 +6,14 @@ public class SimpleActionController : EnvironmentActionController
 {
     //environment action handled by the environment controller
     private EnvironmentAction envAction;
+    private GameObject physicsBoxPrefub;
+    private Rigidbody targetRig;
+
+    public SimpleActionController(GameObject physicsBoxPrefub, Rigidbody targetRig)
+    {
+        this.physicsBoxPrefub = physicsBoxPrefub;
+        this.targetRig = targetRig;
+    }
 
     public void ExcecuteAction()
     {
@@ -24,7 +32,7 @@ public class SimpleActionController : EnvironmentActionController
 
     public void InitActionController()
     {
-        envAction = new ThrowBoxAction(EnvironmentMaster.GetInstance().GetPhysicsBoxPrefub(),
-        EnvironmentMaster.GetInstance().GetTargetRig());
+        envAction = new ThrowBoxAction(physicsBoxPrefub,
+        targetRig);
     }
 }

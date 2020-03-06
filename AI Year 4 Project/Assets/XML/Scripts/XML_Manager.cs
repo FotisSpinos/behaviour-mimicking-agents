@@ -11,11 +11,15 @@ public class XML_Manager : MonoBehaviour
     public static XML_Manager manager;
 
     public AgentStates agentStates;
-    public Agent_State agent;
 
     void Awake()
     {
         manager = this;
+    }
+
+    public XML_Manager()
+    {
+        agentStates = new AgentStates();
     }
 
     public void AddState(Agent_State state)
@@ -55,7 +59,7 @@ public class XML_Manager : MonoBehaviour
 [Serializable]
 public class Agent_State
 {
-    public Vector3 Position;
+    public Vector3 position;
     public Vector3 rotation;
     public Vector3 velocity;
 }
