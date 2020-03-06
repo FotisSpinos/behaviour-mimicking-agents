@@ -10,13 +10,11 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
     private EnvironmentActionController actionController;
     private VehicleController dummyCar;
 
-    private XML_Manager xmlManager;
-
     override public void InitEnvironmentMaster()
     {
         // load the datat
         dummyCar = new TrainingVehicleController();
-        dummyCar.InitController(targetRig.GetComponent<AgentCar>());
+        dummyCar.InitController(targetRig.GetComponent<CarVehicle>());
 
 
     }

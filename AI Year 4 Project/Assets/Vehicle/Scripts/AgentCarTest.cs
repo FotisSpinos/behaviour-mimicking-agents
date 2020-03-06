@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AgentCarTest : MonoBehaviour
 {
-    [SerializeField] private AgentCar vehicle;
+    [SerializeField] private CarVehicle vehicle;
 
     private void Update()
     {

@@ -48,8 +48,8 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         // make a recorder instance
         recorder = new Recorder(targetRig);
 
-        vehicleController = new UserVehicleController(targetRig.GetComponent<AgentCar>());
-        vehicleController.InitController(targetRig.GetComponent<AgentCar>());
+        vehicleController = new UserVehicleController(targetRig.GetComponent<CarVehicle>());
+        vehicleController.InitController(targetRig.GetComponent<CarVehicle>());
     }
 
     override public void UpdateEnvironmentMaster()

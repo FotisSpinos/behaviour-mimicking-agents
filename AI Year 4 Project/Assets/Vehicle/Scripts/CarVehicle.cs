@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(Rigidbody))]
-public class AgentCar : MonoBehaviour, Vehicle
+public class CarVehicle : MonoBehaviour, Vehicle
 {
     [SerializeField] private Rigidbody rb;
 
@@ -14,13 +14,21 @@ public class AgentCar : MonoBehaviour, Vehicle
     [SerializeField] private float forwardForce;
     [SerializeField] private float steerForce;
 
+    public CarVehicle()
+    {
+
+    }
+
     /// <summary>
     /// Initialization
     /// </summary>
     private void Start()
     {
         if(rb == null)
-            rb = GetComponent<Rigidbody>();
+            rb = gameObject.GetComponent<Rigidbody>();
+
+        if(rb == null)
+            rb = gameObject.AddComponent<Rigidbody>();
     }
 
     /// <summary>
@@ -45,7 +53,8 @@ public class AgentCar : MonoBehaviour, Vehicle
     /// <param name="steeringAmount">The amount of torque </param>
     public void Steer(float steeringAmount)
     {
-        rb.AddTorque(0, steeringAmount * steerForce, 0);
+        if(steeringAmount != 0.0f)
+            rb.AddTorque(0, steeringAmount * steerForce, 0);
     }
 
     /// <summary>
@@ -55,7 +64,8 @@ public class AgentCar : MonoBehaviour, Vehicle
     /// <param name="forwardAmount">The amount of force applied to the object</param>
     public void Move(float forwardAmount)
     {
-        rb.AddForce(transform.up * forwardAmount * forwardForce);
+        if(forwardAmount != 0.0f)
+            rb.AddForce(transform.up * forwardAmount * forwardForce);
     }
 
     // Getters
