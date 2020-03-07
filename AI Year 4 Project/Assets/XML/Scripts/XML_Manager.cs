@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System;
 
+public enum Files {Agent, DummyCar}
 public class XML_Manager : MonoBehaviour
 {
     public static XML_Manager manager;
@@ -33,10 +34,12 @@ public class XML_Manager : MonoBehaviour
         return agentStates.states;
     }
 
-    public void Save()
+    public void Save(Files saveFile)
     {
+        string fileName = GetFile(saveFile);
+
         XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
-        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/Agent_Data.xml", FileMode.Create); //Filemode Create ovewrites
+        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Create); //Filemode Create ovewrites
 
         serializer.Serialize(stream, agentStates);
         stream.Close();
@@ -44,16 +47,37 @@ public class XML_Manager : MonoBehaviour
         Debug.Log("Data saved");
     }
 
-    public void Load()
+    public void Load(Files saveFile)
     {
+        string fileName = GetFile(saveFile);
+
         XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
-        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/Agent_Data.xml", FileMode.Open);
+        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Open);
 
         agentStates = serializer.Deserialize(stream) as AgentStates;
         stream.Close();
         
         Debug.Log("Data loaded");
     }
+
+    public string GetFile(Files file)
+    {
+        string fileName = null;
+
+        switch(file)
+        {
+            case Files.Agent:
+                fileName = "Agent_Data";
+                break;       
+                
+            case Files.DummyCar:
+                fileName = "DummyCar_Data";
+                break;
+        }
+
+        return fileName;
+    }
+
 }
 
 [Serializable]

@@ -10,16 +10,18 @@ public class XML_Test : MonoBehaviour
 
     public List<Agent_State> loadedStates;
 
+    public Files file;
+
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyUp(KeyCode.S))
         {
-            manager_XML.Save();
+            manager_XML.Save(file);
         }        
         if(Input.GetKeyUp(KeyCode.L))
         {
-            manager_XML.Load();
+            manager_XML.Load(file);
             loadedStates = manager_XML.GetStateList();
         }        
         if(Input.GetKeyUp(KeyCode.A))

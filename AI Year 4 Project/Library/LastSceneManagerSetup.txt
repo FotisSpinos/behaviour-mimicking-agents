@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Training/Training_Scene.unity
+- path: Assets/XML/Scene/Xml_Scene.unity
   isLoaded: 1
   isActive: 1

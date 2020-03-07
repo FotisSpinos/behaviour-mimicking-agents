@@ -24,7 +24,7 @@ public class TrainingVehicleController : VehicleController
         stateIndex = 0;
 
         xml = new XML_Manager();
-        xml.Load();
+        xml.Load(Files.DummyCar);
     }
 
     public void UpdateController()
