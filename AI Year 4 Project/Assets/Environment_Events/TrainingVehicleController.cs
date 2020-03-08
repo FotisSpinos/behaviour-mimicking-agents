@@ -31,13 +31,21 @@ public class TrainingVehicleController : VehicleController
     {
         if(stateIndex < xml.agentStates.states.Count)
         {
-            vehicle.GetGameObject().transform.position = xml.agentStates.states[stateIndex].position;
+            vehicle.GetGameObject().transform.localPosition = xml.agentStates.states[stateIndex].position;
             vehicle.GetGameObject().transform.eulerAngles = xml.agentStates.states[stateIndex].rotation;
+            
             stateIndex++;
         }
         else
         {
             stateIndex = 0;
         }
+    }
+
+    public void ResetVehicleController()
+    {
+        int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
+        stateIndex = (randIndex);
+        UpdateController();
     }
 }

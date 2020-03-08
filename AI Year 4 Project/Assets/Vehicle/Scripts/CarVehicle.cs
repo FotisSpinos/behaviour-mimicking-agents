@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class CarVehicle : MonoBehaviour, Vehicle
 {
-    [SerializeField] private Rigidbody rb;
+    private Rigidbody rb;
 
     [SerializeField] private float maxSpeed;
     [SerializeField] private float maxAngularSpeed;
@@ -24,11 +24,7 @@ public class CarVehicle : MonoBehaviour, Vehicle
     /// </summary>
     private void Start()
     {
-        if(rb == null)
-            rb = gameObject.GetComponent<Rigidbody>();
-
-        if(rb == null)
-            rb = gameObject.AddComponent<Rigidbody>();
+         rb = gameObject.GetComponent<Rigidbody>();
     }
 
     /// <summary>
@@ -64,7 +60,7 @@ public class CarVehicle : MonoBehaviour, Vehicle
     /// <param name="forwardAmount">The amount of force applied to the object</param>
     public void Move(float forwardAmount)
     {
-        if(forwardAmount != 0.0f)
+        if (forwardAmount != 0.0f)
             rb.AddForce(transform.up * forwardAmount * forwardForce);
     }
 

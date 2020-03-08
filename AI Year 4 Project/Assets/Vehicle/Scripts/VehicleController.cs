@@ -6,4 +6,6 @@ public interface VehicleController
 {
     void UpdateController();
     void InitController(Vehicle vehicle);
+
+    void ResetVehicleController();
 }

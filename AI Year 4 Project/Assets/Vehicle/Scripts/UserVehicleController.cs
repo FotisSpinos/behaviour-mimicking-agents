@@ -16,6 +16,11 @@ public class UserVehicleController : MonoBehaviour, VehicleController
         
     }
 
+    public void ResetVehicleController()
+    {
+        
+    }
+
     public void UpdateController()
     {
         vehicle.SetVehicleInput(Input.GetAxis("Horizontal"),
