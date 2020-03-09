@@ -26,6 +26,9 @@ public class AgentCar : Agent
 
         transform.localPosition = dummyCar.transform.localPosition;//dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
+
+
+        environment.InitEnvironmentMaster();
     }
 
     public override void AgentAction(float[] vectorAction)
@@ -50,22 +53,18 @@ public class AgentCar : Agent
         float rotationReward = 1 / rotationDifference;
 
         //reward = (positionReward * 1.5f + rotationReward * 0.5f) / 2;
-        reward = 0.1f;
+        reward = 0.01f;
 
-        //if(positionDifference > 10000)
+        if(positionDifference > 10000 || rotationDifference > 20000)
         {
             reward = -1.0f;
-            //Done();
-        }
-
-        /*
-        if (timer > resetTime)
-        {
-            timer = 0.0f;
             Done();
         }
-        */
+
         timer += Time.deltaTime;
+
+        // update environemnt
+        environment.UpdateEnvironmentMaster();
 
         //Debug.Log("Reward: " + reward + " Pos diff: " + positionDifference + " Rot diff: " + rotationDifference);
         SetReward(Mathf.Pow(reward, 1));
