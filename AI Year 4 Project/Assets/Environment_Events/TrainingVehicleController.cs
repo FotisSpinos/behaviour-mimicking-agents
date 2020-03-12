@@ -12,11 +12,11 @@ public class TrainingVehicleController : VehicleController
 
     private int stateIndex;
 
-    XML_Manager xml;
+    private XML_Manager xml;
 
-    public TrainingVehicleController()
-    {
-    }
+
+    public delegate void Reset();
+    public event Reset OnReset;
 
     public void InitController(Vehicle vehicle)
     {
@@ -29,7 +29,7 @@ public class TrainingVehicleController : VehicleController
 
     public void UpdateController()
     {
-        if(stateIndex < xml.agentStates.states.Count)
+        if (stateIndex < xml.agentStates.states.Count)
         {
             vehicle.GetGameObject().transform.localPosition = xml.agentStates.states[stateIndex].position;
             vehicle.GetGameObject().transform.eulerAngles = xml.agentStates.states[stateIndex].rotation;
@@ -38,7 +38,10 @@ public class TrainingVehicleController : VehicleController
         }
         else
         {
-            stateIndex = 0;
+            ResetVehicleController();
+
+            if(OnReset != null)
+                OnReset();
         }
     }
 
@@ -46,6 +49,18 @@ public class TrainingVehicleController : VehicleController
     {
         int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
         stateIndex = (randIndex);
+
+        // update controller once a new index is being set
         UpdateController();
+    }
+
+    public Vehicle GetVehicle()
+    {
+        return vehicle;
+    }
+
+    public Vector3 GetCurrentVelocity()
+    {
+        return xml.agentStates.states[stateIndex].velocity;
     }
 }

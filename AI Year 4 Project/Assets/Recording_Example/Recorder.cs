@@ -33,14 +33,13 @@ public class Recorder
     {
         Agent_State state = new Agent_State();
 
-        state.position = recordingObject.transform.position;
-        state.rotation = recordingObject.transform.rotation.eulerAngles;
+        state.position = recordingObject.transform.localPosition;
+        state.rotation = recordingObject.transform.localEulerAngles;
         state.velocity = recordingObject.velocity;
 
         xml.AddState(state);
 
         /* FOR DEBUGGING ONLY - REMOVE LATER */
-        
         Debug.Log("position: " + recordingObject.gameObject.transform.position +
             "rotation: " + recordingObject.gameObject.transform.rotation.eulerAngles +
             "velocity: " + recordingObject.velocity);
