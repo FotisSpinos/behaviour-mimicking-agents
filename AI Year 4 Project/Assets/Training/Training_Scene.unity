@@ -189,6 +189,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -203,6 +208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -283,6 +293,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -297,6 +312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -377,6 +397,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -391,6 +416,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -483,6 +513,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -497,6 +532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -577,6 +617,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -591,6 +636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -671,6 +721,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -685,6 +740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -852,6 +912,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -866,6 +931,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -946,6 +1016,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -960,6 +1035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1040,6 +1120,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1054,6 +1139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1146,6 +1236,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1160,6 +1255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1240,6 +1340,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1254,6 +1359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1340,6 +1450,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1354,6 +1469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1434,6 +1554,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1448,6 +1573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1528,6 +1658,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1542,6 +1677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1628,6 +1768,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1643,6 +1788,11 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: VehicleBrain
       objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
 --- !u!1 &809967508 stripped
@@ -1651,6 +1801,110 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 184835963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &811553651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 540648088823339633, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Name
+      value: Environment Object (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 540648088823339633, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 840
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219573113116720141, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: dummyCar
+      value: 
+      objectReference: {fileID: 913233175}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BehaviorName
+      value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
 --- !u!1 &819534226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
@@ -1734,6 +1988,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1748,6 +2007,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -1828,6 +2092,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1843,8 +2112,19 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: VehicleBrain
       objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
+--- !u!1 &913233175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
+    type: 3}
+  m_PrefabInstance: {fileID: 811553651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &974551119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1922,6 +2202,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -1936,6 +2221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2022,6 +2312,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2036,6 +2331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2132,8 +2432,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099628798}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: 1.1641532e-10, w: 0.7071068}
-  m_LocalPosition: {x: 826.05475, y: 1044.3765, z: 430.8752}
+  m_LocalRotation: {x: 0.70710677, y: -2.3283062e-10, z: -8.1490714e-10, w: 0.7071068}
+  m_LocalPosition: {x: 835.1079, y: 964.7825, z: 424.3524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2144,6 +2444,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
     type: 3}
   m_PrefabInstance: {fileID: 1254961251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1212756085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
+    type: 3}
+  m_PrefabInstance: {fileID: 1908205027}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1254961251
 PrefabInstance:
@@ -2222,6 +2528,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2236,6 +2547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2316,6 +2632,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2330,6 +2651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2434,6 +2760,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2448,6 +2779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2534,6 +2870,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2548,6 +2889,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2634,6 +2980,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2648,6 +2999,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2728,6 +3084,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2742,6 +3103,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2834,6 +3200,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2848,6 +3219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -2928,6 +3304,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -2942,6 +3323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3040,6 +3426,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3054,6 +3445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3075,6 +3471,110 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9045274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1908205027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 540648088823339633, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Name
+      value: Environment Object (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 540648088823339633, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 560
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219573113116720141, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: dummyCar
+      value: 
+      objectReference: {fileID: 1212756085}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BehaviorName
+      value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
 --- !u!1 &1910088749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
@@ -3158,6 +3658,31 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1219573113116720142, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219573113121998984, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3172188596228430874, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3172,6 +3697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3270,6 +3800,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3284,6 +3819,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3364,6 +3904,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3378,6 +3923,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3476,7 +4026,7 @@ PrefabInstance:
     - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
@@ -3497,6 +4047,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorActionSize.Array.data[0]
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3601,7 +4161,7 @@ PrefabInstance:
     - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5706643162277786527, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
@@ -3622,6 +4182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
@@ -3702,6 +4267,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3717,6 +4287,11 @@ PrefabInstance:
       propertyPath: m_BehaviorName
       value: VehicleBrain
       objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}
 --- !u!1001 &6787313004612498522
@@ -3730,6 +4305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Environment Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 540648088823339633, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 678500695943483200, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
@@ -3791,6 +4371,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4397360656129052301, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6787313004741845180, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: dummyCar
@@ -3800,12 +4385,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 11400000, guid: 102eb4261e20a64428ca287b48b503b3,
+      objectReference: {fileID: 11400000, guid: e8578ead136d61649a7e9ab2412fbabc,
         type: 3}
     - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
         type: 3}
       propertyPath: m_BehaviorName
       value: VehicleBrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787313004741845182, guid: 17c7df12c73200e449a469a4b4f4b402,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c7df12c73200e449a469a4b4f4b402, type: 3}

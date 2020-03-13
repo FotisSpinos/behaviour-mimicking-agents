@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using MLAgents;
+using System;
 
 // we need a decision requester component
 // we need behaviour parameters component
@@ -92,17 +93,22 @@ public class AgentCar : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        // pass agent information
         sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(transform.localEulerAngles);
-        sensor.AddObservation(GetComponent<Rigidbody>().velocity);
+        sensor.AddObservation(transform.localEulerAngles.y);
+        sensor.AddObservation(agentRig.velocity);
+
+        // pass distance between agent and dummy car
         sensor.AddObservation(dummyCar.transform.position - transform.position);
 
+        // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
-        sensor.AddObservation(dummyCar.transform.localEulerAngles);
+        sensor.AddObservation(dummyCar.transform.localEulerAngles.y);
 
         // We definatelly need to add this (It wasn't added for the trained model) - possibly improve training times and rapid changes in the mean fitness 
         // the mean fitness seems to be unstable
-        //sensor.AddObservation(dummyCarController.GetCurrentVelocity());
+        Vector3 dummyCarVelocity = dummyCarController.GetCurrentVelocity();
+        sensor.AddObservation(dummyCarVelocity);
     }
 
     public override void AgentReset()
@@ -126,3 +132,20 @@ public class AgentCar : Agent
         return action;
     }
 }
+
+/*
+ WORKING OBSERVATIONS: 
+
+
+        // pass agent information
+        sensor.AddObservation(transform.localPosition);
+        sensor.AddObservation(transform.localEulerAngles);
+        sensor.AddObservation(agentRig);
+
+        // pass distance between agent and dummy car
+        sensor.AddObservation(dummyCar.transform.position - transform.position);
+
+        // pass dummy car information
+        sensor.AddObservation(dummyCar.transform.localPosition);
+        sensor.AddObservation(dummyCar.transform.localEulerAngles);
+ */

@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 using System;
 
 public enum Files {Agent, DummyCar}
-public class XML_Manager : MonoBehaviour
+public class XML_Manager
 {
     public static XML_Manager manager;
 

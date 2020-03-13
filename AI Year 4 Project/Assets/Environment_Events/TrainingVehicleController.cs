@@ -61,6 +61,6 @@ public class TrainingVehicleController : VehicleController
 
     public Vector3 GetCurrentVelocity()
     {
-        return xml.agentStates.states[stateIndex].velocity;
+        return xml.agentStates.states[stateIndex - 1].velocity;
     }
 }
