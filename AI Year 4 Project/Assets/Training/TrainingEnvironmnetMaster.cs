@@ -8,12 +8,12 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
     [SerializeField] private Rigidbody targetRig;
 
     private EnvironmentActionController actionController;
-    private TrainingVehicleController dummyCarController;
+    private DummyCarController dummyCarController;
 
     override public void InitEnvironmentMaster()
     {
         // load the data
-        dummyCarController = new TrainingVehicleController();
+        dummyCarController = new DummyCarController();
         dummyCarController.InitController(targetRig.GetComponent<CarVehicle>());
     }
 
@@ -22,7 +22,7 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
         dummyCarController.UpdateController();
     }
 
-    public TrainingVehicleController GetDummyCarController()
+    public DummyCarController GetDummyCarController()
     {
         return dummyCarController;
     }

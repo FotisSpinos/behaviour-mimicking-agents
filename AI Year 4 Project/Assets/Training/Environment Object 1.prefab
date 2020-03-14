@@ -73,7 +73,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219573113116720142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17ff7c331a5ff754d817a1512c806062, type: 3}
   m_Name: 
@@ -284,16 +284,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Agent
       objectReference: {fileID: 0}
-    - target: {fileID: 2307933779635753463, guid: e7debde2bd7c952429e39d5604001f48,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4841541720481955780, guid: e7debde2bd7c952429e39d5604001f48,
-        type: 3}
-      propertyPath: dummyCar
-      value: 
-      objectReference: {fileID: 5706643162277786527}
     - target: {fileID: 4841541720481955780, guid: e7debde2bd7c952429e39d5604001f48,
         type: 3}
       propertyPath: environment
@@ -302,7 +292,7 @@ PrefabInstance:
     - target: {fileID: 4841541720481955782, guid: e7debde2bd7c952429e39d5604001f48,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 4841541720481955782, guid: e7debde2bd7c952429e39d5604001f48,
         type: 3}
@@ -311,10 +301,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4841541720481955782, guid: e7debde2bd7c952429e39d5604001f48,
         type: 3}
-      propertyPath: m_Model
-      value: 
-      objectReference: {fileID: 11400000, guid: d20086ed994f4774991a3a4ecd7572e5,
-        type: 3}
+      propertyPath: m_BehaviorName
+      value: VehicleBrain
+      objectReference: {fileID: 0}
     - target: {fileID: 4841541720481955783, guid: e7debde2bd7c952429e39d5604001f48,
         type: 3}
       propertyPath: DecisionPeriod
@@ -335,11 +324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 678500695943483200}
     m_Modifications:
-    - target: {fileID: 7149447917630541240, guid: 71de47bb5bbede044bd13b233c5b5aec,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: maxSpeed
@@ -447,12 +431,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71de47bb5bbede044bd13b233c5b5aec, type: 3}
---- !u!1 &5706643162277786527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7149447917630541242, guid: 71de47bb5bbede044bd13b233c5b5aec,
-    type: 3}
-  m_PrefabInstance: {fileID: 3172188597692202533}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5706643162277786520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7149447917630541245, guid: 71de47bb5bbede044bd13b233c5b5aec,

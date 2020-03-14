@@ -13,7 +13,7 @@ public class AgentLaunch : Agent
 
     [SerializeField] private GameObject dummyCar;
 
-    private TrainingVehicleController dummyCarController;
+    private DummyCarController dummyCarController;
 
     private Rigidbody agentRig;
 

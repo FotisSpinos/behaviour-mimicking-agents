@@ -1,12 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using MLAgents;
 using System;
-
-// we need a decision requester component
-// we need behaviour parameters component
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
@@ -16,7 +12,7 @@ public class AgentCar : Agent
     private Vehicle car;
 
     // a reference to the dummy car
-    private TrainingVehicleController dummyCarController;
+    private DummyCarController dummyCarController;
 
     /*
      * It was noted that the update and AgentAction were not synchronized
@@ -29,7 +25,14 @@ public class AgentCar : Agent
     // the agent's rigidbody
     private Rigidbody agentRig;
 
+    // the dummy car game object
     private GameObject dummyCar;
+
+    // the maximum rotation distance between the dummy car and the agent
+    [SerializeField] float maxRotDist;
+
+    // the maximum position distance between the dummy car and the agent
+    [SerializeField] float maxPosDist;
 
     public override void InitializeAgent()
     {
@@ -38,11 +41,14 @@ public class AgentCar : Agent
         // initialize environment master
         environment.InitEnvironmentMaster();
 
+        // update once
+        environment.UpdateEnvironmentMaster();
+
         // add car vehicle to this game object
         car = gameObject.GetComponent<CarVehicle>();
 
+        // Set class attributes
         dummyCarController = environment.GetDummyCarController();
-
         dummyCar = dummyCarController.GetVehicle().GetGameObject();
 
         transform.localPosition = dummyCar.transform.position;
@@ -50,7 +56,11 @@ public class AgentCar : Agent
 
         agentRig = GetComponent<Rigidbody>();
         
+        // subscribe to the animation reset event
         environment.GetDummyCarController().OnReset += AgentReset;
+
+        // check that parameters set from the editor are valid
+        
     }
 
     public override void AgentAction(float[] vectorAction)
@@ -58,27 +68,22 @@ public class AgentCar : Agent
         // reset reward value at every update
         float reward = 0;
 
-        // apply actions
+        // increase velocities so that the agent can catch up to the dummy car
         float forwardAmount = vectorAction[0] * 1.4f;
         float steerAmount = vectorAction[1] * 1.5f;
 
+        // apply input to the vehicle
         car.SetVehicleInput(steerAmount, forwardAmount);
 
-        float positionDifference = (dummyCar.transform.localPosition - transform.localPosition).magnitude * 1000;
-        float rotationDifference = (dummyCar.transform.localEulerAngles - transform.localEulerAngles).magnitude * 1000;
+        // culculate the distances in position and rotations
+        float positionDifference = (dummyCar.transform.localPosition - transform.localPosition).magnitude;
+        float rotationDifference = (dummyCar.transform.localEulerAngles - transform.localEulerAngles).magnitude;
 
-        //if (positionDifference <= 0.1f)
-        //    positionDifference = 1f;
-        //if (rotationDifference <= 0.1f)
-        //    rotationDifference = 1f;
-
-        //float positionReward = 1 / positionDifference;
-        //float rotationReward = 1 / rotationDifference;
-
-        //reward = (positionReward * 1.5f + rotationReward * 0.5f) / 2;
+        // give a small reward on each frame
         reward = 0.01f;
 
-        if(positionDifference > 10000 || rotationDifference > 20000)
+        // check if the agent follows the dummy car
+        if (positionDifference > 10 || rotationDifference > 20)
         {
             reward = -1.0f;
             Done();
@@ -95,7 +100,7 @@ public class AgentCar : Agent
     {
         // pass agent information
         sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(transform.localEulerAngles.y);
+        sensor.AddObservation(transform.localEulerAngles.z);
         sensor.AddObservation(agentRig.velocity);
 
         // pass distance between agent and dummy car
@@ -103,7 +108,7 @@ public class AgentCar : Agent
 
         // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
-        sensor.AddObservation(dummyCar.transform.localEulerAngles.y);
+        sensor.AddObservation(dummyCar.transform.localEulerAngles.z);
 
         // We definatelly need to add this (It wasn't added for the trained model) - possibly improve training times and rapid changes in the mean fitness 
         // the mean fitness seems to be unstable
@@ -113,12 +118,13 @@ public class AgentCar : Agent
 
     public override void AgentReset()
     {
+        // reset the animation randomly
         if (environment != null && environment.GetDummyCarController() != null)
             environment.GetDummyCarController().ResetVehicleController();
 
+        // apply the dummy car state to the agent
         transform.localPosition = dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
-
         agentRig.velocity = dummyCarController.GetCurrentVelocity();
     }
 
@@ -132,20 +138,3 @@ public class AgentCar : Agent
         return action;
     }
 }
-
-/*
- WORKING OBSERVATIONS: 
-
-
-        // pass agent information
-        sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(transform.localEulerAngles);
-        sensor.AddObservation(agentRig);
-
-        // pass distance between agent and dummy car
-        sensor.AddObservation(dummyCar.transform.position - transform.position);
-
-        // pass dummy car information
-        sensor.AddObservation(dummyCar.transform.localPosition);
-        sensor.AddObservation(dummyCar.transform.localEulerAngles);
- */
