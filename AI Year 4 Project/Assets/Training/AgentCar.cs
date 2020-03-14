@@ -9,6 +9,7 @@ using System;
 // we need behaviour parameters component
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(CarVehicle))]
 public class AgentCar : Agent
 {
     // A reference to the vehicle "driven" by the agent
@@ -48,8 +49,7 @@ public class AgentCar : Agent
         transform.localEulerAngles = dummyCar.transform.localEulerAngles;
 
         agentRig = GetComponent<Rigidbody>();
-
-        // 
+        
         environment.GetDummyCarController().OnReset += AgentReset;
     }
 
