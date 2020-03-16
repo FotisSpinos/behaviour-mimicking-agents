@@ -37,9 +37,14 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         return instance;
     }
 
+    public override DummyCarController GetDummyCarController()
+    {
+        return null;
+    }
+
     override public void InitEnvironmentMaster()
     {       
-        actionController = new SimpleActionController(physicsBoxPrefub, targetRig);
+        actionController = new SimpleActionController(new ThrowBoxAction(physicsBoxPrefub, targetRig));
 
         actionController.InitActionController();
         actionController.InitAction();

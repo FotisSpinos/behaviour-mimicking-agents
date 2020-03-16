@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseEnvironmentMaster : MonoBehaviour, EnvironmentMaster
+// abstract environment master allows as to expose environment masters to the editor as interfaces cannot be used for this purpose.
+public abstract class BaseEnvironmentMaster : MonoBehaviour, EnvironmentMaster
 {
-    public virtual void InitEnvironmentMaster()
-    {
-        Debug.LogError("InitEnvironmentMaster is called, no functionality is provided");
-    }
+    public abstract DummyCarController GetDummyCarController();
 
-    public virtual void UpdateEnvironmentMaster()
-    {
-        Debug.LogError("UpdateEnvironmentMaster is called, no functionality is provided");
-    }
+    public abstract void InitEnvironmentMaster();
+
+    public abstract void UpdateEnvironmentMaster();
 }

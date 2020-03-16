@@ -7,4 +7,6 @@ public interface EnvironmentMaster
     void InitEnvironmentMaster();
 
     void UpdateEnvironmentMaster();
+
+    DummyCarController GetDummyCarController();
 }

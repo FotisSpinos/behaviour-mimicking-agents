@@ -9,10 +9,9 @@ public class SimpleActionController : EnvironmentActionController
     private GameObject physicsBoxPrefub;
     private Rigidbody targetRig;
 
-    public SimpleActionController(GameObject physicsBoxPrefub, Rigidbody targetRig)
+    public SimpleActionController(EnvironmentAction envAction)
     {
-        this.physicsBoxPrefub = physicsBoxPrefub;
-        this.targetRig = targetRig;
+        this.envAction = envAction;
     }
 
     public void ExcecuteAction()
@@ -32,7 +31,5 @@ public class SimpleActionController : EnvironmentActionController
 
     public void InitActionController()
     {
-        envAction = new ThrowBoxAction(physicsBoxPrefub,
-        targetRig);
     }
 }

@@ -20,7 +20,7 @@ public class AgentCar : Agent
      * Because of that the agent was mimicking a "Slow" dummy car
      * Thus environment calls ensured that the dummy car and the agent are updating at the same rate
     */
-    [SerializeField] private TrainingEnvironmnetMaster environment;
+    [SerializeField] private BaseEnvironmentMaster environment;
 
     // the agent's rigidbody
     private Rigidbody agentRig;
@@ -86,7 +86,7 @@ public class AgentCar : Agent
         if (positionDifference > 10 || rotationDifference > 20)
         {
             reward = -1.0f;
-            Done();
+           // Done();
         }
 
         // update the environemnt
@@ -120,7 +120,9 @@ public class AgentCar : Agent
     {
         // reset the animation randomly
         if (environment != null && environment.GetDummyCarController() != null)
+        {
             environment.GetDummyCarController().ResetVehicleController();
+        }
 
         // apply the dummy car state to the agent
         transform.localPosition = dummyCar.transform.localPosition;

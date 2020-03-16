@@ -22,7 +22,7 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
         dummyCarController.UpdateController();
     }
 
-    public DummyCarController GetDummyCarController()
+    override public DummyCarController GetDummyCarController()
     {
         return dummyCarController;
     }
