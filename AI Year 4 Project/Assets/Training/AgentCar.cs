@@ -34,6 +34,8 @@ public class AgentCar : Agent
     // the maximum position distance between the dummy car and the agent
     [SerializeField] float maxPosDist;
 
+    [SerializeField] bool isTraining = true;
+
     public override void InitializeAgent()
     {
         base.InitializeAgent();
@@ -58,9 +60,6 @@ public class AgentCar : Agent
         
         // subscribe to the animation reset event
         environment.GetDummyCarController().OnReset += AgentReset;
-
-        // check that parameters set from the editor are valid
-        
     }
 
     public override void AgentAction(float[] vectorAction)
@@ -83,10 +82,10 @@ public class AgentCar : Agent
         reward = 0.01f;
 
         // check if the agent follows the dummy car
-        if (positionDifference > 10 || rotationDifference > 20)
+        if ((positionDifference > 10 || rotationDifference > 20) && isTraining)
         {
             reward = -1.0f;
-           // Done();
+            Done();
         }
 
         // update the environemnt
@@ -100,7 +99,7 @@ public class AgentCar : Agent
     {
         // pass agent information
         sensor.AddObservation(transform.localPosition);
-        sensor.AddObservation(transform.localEulerAngles.z);
+        sensor.AddObservation(transform.localEulerAngles.y);
         sensor.AddObservation(agentRig.velocity);
 
         // pass distance between agent and dummy car
@@ -108,7 +107,7 @@ public class AgentCar : Agent
 
         // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
-        sensor.AddObservation(dummyCar.transform.localEulerAngles.z);
+        sensor.AddObservation(dummyCar.transform.localEulerAngles.y);
 
         // We definatelly need to add this (It wasn't added for the trained model) - possibly improve training times and rapid changes in the mean fitness 
         // the mean fitness seems to be unstable
