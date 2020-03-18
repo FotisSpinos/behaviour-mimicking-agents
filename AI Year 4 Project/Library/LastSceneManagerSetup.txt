@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Training/Training_Scene.unity
+- path: Assets/AgentLaunch/AgentLaunchScene.unity
   isLoaded: 1
   isActive: 1

@@ -4,6 +4,9 @@ using UnityEngine;
 using MLAgents;
 using System;
 
+// TODO: test out the behaviour minimising the difference in position and rotation
+// TODO: Give some reward depending on the distances in their state 
+
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
 public class AgentCar : Agent

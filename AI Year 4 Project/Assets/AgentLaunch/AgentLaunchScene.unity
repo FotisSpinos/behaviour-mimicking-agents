@@ -385,6 +385,11 @@ PrefabInstance:
       propertyPath: environment
       value: 
       objectReference: {fileID: 1734840311}
+    - target: {fileID: 5430498186518935672, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: isTraining
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5430498186518935674, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_Model
