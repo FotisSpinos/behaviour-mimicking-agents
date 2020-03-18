@@ -295,10 +295,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manager_XML: {fileID: 2006931997}
   testState:
-    Position: {x: 0, y: 0, z: 0}
+    position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     velocity: {x: 0, y: 0, z: 0}
   loadedStates: []
+  file: 0
 --- !u!114 &2006931997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,10 +314,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentStates:
     states: []
-  agent:
-    Position: {x: 0, y: 0, z: 0}
-    rotation: {x: 0, y: 0, z: 0}
-    velocity: {x: 0, y: 0, z: 0}
 --- !u!4 &2006931998
 Transform:
   m_ObjectHideFlags: 0

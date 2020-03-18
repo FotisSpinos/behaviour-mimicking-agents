@@ -50,7 +50,7 @@ public class Recorder
     public void StoreRecordedData()
     {
         isRecording = false;
-        xml.Save(Files.DummyCar);
+        xml.Save(Files.CarPath_2);
     }
 
     /* GETTERS */

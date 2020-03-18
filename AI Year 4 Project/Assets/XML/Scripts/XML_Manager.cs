@@ -6,8 +6,8 @@ using System.Xml;
 using System.Xml.Serialization;
 using System;
 
-public enum Files {Agent, DummyCar}
-public class XML_Manager
+public enum Files {CarPath_1, CarPath_2, CarPath_3, CarPath_4, CarPath_5}
+public class XML_Manager: MonoBehaviour
 {
     public static XML_Manager manager;
 
@@ -66,12 +66,24 @@ public class XML_Manager
 
         switch(file)
         {
-            case Files.Agent:
-                fileName = "Agent_Data";
+            case Files.CarPath_1:
+                fileName = "CarPath_1_Data";
                 break;       
                 
-            case Files.DummyCar:
-                fileName = "DummyCar_Data";
+            case Files.CarPath_2:
+                fileName = "CarPath_2_Data";
+                break;            
+            
+            case Files.CarPath_3:
+                fileName = "CarPath_3_Data";
+                break;            
+            
+            case Files.CarPath_4:
+                fileName = "CarPath_4_Data";
+                break;            
+            
+            case Files.CarPath_5:
+                fileName = "CarPath_5_Data";
                 break;
         }
 
