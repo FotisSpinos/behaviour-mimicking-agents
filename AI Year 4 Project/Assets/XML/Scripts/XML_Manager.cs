@@ -6,16 +6,20 @@ using System.Xml;
 using System.Xml.Serialization;
 using System;
 
-public enum Files {Agent, DummyCar}
-public class XML_Manager
+public enum Files {CarPath_1, CarPath_2, CarPath_3, CarPath_4, CarPath_5}
+public class XML_Manager: MonoBehaviour
 {
     public static XML_Manager manager;
 
     public AgentStates agentStates;
 
+    public List<AgentStates> pathsList = new List<AgentStates>();
+    //// manager.pathsList[index].states;
+
     void Awake()
     {
         manager = this;
+        pathsList = LoadAll();
     }
 
     public XML_Manager()
@@ -32,7 +36,7 @@ public class XML_Manager
     public List<Agent_State> GetStateList()
     {
         return agentStates.states;
-    }
+    }    
 
     public void Save(Files saveFile)
     {
@@ -60,18 +64,44 @@ public class XML_Manager
         Debug.Log("Data loaded");
     }
 
+    List<AgentStates> LoadAll()
+    {
+        List<AgentStates> loadList = new List<AgentStates>();
+
+        foreach (Files slot in Enum.GetValues(typeof(Files)))
+        {
+            Load(slot);
+            loadList.Add(agentStates);
+        }
+
+        return loadList;
+    }
+
+
     public string GetFile(Files file)
     {
         string fileName = null;
 
         switch(file)
         {
-            case Files.Agent:
-                fileName = "Agent_Data";
+            case Files.CarPath_1:
+                fileName = "CarPath_1_Data";
                 break;       
                 
-            case Files.DummyCar:
-                fileName = "DummyCar_Data";
+            case Files.CarPath_2:
+                fileName = "CarPath_2_Data";
+                break;            
+            
+            case Files.CarPath_3:
+                fileName = "CarPath_3_Data";
+                break;            
+            
+            case Files.CarPath_4:
+                fileName = "CarPath_4_Data";
+                break;            
+            
+            case Files.CarPath_5:
+                fileName = "CarPath_5_Data";
                 break;
         }
 
