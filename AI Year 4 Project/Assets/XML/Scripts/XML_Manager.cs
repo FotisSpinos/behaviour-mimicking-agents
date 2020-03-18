@@ -13,9 +13,13 @@ public class XML_Manager: MonoBehaviour
 
     public AgentStates agentStates;
 
+    public List<AgentStates> pathsList = new List<AgentStates>();
+    //// manager.pathsList[index].states;
+
     void Awake()
     {
         manager = this;
+        pathsList = LoadAll();
     }
 
     public XML_Manager()
@@ -32,7 +36,7 @@ public class XML_Manager: MonoBehaviour
     public List<Agent_State> GetStateList()
     {
         return agentStates.states;
-    }
+    }    
 
     public void Save(Files saveFile)
     {
@@ -59,6 +63,20 @@ public class XML_Manager: MonoBehaviour
         
         Debug.Log("Data loaded");
     }
+
+    List<AgentStates> LoadAll()
+    {
+        List<AgentStates> loadList = new List<AgentStates>();
+
+        foreach (Files slot in Enum.GetValues(typeof(Files)))
+        {
+            Load(slot);
+            loadList.Add(agentStates);
+        }
+
+        return loadList;
+    }
+
 
     public string GetFile(Files file)
     {

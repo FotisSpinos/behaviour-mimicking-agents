@@ -19,14 +19,17 @@ public class XML_Test : MonoBehaviour
         {
             manager_XML.Save(file);
         }        
+        
         if(Input.GetKeyUp(KeyCode.L))
         {
             manager_XML.Load(file);
             loadedStates = manager_XML.GetStateList();
         }        
+        
         if(Input.GetKeyUp(KeyCode.A))
         {
             manager_XML.AddState(testState);
-        }
+        }        
+        
     }
 }
