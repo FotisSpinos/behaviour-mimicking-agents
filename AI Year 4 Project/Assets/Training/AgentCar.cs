@@ -85,7 +85,8 @@ public class AgentCar : Agent
         reward = 0.01f;
 
         // check if the agent follows the dummy car
-        if ((positionDifference > 10 || rotationDifference > 20) && isTraining)
+        //if ((positionDifference > 10 || rotationDifference > 20) && isTraining)
+        if ((positionDifference > maxPosDist || rotationDifference > maxRotDist) && isTraining)
         {
             reward = -1.0f;
             Done();

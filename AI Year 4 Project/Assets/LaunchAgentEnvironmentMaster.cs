@@ -7,7 +7,10 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
     [SerializeField] private GameObject physicsBoxPrefub;
     [SerializeField] private Rigidbody dummyCarRig;
 
-    private EnvironmentActionController actionController;
+    private ThrowBoxAction throwBoxAction;
+    private TeleportAction teleportAction;
+    private InvisibleForceAction invisibleForceAction;
+
     private DummyCarController dummyCarController;
 
     [SerializeField] private AgentCar agentCar;
@@ -20,22 +23,37 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
     public override void InitEnvironmentMaster()
     {
+        Rigidbody agentRig = agentCar.GetComponent<Rigidbody>();
+
         // init dummy car controller
         dummyCarController = new DummyCarController();
         dummyCarController.InitController(dummyCarRig.GetComponent<CarVehicle>());
 
-        actionController = new SimpleActionController(new ThrowBoxAction(physicsBoxPrefub, 
-            agentCar.gameObject.GetComponent<Rigidbody>()));
+        // add throw box action
+        throwBoxAction = new ThrowBoxAction(physicsBoxPrefub, agentRig);
+
+        // add teleport action
+        teleportAction = new TeleportAction(agentCar, 10.0f, 5.0f);
+
+        // add random force action
+        invisibleForceAction = new InvisibleForceAction(10000000.0f, agentRig);
     }
 
     public override void UpdateEnvironmentMaster()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            actionController.ExcecuteAction();
+            throwBoxAction.ExcecuteAction();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            teleportAction.ExcecuteAction();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            invisibleForceAction.ExcecuteAction();
         }
 
-        actionController.UpdateAction();
 
         dummyCarController.UpdateController();
     }
