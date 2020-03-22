@@ -11,9 +11,10 @@ public class DummyCarController : VehicleController
     private Vehicle vehicle;
 
     private int stateIndex;
-
-    private XML_Manager xml;
-
+    //[Range(0,4)]public int pathIndex;
+    public Files pathFile;
+    private XML_Manager xml = GameObject.Find("Obj_GameManager").GetComponent<XML_Manager>();
+    private AgentStates path;
 
     public delegate void Reset();
     public event Reset OnReset;
@@ -24,18 +25,25 @@ public class DummyCarController : VehicleController
 
         stateIndex = 0;
 
-        xml = new XML_Manager();
-        xml.Load(Files.CarPath_2);
+        // = new XML_Manager();
+        //xml.Load(Files.CarPath_2);
+
+        path = xml.pathsList[(int)pathFile];
     }
 
     public void UpdateController()
     {
-        if (stateIndex < xml.agentStates.states.Count)
+        //if (stateIndex < xml.agentStates.states.Count)
+        if (stateIndex < path.states.Count)
         {
             stateIndex++;
 
-            vehicle.GetGameObject().transform.localPosition = xml.agentStates.states[stateIndex - 1].position;
-            vehicle.GetGameObject().transform.eulerAngles = xml.agentStates.states[stateIndex - 1].rotation;
+            //vehicle.GetGameObject().transform.localPosition = xml.agentStates.states[stateIndex - 1].position;
+            //vehicle.GetGameObject().transform.eulerAngles = xml.agentStates.states[stateIndex - 1].rotation;
+                        
+            
+            vehicle.GetGameObject().transform.localPosition = path.states[stateIndex - 1].position;
+            vehicle.GetGameObject().transform.eulerAngles = path.states[stateIndex - 1].rotation;
             
         }
         else
@@ -49,7 +57,8 @@ public class DummyCarController : VehicleController
 
     public void ResetVehicleController()
     {
-        int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
+        //int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
+        int randIndex = Random.Range(0, path.states.Count - 1);
         stateIndex = (randIndex);
 
         // update controller once a new index is being set
@@ -63,6 +72,7 @@ public class DummyCarController : VehicleController
 
     public Vector3 GetCurrentVelocity()
     {
-        return xml.agentStates.states[stateIndex - 1].velocity;
+        //return xml.agentStates.states[stateIndex - 1].velocity;
+        return path.states[stateIndex - 1].velocity;
     }
 }

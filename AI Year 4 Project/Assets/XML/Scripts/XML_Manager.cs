@@ -49,6 +49,11 @@ public class XML_Manager: MonoBehaviour
         stream.Close();
 
         Debug.Log("Data saved");
+        if (pathsList != null)
+        {
+            UpdatePathList(saveFile);
+            Debug.Log("Paths updated");
+        }
     }
 
     public void Load(Files saveFile)
@@ -62,6 +67,7 @@ public class XML_Manager: MonoBehaviour
         stream.Close();
         
         Debug.Log("Data loaded");
+
     }
 
     List<AgentStates> LoadAll()
@@ -75,6 +81,12 @@ public class XML_Manager: MonoBehaviour
         }
 
         return loadList;
+    }
+
+    public void UpdatePathList(Files updateFile)
+    {
+        Load(updateFile);
+        pathsList[(int)updateFile] = agentStates;
     }
 
 
