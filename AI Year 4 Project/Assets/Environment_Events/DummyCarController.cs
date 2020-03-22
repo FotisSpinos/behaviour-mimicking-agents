@@ -11,10 +11,9 @@ public class DummyCarController : VehicleController
     private Vehicle vehicle;
 
     private int stateIndex;
-    //[Range(0,4)]public int pathIndex;
+
     public Files pathFile;
-    private XML_Manager xml = GameObject.Find("Obj_GameManager").GetComponent<XML_Manager>();
-    private AgentStates path;
+    private XML_Manager xmlManager;
 
     public delegate void Reset();
     public event Reset OnReset;
@@ -25,26 +24,39 @@ public class DummyCarController : VehicleController
 
         stateIndex = 0;
 
-        // = new XML_Manager();
-        //xml.Load(Files.CarPath_2);
+        this.xmlManager = XML_Manager.GetInstance();
+    }
 
-        path = xml.pathsList[(int)pathFile];
+    public void SetPathFile(Files pathFile)
+    {
+        this.pathFile = pathFile;
+    }
+
+    public void SetXmlManager(XML_Manager xmlManager)
+    {
+        this.xmlManager = xmlManager;
+    }
+
+    private AgentStates CurrentPathList()
+    {
+        return xmlManager.pathsList[(int)pathFile];
     }
 
     public void UpdateController()
     {
+        if(xmlManager == null)
+        {
+            Debug.Log("xml manager is undefined in dummy car controller");
+            return;
+        }
+
         //if (stateIndex < xml.agentStates.states.Count)
-        if (stateIndex < path.states.Count)
+        if (stateIndex < CurrentPathList().states.Count)
         {
             stateIndex++;
 
-            //vehicle.GetGameObject().transform.localPosition = xml.agentStates.states[stateIndex - 1].position;
-            //vehicle.GetGameObject().transform.eulerAngles = xml.agentStates.states[stateIndex - 1].rotation;
-                        
-            
-            vehicle.GetGameObject().transform.localPosition = path.states[stateIndex - 1].position;
-            vehicle.GetGameObject().transform.eulerAngles = path.states[stateIndex - 1].rotation;
-            
+            vehicle.GetGameObject().transform.localPosition = CurrentPathList().states[stateIndex - 1].position;
+            vehicle.GetGameObject().transform.eulerAngles = CurrentPathList().states[stateIndex - 1].rotation;            
         }
         else
         {
@@ -58,7 +70,7 @@ public class DummyCarController : VehicleController
     public void ResetVehicleController()
     {
         //int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
-        int randIndex = Random.Range(0, path.states.Count - 1);
+        int randIndex = Random.Range(0, CurrentPathList().states.Count - 1);
         stateIndex = (randIndex);
 
         // update controller once a new index is being set
@@ -72,7 +84,6 @@ public class DummyCarController : VehicleController
 
     public Vector3 GetCurrentVelocity()
     {
-        //return xml.agentStates.states[stateIndex - 1].velocity;
-        return path.states[stateIndex - 1].velocity;
+        return CurrentPathList().states[stateIndex - 1].velocity;
     }
 }

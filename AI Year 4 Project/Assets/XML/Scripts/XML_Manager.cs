@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 using System;
 
 public enum Files {CarPath_1, CarPath_2, CarPath_3, CarPath_4, CarPath_5}
-public class XML_Manager: MonoBehaviour
+public class XML_Manager
 {
     public static XML_Manager manager;
 
@@ -16,15 +16,19 @@ public class XML_Manager: MonoBehaviour
     public List<AgentStates> pathsList = new List<AgentStates>();
     //// manager.pathsList[index].states;
 
-    void Awake()
+    public static XML_Manager GetInstance()
     {
-        manager = this;
-        pathsList = LoadAll();
+        if(manager == null)
+        {
+            manager = new XML_Manager();
+        }
+        return manager;
     }
 
     public XML_Manager()
     {
         agentStates = new AgentStates();
+        pathsList = LoadAll();
     }
 
     public void AddState(Agent_State state)
