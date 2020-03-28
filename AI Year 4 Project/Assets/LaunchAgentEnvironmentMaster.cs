@@ -15,6 +15,8 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
     [SerializeField] private AgentCar agentCar;
 
+    private Recorder agentRecorder;
+    private Recorder dummyCarRecorder;
 
     public override DummyCarController GetDummyCarController()
     {
@@ -37,10 +39,19 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
         // add random force action
         invisibleForceAction = new InvisibleForceAction(10000000.0f, agentRig);
+
+        // initialize agent recorder and start recording
+        agentRecorder = new Recorder(agentRig);
+        agentRecorder.SetRecording(true);
+
+        //initialize dummy recorder and start recording
+        dummyCarRecorder = new Recorder(agentRig);
+        dummyCarRecorder.SetRecording(true);
     }
 
     public override void UpdateEnvironmentMaster()
     {
+        // excecute action on user press
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
             throwBoxAction.ExcecuteAction();
@@ -54,7 +65,20 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
             invisibleForceAction.ExcecuteAction();
         }
 
-
+        // update dummy car controller
         dummyCarController.UpdateController();
+
+        // update agent recorder
+        agentRecorder.UpdateRecorder();
+
+        // update dummy car recorder
+        dummyCarRecorder.UpdateRecorder();
+    }
+
+    private void OnApplicationQuit()
+    {
+        // store data recorded from the vehicle and the dummy car
+        agentRecorder.StoreRecordedData("AgentLaunchData");
+        dummyCarRecorder.StoreRecordedData("DummyCarLaunchData");
     }
 }

@@ -50,7 +50,6 @@ public class DummyCarController : VehicleController
             return;
         }
 
-        //if (stateIndex < xml.agentStates.states.Count)
         if (stateIndex < CurrentPathList().states.Count)
         {
             stateIndex++;
@@ -69,7 +68,10 @@ public class DummyCarController : VehicleController
 
     public void ResetVehicleController()
     {
-        //int randIndex = Random.Range(0, xml.agentStates.states.Count - 1);
+        // choose random animation
+        pathFile = (Files)Random.Range(0, 5);
+
+        // choose random point in the selected animation
         int randIndex = Random.Range(0, CurrentPathList().states.Count - 1);
         stateIndex = (randIndex);
 

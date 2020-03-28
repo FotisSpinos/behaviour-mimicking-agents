@@ -5,7 +5,7 @@ using UnityEngine;
 public class Recorder
 {
     [SerializeField] private Rigidbody recordingObject;
-    private XML_Manager xml = GameObject.Find("Obj_GameManager").GetComponent<XML_Manager>();
+    private XML_Manager xml;
     private bool isRecording;
 
     public Recorder(Rigidbody recordingObject)
@@ -13,7 +13,7 @@ public class Recorder
         isRecording = false;
         this.recordingObject = recordingObject;
 
-        //xml = new XML_Manager();
+        xml = XML_Manager.GetInstance();
     }
 
     public void SetRecording(bool isRecording)
@@ -47,10 +47,24 @@ public class Recorder
     }
 
     // stops recording and stores gathered data to xml file
-    public void StoreRecordedData()
+    public void StoreRecordedData(int animIndex)
+    {
+        if (animIndex < 0 || animIndex > 4)
+            return;
+
+        isRecording = false;
+        xml.Save((Files)animIndex);
+    }
+
+    public void StoreRecordedData(string recordedData)
     {
         isRecording = false;
-        xml.Save(Files.CarPath_2);
+        xml.Save(recordedData);
+    }
+
+    public void ClearRecordedData()
+    {
+        xml.agentStates.states.Clear();
     }
 
     /* GETTERS */

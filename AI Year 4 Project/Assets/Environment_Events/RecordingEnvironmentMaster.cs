@@ -11,28 +11,32 @@ using UnityEngine;
 
 public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 {
+    // the instance of the environment master
     private static EnvironmentMaster instance;
     
-    [SerializeField] private GameObject physicsBoxPrefub;
     [SerializeField] private Rigidbody targetRig;
 
-    private bool record;
+    // check if we are recording
+    private bool isRecording;
 
-    private EnvironmentActionController actionController;
+    // a reference to the recorder
     private Recorder recorder;
 
-    private VehicleController vehicleController;
+    // the vehicle controller operated by the user
+    private VehicleController userVehicleController;
 
-    public RecordingEnvironmentMaster()
-    {
+    // the file index storing recorded current animation 
+    int animIndex;
 
-    }
+    // default constructor
+    public RecordingEnvironmentMaster() {}
 
     public static EnvironmentMaster GetInstance()
     {
         if(instance == null)
         {
             GameObject envMasterGo = new GameObject();
+            envMasterGo.AddComponent<RecordingEnvironmentMaster>();
         }
         return instance;
     }
@@ -43,28 +47,22 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     }
 
     override public void InitEnvironmentMaster()
-    {       
-        actionController = new SimpleActionController(new ThrowBoxAction(physicsBoxPrefub, targetRig));
-
-        actionController.InitActionController();
-        actionController.InitAction();
-        
-
+    {
         // make a recorder instance
         recorder = new Recorder(targetRig);
 
-        vehicleController = new UserVehicleController(targetRig.GetComponent<CarVehicle>());
-        vehicleController.InitController(targetRig.GetComponent<CarVehicle>());
+        userVehicleController = new UserVehicleController(targetRig.GetComponent<CarVehicle>());
+        userVehicleController.InitController(targetRig.GetComponent<CarVehicle>());
+
+        // init anim index
+        animIndex = 0;
     }
 
     override public void UpdateEnvironmentMaster()
     {
-        // excecute action if we press space
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            actionController.ExcecuteAction();
-        }
-        
+        // define animation index
+        animIndex = DefineAnimIndex();
+
         // when we press r start recording
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -72,16 +70,35 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 
             // save data if we stop recording
             if (!recorder.GetRecording())
-                recorder.StoreRecordedData();
+            {
+                recorder.StoreRecordedData(animIndex);
+                recorder.ClearRecordedData();
+            }
         }
         
-        // update action controller
-        actionController.UpdateAction();
-
         // record the state
         recorder.UpdateRecorder();
 
         // update vehicle controller
-        vehicleController.UpdateController();
+        userVehicleController.UpdateController();
+    }
+
+    // Defines animation index defined from user input
+    private int DefineAnimIndex()
+    {
+        int output = animIndex;
+
+        if (Input.GetKeyDown(KeyCode.Alpha1)) output = 0;
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) output = 1;
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) output = 2;
+        else if (Input.GetKeyDown(KeyCode.Alpha4)) output = 3;
+        else if (Input.GetKeyDown(KeyCode.Alpha5)) output = 4;
+
+        if (animIndex != output)
+            Debug.Log("Recording slot is set to: " + output);
+        else 
+            return animIndex;
+
+        return output;
     }
 }

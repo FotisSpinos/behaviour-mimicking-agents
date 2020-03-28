@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System;
 
-public enum Files {CarPath_1, CarPath_2, CarPath_3, CarPath_4, CarPath_5}
+public enum Files {CarPath_1 = 0, CarPath_2 = 1, CarPath_3 = 2, CarPath_4 = 3, CarPath_5 = 4}
 public class XML_Manager
 {
     public static XML_Manager manager;
@@ -57,6 +57,22 @@ public class XML_Manager
         {
             UpdatePathList(saveFile);
             Debug.Log("Paths updated");
+        }
+    }
+
+    public void Save(String fileName)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
+        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Create); //Filemode Create ovewrites
+
+        serializer.Serialize(stream, agentStates);
+        stream.Close();
+
+        Debug.Log("Data saved");
+        if (pathsList != null)
+        {
+            //UpdatePathList(saveFile);
+            //Debug.Log("Paths updated");
         }
     }
 
