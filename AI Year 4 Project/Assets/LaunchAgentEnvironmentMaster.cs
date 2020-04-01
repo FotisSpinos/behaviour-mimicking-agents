@@ -54,15 +54,15 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         // excecute action on user press
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            throwBoxAction.ExcecuteAction();
+            throwBoxAction.ExecuteAction();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            teleportAction.ExcecuteAction();
+            teleportAction.ExecuteAction();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            invisibleForceAction.ExcecuteAction();
+            invisibleForceAction.ExecuteAction();
         }
 
         // update dummy car controller

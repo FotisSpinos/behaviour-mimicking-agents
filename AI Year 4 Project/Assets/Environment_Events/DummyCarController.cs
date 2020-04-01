@@ -13,18 +13,16 @@ public class DummyCarController : VehicleController
     private int stateIndex;
 
     public Files pathFile;
-    private XML_Manager xmlManager;
+    private XmlReadWrite xmlManager;
 
     public delegate void Reset();
     public event Reset OnReset;
 
     public void InitController(Vehicle vehicle)
     {
+        this.xmlManager = XmlReadWrite.GetInstance();
         this.vehicle = vehicle;
-
         stateIndex = 0;
-
-        this.xmlManager = XML_Manager.GetInstance();
     }
 
     public void SetPathFile(Files pathFile)
@@ -32,7 +30,7 @@ public class DummyCarController : VehicleController
         this.pathFile = pathFile;
     }
 
-    public void SetXmlManager(XML_Manager xmlManager)
+    public void SetXmlManager(XmlReadWrite xmlManager)
     {
         this.xmlManager = xmlManager;
     }
@@ -54,6 +52,7 @@ public class DummyCarController : VehicleController
         {
             stateIndex++;
 
+            // apply the animation state to the agent object
             vehicle.GetGameObject().transform.localPosition = CurrentPathList().states[stateIndex - 1].position;
             vehicle.GetGameObject().transform.eulerAngles = CurrentPathList().states[stateIndex - 1].rotation;            
         }

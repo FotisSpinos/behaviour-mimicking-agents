@@ -16,7 +16,7 @@ public class SimpleActionController : EnvironmentActionController
 
     public void ExcecuteAction()
     {
-        envAction.ExcecuteAction();
+        envAction.ExecuteAction();
     }
 
     public void UpdateAction()

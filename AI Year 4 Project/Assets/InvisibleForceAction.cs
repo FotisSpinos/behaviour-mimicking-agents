@@ -11,7 +11,7 @@ public class InvisibleForceAction : EnvironmentAction
         this.rig = rig;
     }
 
-    public void ExcecuteAction()
+    public void ExecuteAction()
     {
         // define random direction
         Vector3 dir = new Vector3(0.0f, Random.Range(0.0f, 360), 0.0f);

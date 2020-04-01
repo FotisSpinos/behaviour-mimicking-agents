@@ -390,16 +390,31 @@ PrefabInstance:
       propertyPath: isTraining
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5430498186518935672, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430498186518935672, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: maxPosDist
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5430498186518935674, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 11400000, guid: e8578ead136d61649a7e9ab2412fbabc,
+      objectReference: {fileID: 11400000, guid: 933f57825e39e3c4c81d81b0200e44af,
         type: 3}
     - target: {fileID: 5430498186518935674, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430498186518935675, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6511767297183542107, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}

@@ -24,7 +24,7 @@ public class ThrowBoxActionTest : MonoBehaviour
         {
             excecutionRate = excecutionRateStore;
 
-            envAction.ExcecuteAction();
+            envAction.ExecuteAction();
         }
 
         envAction.UpdateAction();

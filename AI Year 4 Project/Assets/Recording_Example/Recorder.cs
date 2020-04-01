@@ -5,7 +5,7 @@ using UnityEngine;
 public class Recorder
 {
     [SerializeField] private Rigidbody recordingObject;
-    private XML_Manager xml;
+    private XmlReadWrite xml;
     private bool isRecording;
 
     public Recorder(Rigidbody recordingObject)
@@ -13,7 +13,7 @@ public class Recorder
         isRecording = false;
         this.recordingObject = recordingObject;
 
-        xml = XML_Manager.GetInstance();
+        xml = XmlReadWrite.GetInstance();
     }
 
     public void SetRecording(bool isRecording)

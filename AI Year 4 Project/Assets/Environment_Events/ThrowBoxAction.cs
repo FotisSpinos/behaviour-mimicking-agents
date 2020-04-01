@@ -27,7 +27,7 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
         chasingBoxes = new LinkedList<ChasingBox>();
     }
 
-    public void ExcecuteAction()
+    public void ExecuteAction()
     {
         // Spawn ThrowBox
         GameObject throwBoxGo = GameObject.Instantiate(physicsBoxPrefub, new Vector3(0.0f, 10.0f, 0.0f), Quaternion.identity);

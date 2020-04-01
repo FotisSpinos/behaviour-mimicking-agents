@@ -13,7 +13,7 @@ internal class TeleportAction : EnvironmentAction
         this.rotRange = rotRange;
     }
 
-    public void ExcecuteAction()
+    public void ExecuteAction()
     {
         agentCar.transform.localPosition += GetRandomPosition(posRange);
 

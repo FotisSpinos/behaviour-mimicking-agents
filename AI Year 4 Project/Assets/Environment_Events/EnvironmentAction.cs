@@ -5,7 +5,7 @@ using UnityEngine;
 public interface EnvironmentAction
 {
     // Excecutes the environment action
-    void ExcecuteAction();
+    void ExecuteAction();
 
     // Initializes the environment action
     void InitAction();

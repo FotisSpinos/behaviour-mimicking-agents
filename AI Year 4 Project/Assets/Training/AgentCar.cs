@@ -107,7 +107,10 @@ public class AgentCar : Agent
         sensor.AddObservation(agentRig.velocity);
 
         // pass distance between agent and dummy car
-        sensor.AddObservation(dummyCar.transform.position - transform.position);
+        sensor.AddObservation(dummyCar.transform.localPosition - transform.localPosition);
+
+        // pass rotation difference between agent and dummy car
+        sensor.AddObservation(dummyCar.transform.localEulerAngles - transform.localEulerAngles);
 
         // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
@@ -124,7 +127,7 @@ public class AgentCar : Agent
         // reset the animation randomly
         if (environment != null && environment.GetDummyCarController() != null)
         {
-            environment.GetDummyCarController().ResetVehicleController();
+//            environment.GetDummyCarController().ResetVehicleController();
         }
 
         // apply the dummy car state to the agent

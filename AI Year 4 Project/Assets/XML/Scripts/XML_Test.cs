@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class XML_Test : MonoBehaviour
 {
-    public XML_Manager manager_XML;
+    public XmlReadWrite manager_XML;
 
     public Agent_State testState;
 
