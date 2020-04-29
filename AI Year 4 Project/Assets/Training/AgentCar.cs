@@ -9,7 +9,7 @@ using System;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
-public class AgentCar : Agent
+public class AgentCar : AgentCarController
 {
     // A reference to the vehicle "driven" by the agent
     private Vehicle car;
@@ -39,30 +39,11 @@ public class AgentCar : Agent
 
     [SerializeField] bool isTraining = true;
 
+    public AgentCar() { }
+
     public override void InitializeAgent()
     {
         base.InitializeAgent();
-
-        // initialize environment master
-        environment.InitEnvironmentMaster();
-
-        // update once
-        environment.UpdateEnvironmentMaster();
-
-        // add car vehicle to this game object
-        car = gameObject.GetComponent<CarVehicle>();
-
-        // Set class attributes
-        dummyCarController = environment.GetDummyCarController();
-        dummyCar = dummyCarController.GetVehicle().GetGameObject();
-
-        transform.localPosition = dummyCar.transform.position;
-        transform.localEulerAngles = dummyCar.transform.localEulerAngles;
-
-        agentRig = GetComponent<Rigidbody>();
-        
-        // subscribe to the animation reset event
-        environment.GetDummyCarController().OnReset += AgentReset;
     }
 
     public override void AgentAction(float[] vectorAction)
@@ -79,21 +60,16 @@ public class AgentCar : Agent
 
         // culculate the distances in position and rotations
         float positionDifference = (dummyCar.transform.localPosition - transform.localPosition).magnitude;
-        float rotationDifference = (dummyCar.transform.localEulerAngles - transform.localEulerAngles).magnitude;
+        float rotationDifference = Vector3.Angle(dummyCar.transform.right, transform.right);
 
         // give a small reward on each frame
         reward = 0.01f;
 
-        // check if the agent follows the dummy car
-        //if ((positionDifference > 10 || rotationDifference > 20) && isTraining)
         if ((positionDifference > maxPosDist || rotationDifference > maxRotDist) && isTraining)
         {
             reward = -1.0f;
             Done();
         }
-
-        // update the environemnt
-        environment.UpdateEnvironmentMaster();
 
         //Debug.Log("Reward: " + reward + " Pos diff: " + positionDifference + " Rot diff: " + rotationDifference);
         SetReward(Mathf.Pow(reward, 1));
@@ -101,6 +77,9 @@ public class AgentCar : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        if (sensor == null || agentRig == null)
+            return;
+
         // pass agent information
         sensor.AddObservation(transform.localPosition);
         sensor.AddObservation(transform.localEulerAngles.y);
@@ -124,12 +103,8 @@ public class AgentCar : Agent
 
     public override void AgentReset()
     {
-        // reset the animation randomly
-        if (environment != null && environment.GetDummyCarController() != null)
-        {
-//            environment.GetDummyCarController().ResetVehicleController();
-        }
-
+        if (dummyCar == null)
+            return;
         // apply the dummy car state to the agent
         transform.localPosition = dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
@@ -145,4 +120,33 @@ public class AgentCar : Agent
 
         return action;
     }
+
+    public override void UpdateController()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void InitController(Vehicle vehicle)
+    {
+        // add car vehicle to this game object
+        car = vehicle;
+
+        // Set class attributes
+        dummyCarController = environment.GetDummyCarController();
+        dummyCar = dummyCarController.GetVehicle().GetGameObject();
+
+        transform.localPosition = dummyCar.transform.position;
+        transform.localEulerAngles = dummyCar.transform.localEulerAngles;
+
+        agentRig = GetComponent<Rigidbody>();
+
+        // subscribe to the animation reset event
+        environment.GetDummyCarController().OnReset += AgentReset;
+    }
+
+    public override void ResetVehicleController()
+    {
+        throw new NotImplementedException();
+    }
 }
+

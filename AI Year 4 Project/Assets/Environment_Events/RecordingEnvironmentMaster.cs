@@ -67,12 +67,14 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         if (Input.GetKeyDown(KeyCode.R))
         {
             recorder.SetRecording(!recorder.GetRecording());
+            Debug.Log("Recorder Started");
 
             // save data if we stop recording
             if (!recorder.GetRecording())
             {
                 recorder.StoreRecordedData(animIndex);
                 recorder.ClearRecordedData();
+                Debug.Log("Recorder Stoped");
             }
         }
         
@@ -96,7 +98,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 
         if (animIndex != output)
             Debug.Log("Recording slot is set to: " + output);
-        else 
+        else
             return animIndex;
 
         return output;

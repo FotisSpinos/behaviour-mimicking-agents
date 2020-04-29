@@ -4,23 +4,49 @@ using UnityEngine;
 
 public class EnvironmentController : MonoBehaviour
 {
-    [SerializeField] private BaseEnvironmentMaster environmentMaster;
+    private BaseEnvironmentMaster[] environmentMasters;
     private bool valid;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        valid = environmentMaster != null;
+        valid = true;
 
-        if (valid)
-            environmentMaster.InitEnvironmentMaster();
-        else Debug.LogError("The Base Environment Master is not assigned, please define an environment master from the editor");
+        // Destroy other environment controllers
+        EnvironmentController[] envControllers = FindObjectsOfType<EnvironmentController>();
+        for(int i = 1; i < envControllers.Length; i++)
+        {
+            if(envControllers[i] != this)
+            {
+                Destroy(envControllers[i].gameObject);
+            }
+        }
+
+        // find all BaseEnvironmentMaster
+        environmentMasters = FindObjectsOfType<BaseEnvironmentMaster>();
+        if(environmentMasters == null || environmentMasters.Length == 0)
+        {
+            Debug.LogError("This scene does not contain environment masters!");
+            valid = false;
+            return;
+        }
+
+        // initialize all environments
+        foreach(BaseEnvironmentMaster bem in environmentMasters)
+        {
+            bem.InitEnvironmentMaster();
+        }
     }
-
 
     void Update()
     {
-        if(valid)
-            environmentMaster.UpdateEnvironmentMaster();
+        if (!valid)
+            return;
+
+        // update all BaseEnvironmentMasters 
+        foreach (BaseEnvironmentMaster bem in environmentMasters)
+        {
+            bem.UpdateEnvironmentMaster();
+        }
     }
 }
