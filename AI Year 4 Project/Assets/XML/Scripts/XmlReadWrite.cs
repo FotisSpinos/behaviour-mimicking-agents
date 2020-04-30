@@ -167,19 +167,6 @@ public class XmlReadWrite
         return fileName;
     }
 
-    public void FitnessTest()
-    {
-
-        //fitVals.lst_FitnessVals.Add(10.4f);
-        //Debug.Log(fitVals.lst_FitnessVals[0]);
-
-        Debug.Log("Method works");
-        if (fitVals == null)
-        {
-            Debug.Log("no fitVals");
-        }
-
-    }
 
 }
 
