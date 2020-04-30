@@ -12,9 +12,11 @@ public class XmlReadWrite
     public static XmlReadWrite manager;
 
     public AgentStates agentStates;
-
+    public FitnessVals fitVals;
+    
     public List<AgentStates> pathsList = new List<AgentStates>();
     //// manager.pathsList[index].states;
+    //public List<float> lst_Fitness = new List<float>();
 
     public static XmlReadWrite GetInstance()
     {
@@ -28,6 +30,7 @@ public class XmlReadWrite
     public XmlReadWrite()
     {
         agentStates = new AgentStates();
+        fitVals = new FitnessVals();
         pathsList = LoadAll();
     }
 
@@ -40,7 +43,18 @@ public class XmlReadWrite
     public List<Agent_State> GetStateList()
     {
         return agentStates.states;
+    }
+
+    public void AddFitVal(float fitVal)
+    {
+        fitVals.lst_FitnessVals.Add(fitVal);
+        Debug.Log("fitness value added");
     }    
+    public void AddFitLst(List<float> fitlst)
+    {
+        fitVals.lst_FitnessVals.AddRange(fitlst);
+        Debug.Log("fitness list added");
+    }
 
     public void Save(Files saveFile)
     {
@@ -74,6 +88,19 @@ public class XmlReadWrite
             //UpdatePathList(saveFile);
             //Debug.Log("Paths updated");
         }
+    }
+
+    public void SaveFitness()
+    {
+        string fileName = "FitnessVals_" + DateTime.Now.ToString("(dd-MM-yyyy HH,mm,ss)");
+
+        XmlSerializer serializer = new XmlSerializer(typeof(FitnessVals));
+        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/FitnessValues/" + fileName + ".xml", FileMode.Create); //Filemode Create ovewrites
+
+        serializer.Serialize(stream, fitVals);
+        stream.Close();
+
+        Debug.Log("Data saved");
     }
 
     public void Load(Files saveFile)
@@ -140,6 +167,20 @@ public class XmlReadWrite
         return fileName;
     }
 
+    public void FitnessTest()
+    {
+
+        //fitVals.lst_FitnessVals.Add(10.4f);
+        //Debug.Log(fitVals.lst_FitnessVals[0]);
+
+        Debug.Log("Method works");
+        if (fitVals == null)
+        {
+            Debug.Log("no fitVals");
+        }
+
+    }
+
 }
 
 [Serializable]
@@ -154,4 +195,10 @@ public class Agent_State
 public class AgentStates
 {
     public List<Agent_State> states = new List<Agent_State>();
+}
+
+[Serializable]
+public class FitnessVals
+{
+    public List<float> lst_FitnessVals = new List<float>();
 }
