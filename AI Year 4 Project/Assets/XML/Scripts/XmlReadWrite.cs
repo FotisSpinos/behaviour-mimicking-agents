@@ -142,3 +142,9 @@ public class SerializableFitnessValues
 {
     public List<float> fitnessValues = new List<float>();
 }
+
+[Serializable]
+public class FitnessVals
+{
+    public List<float> lst_FitnessVals = new List<float>();
+}

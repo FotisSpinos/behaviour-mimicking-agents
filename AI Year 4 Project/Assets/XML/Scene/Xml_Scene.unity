@@ -272,7 +272,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006931998}
-  - component: {fileID: 2006931997}
   - component: {fileID: 2006931996}
   m_Layer: 0
   m_Name: Obj_GameManager
@@ -293,27 +292,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 973209255db226743a7ec1235e391cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager_XML: {fileID: 2006931997}
   testState:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0}
     velocity: {x: 0, y: 0, z: 0}
   loadedStates: []
   file: 0
---- !u!114 &2006931997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006931995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69c8565bbfcc3a145a50973285de6c13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentStates:
-    states: []
+  lst_FitnessVals: []
 --- !u!4 &2006931998
 Transform:
   m_ObjectHideFlags: 0
