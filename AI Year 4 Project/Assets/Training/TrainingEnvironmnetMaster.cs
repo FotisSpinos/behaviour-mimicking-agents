@@ -15,13 +15,13 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
     private VehicleController agentVehicleController;
 
     [SerializeField] private CarVehicle agentCarVehicle;
-    [SerializeField] private AgentCarController agentCarController;
 
     override public void InitEnvironmentMaster()
     {
         // init dummy car
         dummyCarController = new DummyCarController();
         dummyCarController.InitController(targetVehicle);
+        dummyCarController.UpdateController();
 
         // AutomaticSteppingEnabled 
         Academy.Instance.AutomaticSteppingEnabled = false;

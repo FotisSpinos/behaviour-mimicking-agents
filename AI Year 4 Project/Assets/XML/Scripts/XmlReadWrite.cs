@@ -6,15 +6,9 @@ using System.Xml;
 using System.Xml.Serialization;
 using System;
 
-public enum Files {CarPath_1 = 0, CarPath_2 = 1, CarPath_3 = 2, CarPath_4 = 3, CarPath_5 = 4}
 public class XmlReadWrite
 {
     public static XmlReadWrite manager;
-
-    public AgentStates agentStates;
-
-    public List<AgentStates> pathsList = new List<AgentStates>();
-    //// manager.pathsList[index].states;
 
     public static XmlReadWrite GetInstance()
     {
@@ -25,125 +19,112 @@ public class XmlReadWrite
         return manager;
     }
 
-    public XmlReadWrite()
+    public void SaveStates(string directory, string fileName, SerializableAgentStates agentStates)
     {
-        agentStates = new AgentStates();
-        pathsList = LoadAll();
-    }
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableAgentStates));
 
-    public void AddState(Agent_State state)
-    {
-        agentStates.states.Add(state);
-        Debug.Log("State added");
-    }
+        FileInfo file = new FileInfo(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml");
 
-    public List<Agent_State> GetStateList()
-    {
-        return agentStates.states;
-    }    
+        FileMode currentMode = FileMode.CreateNew;
+        if (file.Exists)
+            currentMode = FileMode.Open;
 
-    public void Save(Files saveFile)
-    {
-        string fileName = GetFile(saveFile);
-
-        XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
-        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Create); //Filemode Create ovewrites
+        file.Directory.Create();
+        FileStream stream = new FileStream(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml", currentMode); //Filemode Create ovewrites
 
         serializer.Serialize(stream, agentStates);
         stream.Close();
 
         Debug.Log("Data saved");
-        if (pathsList != null)
-        {
-            UpdatePathList(saveFile);
-            Debug.Log("Paths updated");
-        }
     }
 
-    public void Save(String fileName)
+    public void SaveFitnessValues(string directory, string fileName, SerializableFitnessValues serializableFitnessValues)
     {
-        XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
-        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Create); //Filemode Create ovewrites
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableFitnessValues));
 
-        serializer.Serialize(stream, agentStates);
+        FileInfo file = new FileInfo(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml");
+
+        FileMode currentMode = FileMode.CreateNew;
+        if (file.Exists)
+            currentMode = FileMode.Open;
+
+        file.Directory.Create();
+        FileStream stream = new FileStream(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml", currentMode); //Filemode Create ovewrites
+
+        serializer.Serialize(stream, serializableFitnessValues);
         stream.Close();
 
-        Debug.Log("Data saved");
-        if (pathsList != null)
+        Debug.Log("Fitness value stored: " + serializableFitnessValues.fitnessValues[0]);
+    }
+
+    public void LoadAllXmlFiles(string directoryName)
+    {
+        string[] fileEntries = Directory.GetFiles(Application.dataPath + "/Data/" + directoryName);
+        foreach (string fileName in fileEntries)
         {
-            //UpdatePathList(saveFile);
-            //Debug.Log("Paths updated");
+            if(fileName.EndsWith(".xml"))
+                Load(fileName);
         }
     }
 
-    public void Load(Files saveFile)
+    public void Load(string path)
     {
-        string fileName = GetFile(saveFile);
 
-        XmlSerializer serializer = new XmlSerializer(typeof(AgentStates));
-        FileStream stream = new FileStream(Application.dataPath + "/Data/Xml/" + fileName + ".xml", FileMode.Open);
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableAgentStates));
 
-        agentStates = serializer.Deserialize(stream) as AgentStates;
-        stream.Close();
-        
-        Debug.Log("Data loaded");
+        FileInfo file = new FileInfo(path);
 
-    }
-
-    List<AgentStates> LoadAll()
-    {
-        List<AgentStates> loadList = new List<AgentStates>();
-
-        foreach (Files slot in Enum.GetValues(typeof(Files)))
+        if (!file.Exists)
         {
-            Load(slot);
-            loadList.Add(agentStates);
+            Debug.Log("File does not exist: " + path);
+            return;
         }
 
-        return loadList;
-    }
+        //FileStream stream = new FileStream(path, FileMode.Open); //Filemode Create ovewrites
+        StreamReader reader = new System.IO.StreamReader(path);
 
-    public void UpdatePathList(Files updateFile)
-    {
-        Load(updateFile);
-        pathsList[(int)updateFile] = agentStates;
-    }
-
-
-    public string GetFile(Files file)
-    {
-        string fileName = null;
-
-        switch(file)
+        try
         {
-            case Files.CarPath_1:
-                fileName = "CarPath_1_Data";
-                break;       
-                
-            case Files.CarPath_2:
-                fileName = "CarPath_2_Data";
-                break;            
-            
-            case Files.CarPath_3:
-                fileName = "CarPath_3_Data";
-                break;            
-            
-            case Files.CarPath_4:
-                fileName = "CarPath_4_Data";
-                break;            
-            
-            case Files.CarPath_5:
-                fileName = "CarPath_5_Data";
-                break;
+            StatesManager.GetInstance().AddSerializableAgentState(serializer.Deserialize(reader) as SerializableAgentStates);
+        }
+        catch (Exception c)
+        {
+            Debug.LogWarning("Exception occured while reading file: " + path);
+            Debug.LogWarning(c.ToString());
+            reader.Close();
+            return;
         }
 
-        return fileName;
+        reader.Close();
+
+        Debug.Log("Data loaded from: " + file.FullName);
+
     }
 
+    private void CreateDirectory(string directoryName)
+    {
+        bool directoryExists = System.IO.Directory.Exists(Application.dataPath + "/Data/" + directoryName);
+
+        if (!directoryExists)
+        {
+            Directory.CreateDirectory(Application.dataPath + "/Data/" + directoryName);
+        }
+    }
+
+    private void CreateFile(string directoryName, string fileName)
+    {
+        bool fileExists = System.IO.File.Exists(Application.dataPath + "/Data/" + directoryName + "/" + fileName + ".xml");
+
+        if (!fileExists)
+        {
+            File.Create(Application.dataPath + "/Data/" + directoryName + "/" + fileName + ".xml");
+        }
+    }
 }
 
+
 [Serializable]
-public class Agent_State
+public class AgentState
 {
     public Vector3 position;
     public Vector3 rotation;
@@ -151,7 +132,13 @@ public class Agent_State
 }
 
 [Serializable]
-public class AgentStates
+public class SerializableAgentStates
 {
-    public List<Agent_State> states = new List<Agent_State>();
+    public List<AgentState> states = new List<AgentState>();
+}
+
+[Serializable]
+public class SerializableFitnessValues
+{
+    public List<float> fitnessValues = new List<float>();
 }

@@ -48,9 +48,6 @@ public class AgentCar : AgentCarController
 
     public override void AgentAction(float[] vectorAction)
     {
-        // reset reward value at every update
-        float reward = 0;
-
         // increase velocities so that the agent can catch up to the dummy car
         float forwardAmount = vectorAction[0] * 1.4f;
         float steerAmount = vectorAction[1] * 1.5f;
@@ -63,16 +60,16 @@ public class AgentCar : AgentCarController
         float rotationDifference = Vector3.Angle(dummyCar.transform.right, transform.right);
 
         // give a small reward on each frame
-        reward = 0.01f;
+        fitness = 0.01f;
 
         if ((positionDifference > maxPosDist || rotationDifference > maxRotDist) && isTraining)
         {
-            reward = -1.0f;
+            fitness = -1.0f;
             Done();
         }
 
         //Debug.Log("Reward: " + reward + " Pos diff: " + positionDifference + " Rot diff: " + rotationDifference);
-        SetReward(Mathf.Pow(reward, 1));
+        SetReward(Mathf.Pow(fitness, 1));
     }
 
     public override void CollectObservations(VectorSensor sensor)

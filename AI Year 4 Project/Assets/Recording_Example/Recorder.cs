@@ -5,15 +5,12 @@ using UnityEngine;
 public class Recorder
 {
     [SerializeField] private Rigidbody recordingObject;
-    private XmlReadWrite xml;
     private bool isRecording;
 
     public Recorder(Rigidbody recordingObject)
     {
         isRecording = false;
         this.recordingObject = recordingObject;
-
-        xml = XmlReadWrite.GetInstance();
     }
 
     public void SetRecording(bool isRecording)
@@ -31,13 +28,14 @@ public class Recorder
 
     private void RecordState()
     {
-        Agent_State state = new Agent_State();
+        AgentState state = new AgentState();
 
         state.position = recordingObject.transform.localPosition;
         state.rotation = recordingObject.transform.localEulerAngles;
         state.velocity = recordingObject.velocity;
 
-        xml.AddState(state);
+        StatesManager.GetInstance().AddState(0 ,state);
+        //xml.AddState(state);
 
         /* FOR DEBUGGING ONLY - REMOVE LATER */
         Debug.Log("position: " + recordingObject.gameObject.transform.position +
@@ -46,25 +44,20 @@ public class Recorder
         
     }
 
-    // stops recording and stores gathered data to xml file
-    public void StoreRecordedData(int animIndex)
+    public void StopRecorder()
     {
-        if (animIndex < 0 || animIndex > 4)
-            return;
-
         isRecording = false;
-        xml.Save((Files)animIndex);
     }
 
-    public void StoreRecordedData(string recordedData)
+    public void StoreRecordedData(string directoryName, string fileName)
     {
         isRecording = false;
-        xml.Save(recordedData);
+        XmlReadWrite.GetInstance().SaveStates(directoryName, fileName, StatesManager.GetInstance().GetSerializableAgentState(0));
     }
 
     public void ClearRecordedData()
     {
-        xml.agentStates.states.Clear();
+        StatesManager.GetInstance().ClearData(0);
     }
 
     /* GETTERS */

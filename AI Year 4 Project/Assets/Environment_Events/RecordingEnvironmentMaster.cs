@@ -8,6 +8,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 {
@@ -27,6 +28,11 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 
     // the file index storing recorded current animation 
     int animIndex;
+
+    [SerializeField] private InputField directoryInputField;
+    [SerializeField] private InputField fileNameInputField;
+    [SerializeField] private Button recordButton;
+    [SerializeField] private Text recordButtonText;
 
     // default constructor
     public RecordingEnvironmentMaster() {}
@@ -56,27 +62,15 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 
         // init anim index
         animIndex = 0;
+
+        recordButton.onClick.AddListener(OnStartRecordingPressed);
+        recordButtonText.text = "Start Recording";
     }
 
     override public void UpdateEnvironmentMaster()
     {
         // define animation index
         animIndex = DefineAnimIndex();
-
-        // when we press r start recording
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            recorder.SetRecording(!recorder.GetRecording());
-            Debug.Log("Recorder Started");
-
-            // save data if we stop recording
-            if (!recorder.GetRecording())
-            {
-                recorder.StoreRecordedData(animIndex);
-                recorder.ClearRecordedData();
-                Debug.Log("Recorder Stoped");
-            }
-        }
         
         // record the state
         recorder.UpdateRecorder();
@@ -102,5 +96,30 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
             return animIndex;
 
         return output;
+    }
+
+    private void OnStartRecordingPressed()
+    {
+        recorder.SetRecording(!recorder.GetRecording());
+        Debug.Log("Recorder Started");
+
+        recordButtonText.text = "Stop Recording";
+
+        // save data if we stop recording
+        if (!recorder.GetRecording())
+        {
+            recordButtonText.text = "Start Recording";
+
+            recorder.StoreRecordedData(GetInputFieldText(directoryInputField), GetInputFieldText(fileNameInputField));
+            recorder.ClearRecordedData();
+            Debug.Log("Recorder Stoped");
+        }
+    }
+
+    private string GetInputFieldText(InputField inputField)
+    {
+        if (inputField == null || inputField.text == "")
+            return "Default";
+        return inputField.text;
     }
 }

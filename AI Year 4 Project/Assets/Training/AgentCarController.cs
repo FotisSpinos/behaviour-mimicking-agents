@@ -6,6 +6,11 @@ using System;
 
 public class AgentCarController : Agent, VehicleController
 {
+    protected float fitness;
+    public float Fitness
+    {
+        get { return fitness; }
+    }
     public virtual void InitController(Vehicle vehicle)
     {
         throw new NotImplementedException();

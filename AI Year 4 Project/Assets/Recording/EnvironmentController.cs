@@ -4,13 +4,39 @@ using UnityEngine;
 
 public class EnvironmentController : MonoBehaviour
 {
-    private BaseEnvironmentMaster[] environmentMasters;
+    protected BaseEnvironmentMaster[] environmentMasters;
     private bool valid;
+    [SerializeField] List<string> animDirectories;
+    private static EnvironmentController instance;
+
+    [SerializeField] protected float analyticsRefreshRate;
+    private float analyticsRefreashRateStore;
+    private AgentAnalytics agentAnalytics;
+
+    public static EnvironmentController GetInstance()
+    {
+        if (instance == null)
+            instance = new EnvironmentController();
+        return instance;
+    }
+
+    public EnvironmentController() 
+    {}
 
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
+
         valid = true;
+
+        analyticsRefreashRateStore = analyticsRefreshRate;
+
+        // Load animations
+        foreach (string directory in animDirectories)
+        {
+            XmlReadWrite.GetInstance().LoadAllXmlFiles(directory);
+        }
 
         // Destroy other environment controllers
         EnvironmentController[] envControllers = FindObjectsOfType<EnvironmentController>();
@@ -36,9 +62,12 @@ public class EnvironmentController : MonoBehaviour
         {
             bem.InitEnvironmentMaster();
         }
+
+
+        agentAnalytics = new AgentAnalytics(environmentMasters);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!valid)
             return;
@@ -48,5 +77,14 @@ public class EnvironmentController : MonoBehaviour
         {
             bem.UpdateEnvironmentMaster();
         }
+
+        if(analyticsRefreshRate <= 0)
+        {
+            // update analytics
+            agentAnalytics.UpdateAnalytics();
+            agentAnalytics.StoreToFile();
+            analyticsRefreshRate = analyticsRefreashRateStore;
+        }
+        analyticsRefreshRate -= Time.deltaTime;
     }
 }

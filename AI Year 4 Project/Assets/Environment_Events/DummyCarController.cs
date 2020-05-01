@@ -10,10 +10,10 @@ public class DummyCarController : VehicleController
 {
     private Vehicle vehicle;
 
-    private int stateIndex;
-
-    public Files pathFile;
     private XmlReadWrite xmlManager;
+
+    private int animIndex;
+    private int stateIndex;
 
     public delegate void Reset();
     public event Reset OnReset;
@@ -22,12 +22,6 @@ public class DummyCarController : VehicleController
     {
         this.xmlManager = XmlReadWrite.GetInstance();
         this.vehicle = vehicle;
-        stateIndex = 0;
-    }
-
-    public void SetPathFile(Files pathFile)
-    {
-        this.pathFile = pathFile;
     }
 
     public void SetXmlManager(XmlReadWrite xmlManager)
@@ -35,45 +29,36 @@ public class DummyCarController : VehicleController
         this.xmlManager = xmlManager;
     }
 
-    private AgentStates CurrentPathList()
-    {
-        return xmlManager.pathsList[(int)pathFile];
-    }
-
     public void UpdateController()
     {
-        if(xmlManager == null)
-        {
-            Debug.Log("xml manager is undefined in dummy car controller");
-            return;
-        }
+        int endAnimIndex = StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count;
 
-        if (stateIndex < CurrentPathList().states.Count)
+        if (stateIndex < endAnimIndex)
         {
             stateIndex++;
 
+            AgentState currentState = StatesManager.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1];
+
             // apply the animation state to the agent object
-            vehicle.GetGameObject().transform.localPosition = CurrentPathList().states[stateIndex - 1].position;
-            vehicle.GetGameObject().transform.eulerAngles = CurrentPathList().states[stateIndex - 1].rotation;            
+            vehicle.GetGameObject().transform.localPosition = currentState.position;
+            vehicle.GetGameObject().transform.eulerAngles = currentState.rotation;            
         }
         else
         {
             ResetVehicleController();
 
-            if(OnReset != null)
-                OnReset();
+            OnReset?.Invoke();
         }
     }
 
     public void ResetVehicleController()
     {
         // choose random animation
-        pathFile = (Files)Random.Range(0, 5);
+        animIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentStates().Count - 1);
 
         // choose random point in the selected animation
-        int randIndex = Random.Range(0, CurrentPathList().states.Count - 1);
-        stateIndex = (randIndex);
-
+        stateIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count - 1);
+        
         // update controller once a new index is being set
         UpdateController();
     }
@@ -85,6 +70,6 @@ public class DummyCarController : VehicleController
 
     public Vector3 GetCurrentVelocity()
     {
-        return CurrentPathList().states[stateIndex - 1].velocity;
+        return StatesManager.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1].velocity;
     }
 }
