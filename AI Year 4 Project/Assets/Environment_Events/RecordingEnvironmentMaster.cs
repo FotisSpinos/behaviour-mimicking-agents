@@ -21,13 +21,10 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     private bool isRecording;
 
     // a reference to the recorder
-    private Recorder recorder;
+    private StateRecorder recorder;
 
     // the vehicle controller operated by the user
     private VehicleController userVehicleController;
-
-    // the file index storing recorded current animation 
-    int animIndex;
 
     [SerializeField] private InputField directoryInputField;
     [SerializeField] private InputField fileNameInputField;
@@ -55,47 +52,22 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     override public void InitEnvironmentMaster()
     {
         // make a recorder instance
-        recorder = new Recorder(targetRig);
+        recorder = new StateRecorder(targetRig.GetComponent<CarVehicle>(), 0.02f);
 
         userVehicleController = new UserVehicleController(targetRig.GetComponent<CarVehicle>());
         userVehicleController.InitController(targetRig.GetComponent<CarVehicle>());
-
-        // init anim index
-        animIndex = 0;
 
         recordButton.onClick.AddListener(OnStartRecordingPressed);
         recordButtonText.text = "Start Recording";
     }
 
     override public void UpdateEnvironmentMaster()
-    {
-        // define animation index
-        animIndex = DefineAnimIndex();
-        
+    {   
         // record the state
-        recorder.UpdateRecorder();
+        recorder.UpdateRecorder(Time.deltaTime);
 
         // update vehicle controller
         userVehicleController.UpdateController();
-    }
-
-    // Defines animation index defined from user input
-    private int DefineAnimIndex()
-    {
-        int output = animIndex;
-
-        if (Input.GetKeyDown(KeyCode.Alpha1)) output = 0;
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) output = 1;
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) output = 2;
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) output = 3;
-        else if (Input.GetKeyDown(KeyCode.Alpha5)) output = 4;
-
-        if (animIndex != output)
-            Debug.Log("Recording slot is set to: " + output);
-        else
-            return animIndex;
-
-        return output;
     }
 
     private void OnStartRecordingPressed()
@@ -104,6 +76,11 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         Debug.Log("Recorder Started");
 
         recordButtonText.text = "Stop Recording";
+
+        if(recorder.GetRecording())
+        {
+            StatesManager.GetInstance().AddSerializableAgentState(new SerializableAgentStates());
+        }
 
         // save data if we stop recording
         if (!recorder.GetRecording())

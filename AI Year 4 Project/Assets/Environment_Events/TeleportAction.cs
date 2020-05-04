@@ -2,11 +2,11 @@
 
 internal class TeleportAction : EnvironmentAction
 {
-    private AgentCar agentCar;
+    private AgentCarController agentCar;
     private float posRange;
     private float rotRange;
 
-    public TeleportAction(AgentCar agentCar, float posRange, float rotRange)
+    public TeleportAction(AgentCarController agentCar, float posRange, float rotRange)
     {
         this.agentCar = agentCar;
         this.posRange = posRange;

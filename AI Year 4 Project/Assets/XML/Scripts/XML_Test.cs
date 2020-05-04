@@ -27,6 +27,7 @@ public class XML_Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if(Input.GetKeyUp(KeyCode.S))
         {
             manager_XML.Save(file);
@@ -48,6 +49,6 @@ public class XML_Test : MonoBehaviour
             manager_XML.AddFitLst(lst_FitVals);
             manager_XML.SaveFitness();
         }
-
+        */
     }
 }

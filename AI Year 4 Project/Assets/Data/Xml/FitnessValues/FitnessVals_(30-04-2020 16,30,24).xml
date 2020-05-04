@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<FitnessVals xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <lst_FitnessVals>
-    <float>1</float>
-    <float>1.3</float>
-    <float>7</float>
-  </lst_FitnessVals>
-</FitnessVals>

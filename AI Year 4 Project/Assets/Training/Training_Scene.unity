@@ -119,6 +119,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -182,9 +197,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &50550367
 PrefabInstance:
@@ -193,6 +224,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -256,9 +302,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &63829140
 PrefabInstance:
@@ -267,6 +329,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -330,9 +407,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &142922688
 PrefabInstance:
@@ -341,6 +434,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -404,9 +512,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &150567751
 PrefabInstance:
@@ -415,6 +539,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -478,9 +617,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &162734697
 PrefabInstance:
@@ -489,6 +644,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -552,9 +722,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &192745688
 PrefabInstance:
@@ -563,6 +749,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296825167616, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -626,9 +832,40 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866958, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298512690968, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389247, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &216023871
 PrefabInstance:
@@ -637,6 +874,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -700,9 +952,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1 &221819705
 GameObject:
@@ -780,6 +1048,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -843,9 +1126,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &381960906
 PrefabInstance:
@@ -854,6 +1153,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -917,9 +1231,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &388370113
 PrefabInstance:
@@ -928,6 +1258,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -991,9 +1336,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &421580422
 PrefabInstance:
@@ -1002,6 +1363,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1065,9 +1441,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &562344453
 PrefabInstance:
@@ -1076,6 +1468,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1139,9 +1546,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &590805708
 PrefabInstance:
@@ -1150,6 +1573,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1213,9 +1651,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1 &592883082
 GameObject:
@@ -1247,8 +1701,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animDirectories:
-  - Default
-  analyticsRefreshRate: 1
+  - TrainingSingleAnim
+  analyticsRefreshRate: 1000000
+  training: 1
 --- !u!4 &592883084
 Transform:
   m_ObjectHideFlags: 0
@@ -1270,6 +1725,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1333,9 +1803,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &644866544
 PrefabInstance:
@@ -1344,6 +1830,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1407,9 +1908,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &751347931
 PrefabInstance:
@@ -1418,6 +1935,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1481,9 +2013,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &781578866
 PrefabInstance:
@@ -1492,6 +2040,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1555,9 +2118,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &852067961
 PrefabInstance:
@@ -1566,6 +2145,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1629,9 +2223,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &855710428
 PrefabInstance:
@@ -1640,6 +2250,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1703,9 +2328,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &855884435
 PrefabInstance:
@@ -1714,6 +2355,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1777,9 +2433,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &881872397
 PrefabInstance:
@@ -1788,6 +2460,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1851,9 +2538,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &954458275
 PrefabInstance:
@@ -1862,6 +2565,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1925,9 +2643,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &960162384
 PrefabInstance:
@@ -1936,6 +2670,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1999,9 +2748,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &970587362
 PrefabInstance:
@@ -2010,6 +2775,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2073,9 +2853,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &974710873
 PrefabInstance:
@@ -2084,6 +2880,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2147,9 +2958,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1005544648
 PrefabInstance:
@@ -2158,6 +2985,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2221,9 +3063,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1050775379
 PrefabInstance:
@@ -2232,6 +3090,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2295,9 +3168,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1053704733
 PrefabInstance:
@@ -2306,6 +3195,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2369,9 +3273,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1 &1099628798
 GameObject:
@@ -2462,6 +3382,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2525,9 +3460,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1169332304
 PrefabInstance:
@@ -2536,6 +3487,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2599,9 +3565,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1175713728
 PrefabInstance:
@@ -2610,6 +3592,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2673,9 +3670,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1212553947
 PrefabInstance:
@@ -2684,6 +3697,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2747,9 +3775,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1219228292
 PrefabInstance:
@@ -2758,6 +3802,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2821,9 +3880,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1273776120
 PrefabInstance:
@@ -2832,6 +3907,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2895,9 +3985,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1288704799
 PrefabInstance:
@@ -2906,6 +4012,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2969,9 +4090,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1322552814
 PrefabInstance:
@@ -2980,6 +4117,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3043,9 +4195,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1357272010
 PrefabInstance:
@@ -3054,6 +4222,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3117,9 +4300,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1369448025
 PrefabInstance:
@@ -3128,6 +4327,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3191,9 +4405,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1373243236
 PrefabInstance:
@@ -3202,6 +4432,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3265,9 +4510,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1393616407
 PrefabInstance:
@@ -3276,6 +4537,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3339,9 +4615,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1410585863
 PrefabInstance:
@@ -3350,6 +4642,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3413,9 +4720,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1422713399
 PrefabInstance:
@@ -3424,6 +4747,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3487,9 +4825,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1477985017
 PrefabInstance:
@@ -3498,6 +4852,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3561,9 +4930,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1482425009
 PrefabInstance:
@@ -3572,6 +4957,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3635,9 +5035,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1484220533
 PrefabInstance:
@@ -3646,6 +5062,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3709,9 +5140,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1503198947
 PrefabInstance:
@@ -3720,6 +5167,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3783,9 +5245,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1506543661
 PrefabInstance:
@@ -3794,6 +5272,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3857,9 +5350,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1530264583
 PrefabInstance:
@@ -3868,6 +5377,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3931,9 +5455,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1608100699
 PrefabInstance:
@@ -3942,6 +5482,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4005,9 +5560,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1760507674
 PrefabInstance:
@@ -4016,6 +5587,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4079,9 +5665,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1772117873
 PrefabInstance:
@@ -4090,6 +5692,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4153,9 +5770,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1797911400
 PrefabInstance:
@@ -4164,6 +5797,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4227,9 +5875,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1812903273
 PrefabInstance:
@@ -4238,6 +5902,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4301,9 +5980,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1844995262
 PrefabInstance:
@@ -4312,6 +6007,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4375,9 +6085,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1872466141
 PrefabInstance:
@@ -4386,6 +6112,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4449,9 +6190,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &2069342737
 PrefabInstance:
@@ -4460,6 +6217,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4523,9 +6295,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &2081692781
 PrefabInstance:
@@ -4534,6 +6322,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4597,9 +6400,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &2091047157
 PrefabInstance:
@@ -4608,6 +6427,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437608296544600755, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: maxRotDist
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608296544600757, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608296856562666, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4671,9 +6505,25 @@ PrefabInstance:
     - target: {fileID: 1437608296856562667, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1437608298611389233, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}
 --- !u!1001 &1437608298459182857
 PrefabInstance:
@@ -4742,5 +6592,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Training Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: DecisionPeriod
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.vectorObservationSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_BrainParameters.numStackedVectorObservations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608298611389235, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b818de30eee5b547a4456ff6958e750,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}

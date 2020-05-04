@@ -14,6 +14,8 @@ public class CarVehicle : MonoBehaviour, Vehicle
     [SerializeField] private float forwardForce;
     [SerializeField] private float steerForce;
 
+    private bool isColliding;
+
     public CarVehicle()
     {
 
@@ -27,6 +29,12 @@ public class CarVehicle : MonoBehaviour, Vehicle
          rb = gameObject.GetComponent<Rigidbody>();
     }
 
+    public void OnImpactRecorded()
+    {
+        isColliding = false;
+    }
+
+
     /// <summary>
     /// Use this method to pass input to the vehicle
     /// </summary>
@@ -35,7 +43,7 @@ public class CarVehicle : MonoBehaviour, Vehicle
     public void SetVehicleInput(float steeringAmount, float speed)
     {
         if (rb.angularVelocity.magnitude < maxAngularSpeed &&
-            rb.velocity.magnitude > 0.7f)
+            rb.velocity.magnitude > 0.4f)
             Steer(steeringAmount);
 
         if(rb.velocity.magnitude < maxSpeed)
@@ -89,5 +97,21 @@ public class CarVehicle : MonoBehaviour, Vehicle
     public GameObject GetGameObject()
     {
         return gameObject;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Chasing box")
+            isColliding = true;
+    }
+
+    public bool IsColliding()
+    {
+        return isColliding;
+    }
+
+    public void ImpactRecorded()
+    {
+        isColliding = false;
     }
 }

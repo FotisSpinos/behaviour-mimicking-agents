@@ -112,6 +112,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1049246197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049246199}
+  - component: {fileID: 1049246198}
+  m_Layer: 0
+  m_Name: Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1049246198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049246197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ff7c331a5ff754d817a1512c806062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animDirectories:
+  - TrainingAnim1
+  analyticsRefreshRate: 1000
+  training: 0
+--- !u!4 &1049246199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049246197}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.1417465, y: -5.615822, z: 21.969849}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317068128
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375806189
 GameObject:
@@ -281,6 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f730b3d371d2d418f76fd176d71eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentCarController: {fileID: 2045751214}
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   dummyCarRig: {fileID: 2102157684}
@@ -310,6 +358,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 396504969910133961, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: animDirectories.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 396504969910133961, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 396504969910133961, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: animDirectories.Array.data[0]
+      value: TrainingAnim2
+      objectReference: {fileID: 0}
     - target: {fileID: 1363646143003935413, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_Name
@@ -363,7 +426,7 @@ PrefabInstance:
     - target: {fileID: 2019552903635326852, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2019552903635326852, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
@@ -379,6 +442,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912404353723799113, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912404353723799114, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912404353723799114, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5430498186518935672, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}

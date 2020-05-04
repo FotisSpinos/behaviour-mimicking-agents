@@ -1153,6 +1153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff7c331a5ff754d817a1512c806062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animDirectories: []
+  analyticsRefreshRate: 0
+  training: 0
 --- !u!4 &1798408828
 Transform:
   m_ObjectHideFlags: 0
@@ -1405,6 +1408,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 460330968926212419, guid: dbcaa7663636fc6459638f164abe6e57,
+        type: 3}
+      propertyPath: forwardForce
+      value: 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 460330968926212419, guid: dbcaa7663636fc6459638f164abe6e57,
+        type: 3}
+      propertyPath: steerForce
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4628567793713737119, guid: dbcaa7663636fc6459638f164abe6e57,
         type: 3}
       propertyPath: m_LocalPosition.x

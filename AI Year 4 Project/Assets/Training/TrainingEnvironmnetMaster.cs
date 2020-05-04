@@ -24,7 +24,7 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
         dummyCarController.UpdateController();
 
         // AutomaticSteppingEnabled 
-        Academy.Instance.AutomaticSteppingEnabled = false;
+        // Academy.Instance.AutomaticSteppingEnabled = false;
 
         // init agent car
         agentCarController.InitController(agentCarVehicle);
@@ -32,10 +32,11 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
 
     override public void UpdateEnvironmentMaster()
     {
+        //Debug.Log("Env update");
         dummyCarController.UpdateController();
 
         // update environment
-        Academy.Instance.EnvironmentStep();
+        // Academy.Instance.EnvironmentStep();
     }
 
     override public DummyCarController GetDummyCarController()

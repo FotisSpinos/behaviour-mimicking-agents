@@ -49,8 +49,8 @@ public class AgentCar : AgentCarController
     public override void AgentAction(float[] vectorAction)
     {
         // increase velocities so that the agent can catch up to the dummy car
-        float forwardAmount = vectorAction[0] * 1.4f;
-        float steerAmount = vectorAction[1] * 1.5f;
+        float forwardAmount = vectorAction[0] * 1.1f;
+        float steerAmount = vectorAction[1] * 1.1f;
 
         // apply input to the vehicle
         car.SetVehicleInput(steerAmount, forwardAmount);
@@ -58,6 +58,9 @@ public class AgentCar : AgentCarController
         // culculate the distances in position and rotations
         float positionDifference = (dummyCar.transform.localPosition - transform.localPosition).magnitude;
         float rotationDifference = Vector3.Angle(dummyCar.transform.right, transform.right);
+
+
+        //(dummyCar.transform.localEulerAngles - transform.localEulerAngles).magnitude;//Vector3.Angle(dummyCar.transform.right, transform.right);
 
         // give a small reward on each frame
         fitness = 0.01f;
@@ -74,8 +77,8 @@ public class AgentCar : AgentCarController
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        if (sensor == null || agentRig == null)
-            return;
+        //if (sensor == null || agentRig == null)
+        //    return;
 
         // pass agent information
         sensor.AddObservation(transform.localPosition);
@@ -86,7 +89,7 @@ public class AgentCar : AgentCarController
         sensor.AddObservation(dummyCar.transform.localPosition - transform.localPosition);
 
         // pass rotation difference between agent and dummy car
-        sensor.AddObservation(dummyCar.transform.localEulerAngles - transform.localEulerAngles);
+        sensor.AddObservation(Vector3.Angle(dummyCar.transform.right, transform.right));
 
         // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
@@ -102,6 +105,7 @@ public class AgentCar : AgentCarController
     {
         if (dummyCar == null)
             return;
+        
         // apply the dummy car state to the agent
         transform.localPosition = dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
@@ -146,4 +150,3 @@ public class AgentCar : AgentCarController
         throw new NotImplementedException();
     }
 }
-

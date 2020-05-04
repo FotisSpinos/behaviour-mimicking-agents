@@ -54,7 +54,7 @@ public class XmlReadWrite
         serializer.Serialize(stream, serializableFitnessValues);
         stream.Close();
 
-        Debug.Log("Fitness value stored: " + serializableFitnessValues.fitnessValues[0]);
+        Debug.Log("Fitness value stored: " + serializableFitnessValues.fitnessValues);
     }
 
     public void LoadAllXmlFiles(string directoryName)
@@ -124,7 +124,7 @@ public class XmlReadWrite
 
 
 [Serializable]
-public class AgentState
+public struct AgentState
 {
     public Vector3 position;
     public Vector3 rotation;
@@ -135,16 +135,13 @@ public class AgentState
 public class SerializableAgentStates
 {
     public List<AgentState> states = new List<AgentState>();
+    public float captureRate = 0.0f;
+    public List<float> impactPoitns = new List<float>();
 }
 
 [Serializable]
 public class SerializableFitnessValues
 {
     public List<float> fitnessValues = new List<float>();
-}
-
-[Serializable]
-public class FitnessVals
-{
-    public List<float> lst_FitnessVals = new List<float>();
+    public float captureRate;
 }

@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1437608297744866944}
   - component: {fileID: 1437608297744866945}
   m_Layer: 0
-  m_Name: Recording environment master
+  m_Name: Training Environment Master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,11 +202,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1d8854597ea0d4aaf6c8208a19c09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentCarController: {fileID: 1437608296544600755}
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   targetVehicle: {fileID: 1437608296544600754}
   agentCarVehicle: {fileID: 1437608296544600757}
-  agentCarController: {fileID: 1437608296544600755}
 --- !u!1 &1437608298512690968
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +316,6 @@ GameObject:
   - component: {fileID: 1437608298611389235}
   - component: {fileID: 1437608298611389232}
   - component: {fileID: 1437608296544600755}
-  - component: {fileID: 1437608298611389233}
   m_Layer: 9
   m_Name: Agent
   m_TagString: Vehicle
@@ -397,8 +396,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 30
   maxAngularSpeed: 2
-  forwardForce: 35
-  steerForce: 20
+  forwardForce: 55
+  steerForce: 40
 --- !u!54 &1437608298611389237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -441,12 +440,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 17
+    vectorObservationSize: 20
     numStackedVectorObservations: 1
     vectorActionSize: 02000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 11400000, guid: 4241fb653d450284c98b2a31d6548f3e, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: VehicleBrain
@@ -464,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DecisionPeriod: 6
+  DecisionPeriod: 2
   RepeatAction: 1
   offsetStep: 0
 --- !u!114 &1437608296544600755
@@ -484,30 +483,6 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   maxStep: 0
   environment: {fileID: 1437608297744866945}
-  maxRotDist: 35
+  maxRotDist: 60
   maxPosDist: 15
   isTraining: 1
---- !u!114 &1437608298611389233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437608298611389247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BrainParameters:
-    vectorObservationSize: 17
-    numStackedVectorObservations: 1
-    vectorActionSize: 02000000
-    vectorActionDescriptions: []
-    vectorActionSpaceType: 1
-  m_Model: {fileID: 0}
-  m_InferenceDevice: 1
-  m_BehaviorType: 0
-  m_BehaviorName: VehicleBrain
-  m_TeamID: 0
-  m_UseChildSensors: 1

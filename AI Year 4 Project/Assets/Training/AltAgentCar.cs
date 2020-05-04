@@ -36,6 +36,10 @@ public class AltAgentCar : AgentCarController
 
     [SerializeField] bool isTraining = true;
 
+    private bool activeFitness;
+
+    private bool initialized;
+
     public AltAgentCar() { }
 
     public override void InitializeAgent()
@@ -45,9 +49,14 @@ public class AltAgentCar : AgentCarController
 
     public override void AgentAction(float[] vectorAction)
     {
+        if (dummyCar == null)
+            return;
+
+
+        //Debug.Log("Aget updae");
         // increase velocities so that the agent can catch up to the dummy car
-        float forwardAmount = vectorAction[0] * 1.4f;
-        float steerAmount = vectorAction[1] * 1.5f;
+        float forwardAmount = vectorAction[0] * 1.1f;
+        float steerAmount = vectorAction[1] * 1.1f;
 
         // apply input to the vehicle
         car.SetVehicleInput(steerAmount, forwardAmount);
@@ -60,33 +69,48 @@ public class AltAgentCar : AgentCarController
         float distanceReward = 0;
         float rotationReward = 0;
 
-        distanceReward = 1 / positionDifference / 100;
-        rotationReward = 1 / rotationDifference;
+        if (positionDifference <= 0.1)
+            distanceReward = 1.0f;
+        else
+            distanceReward = 1 / (positionDifference * 10);
 
-        if (positionDifference == 0)
-            distanceReward = 0.1f;
-        if (rotationDifference == 0)
-            rotationReward = 0.1f;
+        if (rotationDifference <= 0.1)
+            rotationReward = 1.0f;
+        else
+            rotationReward = 1 / (positionDifference * 10);
 
-        fitness = positionDifference + rotationDifference;
+        fitness = (distanceReward * 0.5f + rotationReward * 0.5f) / 10;
 
 
         // check if the agent follows the dummy car
         //if ((positionDifference > 10 || rotationDifference > 20) && isTraining)
-        if ((positionDifference > maxPosDist || rotationDifference > maxRotDist) && isTraining)
+        if ((positionDifference > maxPosDist) && isTraining)
         {
-            fitness = -1000.0f;
+            fitness = -10.0f;
+            activeFitness = false;
             Done();
         }
 
-        //Debug.Log("Reward: " + reward + " Pos diff: " + positionDifference + " Rot diff: " + rotationDifference);
-        SetReward(Mathf.Pow(fitness, 1));
+        SetReward(fitness);
+        // Debug.Log("Fitenss " + fitness);
+        // Debug.Log("Fitness " + fitness + " distanceReward: " + distanceReward + " rotationReward: " + rotationReward);
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        if (sensor == null || agentRig == null)
+        if (agentRig == null)
+        {
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(0.0f);
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(0.0f);
+            sensor.AddObservation(Vector3.zero);
+            sensor.AddObservation(0.0f);
             return;
+        }
 
         // pass agent information
         sensor.AddObservation(transform.localPosition);
@@ -97,7 +121,7 @@ public class AltAgentCar : AgentCarController
         sensor.AddObservation(dummyCar.transform.localPosition - transform.localPosition);
 
         // pass rotation difference between agent and dummy car
-        sensor.AddObservation(dummyCar.transform.localEulerAngles - transform.localEulerAngles);
+        sensor.AddObservation(Vector3.Angle(dummyCar.transform.right, transform.right));
 
         // pass dummy car information
         sensor.AddObservation(dummyCar.transform.localPosition);
@@ -105,18 +129,42 @@ public class AltAgentCar : AgentCarController
 
         // We definatelly need to add this (It wasn't added for the trained model) - possibly improve training times and rapid changes in the mean fitness 
         // the mean fitness seems to be unstable
-        Vector3 dummyCarVelocity = dummyCarController.GetCurrentVelocity();
-        sensor.AddObservation(dummyCarVelocity);
+        sensor.AddObservation(dummyCarController.GetCurrentVelocity());
+
+        sensor.AddObservation(activeFitness);
     }
 
     public override void AgentReset()
     {
-        if (dummyCar == null)
+        if (dummyCar == null || dummyCarController == null)
+        {
+            //dummyCar = dummyCarController.GetVehicle().GetGameObject();
             return;
+        }
+
         // apply the dummy car state to the agent
-        transform.localPosition = dummyCar.transform.localPosition;
-        transform.localRotation = dummyCar.transform.localRotation;
-        agentRig.velocity = dummyCarController.GetCurrentVelocity();
+        Vector3 posOffset = CreateRandomVector(-15, 15);
+        posOffset.y = 0;
+        transform.localPosition = dummyCar.transform.localPosition + posOffset;
+
+        transform.localEulerAngles = dummyCar.transform.localEulerAngles + new Vector3(0.0f, UnityEngine.Random.Range(0, 90), 0.0f);
+
+        Vector3 velocityOffset = CreateRandomVector(-20, 20);
+        velocityOffset.y = 0;
+        agentRig.velocity = dummyCarController.GetCurrentVelocity() + velocityOffset;
+    }
+
+    public Vector3 CreateRandomVector(float minMagnitude, float maxMagnitude)
+    {
+        float magnitude = UnityEngine.Random.Range(minMagnitude, maxMagnitude);
+
+        Vector3 output = new Vector3(UnityEngine.Random.Range(-0.0f, 2.0f),
+            0,
+            UnityEngine.Random.Range(0.0f, 2.0f));
+
+        output = output.normalized * magnitude;
+
+        return output;
     }
 
     // Manual control
@@ -157,3 +205,4 @@ public class AltAgentCar : AgentCarController
         throw new NotImplementedException();
     }
 }
+

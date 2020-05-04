@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,15 +11,18 @@ public class AgentAnalytics
 
     private BaseEnvironmentMaster[] environmentMasters;
 
-    public AgentAnalytics(BaseEnvironmentMaster[] environmentMasters)
+    public AgentAnalytics(BaseEnvironmentMaster[] environmentMasters, float analyticsCaptureRate)
     {
         this.environmentMasters = environmentMasters;
         serializableFitnessValues = new SerializableFitnessValues();
+
+        serializableFitnessValues.captureRate = analyticsCaptureRate;
     }
 
     public void StoreToFile()
     {
-        XmlReadWrite.GetInstance().SaveFitnessValues("Fitness Values", "FirstTest", serializableFitnessValues);
+        string date = DateTime.Now.ToString("dd-MM-yyyy-HHmm");
+        XmlReadWrite.GetInstance().SaveFitnessValues("Fitness Values", "fitness-"+date, serializableFitnessValues);
     }
 
     public void UpdateAnalytics()
@@ -29,12 +33,12 @@ public class AgentAnalytics
         float fitnessSum = 0;
         foreach(BaseEnvironmentMaster envMast in environmentMasters)
         {
-            fitnessSum += envMast.GetAgentCarController().Fitness;
+            if(envMast.GetAgentCarController() != null)
+                fitnessSum += envMast.GetAgentCarController().Fitness;
         }
 
         avairageFitness = fitnessSum / environmentMasters.Length;
 
-        serializableFitnessValues.fitnessValues.Clear();
         serializableFitnessValues.fitnessValues.Add(avairageFitness);
     }
 }

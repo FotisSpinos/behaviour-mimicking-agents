@@ -33,8 +33,11 @@ public class ThrowBoxAction : MonoBehaviour, EnvironmentAction
         GameObject throwBoxGo = GameObject.Instantiate(physicsBoxPrefub, new Vector3(0.0f, 10.0f, 0.0f), Quaternion.identity);
 
         ChasingBox throwBox = throwBoxGo.AddComponent<ChasingBox>();
-        throwBox.init(10.0f, new Vector3(0.0f, 10.0f, 0.0f), targetRig);
-
+        //throwBox.init(10.0f, new Vector3(0.0f, 10.0f, 0.0f), targetRig);
+        Vector3 randVec = VectorUtils.CreateRandomUnitVector();
+        randVec.y = 0;
+        throwBox.init(10.0f, randVec * 10 + targetRig.transform.position, targetRig);
+        
         // add element to the linked list
         chasingBoxes.AddLast(throwBox);
     }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,12 +12,12 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
     private TeleportAction teleportAction;
     private InvisibleForceAction invisibleForceAction;
 
-    private DummyCarController dummyCarController;
+    [SerializeField] private DummyCarController dummyCarController;
 
-    [SerializeField] private AgentCar agentCar;
+    [SerializeField] private AgentCarController agentCar;
 
-    private Recorder agentRecorder;
-    private Recorder dummyCarRecorder;
+    private StateRecorder agentRecorder;
+    private StateRecorder dummyCarRecorder;
 
     public override DummyCarController GetDummyCarController()
     {
@@ -30,6 +31,8 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         // init dummy car controller
         dummyCarController = new DummyCarController();
         dummyCarController.InitController(dummyCarRig.GetComponent<CarVehicle>());
+        dummyCarController.EnableRandomAnimIndex = false;
+        dummyCarController.UpdateController();
 
         // add throw box action
         throwBoxAction = new ThrowBoxAction(physicsBoxPrefub, agentRig);
@@ -38,15 +41,20 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         teleportAction = new TeleportAction(agentCar, 10.0f, 5.0f);
 
         // add random force action
-        invisibleForceAction = new InvisibleForceAction(10000000.0f, agentRig);
+        invisibleForceAction = new InvisibleForceAction(1000.0f, agentRig);
 
         // initialize agent recorder and start recording
-        agentRecorder = new Recorder(agentRig);
+        agentRecorder = new StateRecorder(agentRig.GetComponent<CarVehicle>(), 0.02f);
         agentRecorder.SetRecording(true);
 
         //initialize dummy recorder and start recording
-        dummyCarRecorder = new Recorder(agentRig);
+        dummyCarRecorder = new StateRecorder(agentRig.GetComponent<CarVehicle>(), 0.02f);
         dummyCarRecorder.SetRecording(true);
+
+        // activate agent car
+        agentCar.gameObject.SetActive(true);
+        agentCar.InitController(agentRig.GetComponent<CarVehicle>());
+
     }
 
     public override void UpdateEnvironmentMaster()
@@ -69,9 +77,15 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         dummyCarController.UpdateController();
 
         // update agent recorder
-        agentRecorder.UpdateRecorder();
+        agentRecorder.UpdateRecorder(0.02f);
 
         // update dummy car recorder
-        dummyCarRecorder.UpdateRecorder();
+        dummyCarRecorder.UpdateRecorder(0.02f);
+    }
+
+    public void OnApplicationQuit()
+    {
+        agentRecorder.StoreRecordedData("Agent Launch", "Agent States");
+        agentRecorder.StoreRecordedData("Agent Launch", "Dummy Car States");
     }
 }

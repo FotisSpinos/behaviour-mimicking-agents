@@ -9,9 +9,13 @@ public class EnvironmentController : MonoBehaviour
     [SerializeField] List<string> animDirectories;
     private static EnvironmentController instance;
 
-    [SerializeField] protected float analyticsRefreshRate;
-    private float analyticsRefreashRateStore;
+    [SerializeField] protected float analyticsCaptureRate;
+    private float analyticsCaptureRateStore;
     private AgentAnalytics agentAnalytics;
+
+    [SerializeField]private bool training;
+
+    private bool AnalyticsRecorded;
 
     public static EnvironmentController GetInstance()
     {
@@ -30,7 +34,14 @@ public class EnvironmentController : MonoBehaviour
 
         valid = true;
 
-        analyticsRefreashRateStore = analyticsRefreshRate;
+        AnalyticsRecorded = false;
+
+        analyticsCaptureRateStore = analyticsCaptureRate;
+
+        if(animDirectories == null)
+        {
+            animDirectories = new List<string>();
+        }
 
         // Load animations
         foreach (string directory in animDirectories)
@@ -63,11 +74,10 @@ public class EnvironmentController : MonoBehaviour
             bem.InitEnvironmentMaster();
         }
 
-
-        agentAnalytics = new AgentAnalytics(environmentMasters);
+        agentAnalytics = new AgentAnalytics(environmentMasters, analyticsCaptureRate);
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         if (!valid)
             return;
@@ -78,13 +88,22 @@ public class EnvironmentController : MonoBehaviour
             bem.UpdateEnvironmentMaster();
         }
 
-        if(analyticsRefreshRate <= 0)
+        if (!training)
+            return;
+
+        if(analyticsCaptureRate <= 0)
         {
             // update analytics
+            AnalyticsRecorded = true;
             agentAnalytics.UpdateAnalytics();
-            agentAnalytics.StoreToFile();
-            analyticsRefreshRate = analyticsRefreashRateStore;
+            analyticsCaptureRate = analyticsCaptureRateStore;
         }
-        analyticsRefreshRate -= Time.deltaTime;
+        analyticsCaptureRate -= Time.deltaTime;
+    }
+
+    private void OnApplicationQuit()
+    {
+        if(AnalyticsRecorded)
+            agentAnalytics.StoreToFile();
     }
 }

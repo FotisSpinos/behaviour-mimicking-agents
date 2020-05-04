@@ -43,11 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1d8854597ea0d4aaf6c8208a19c09c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentCarController: {fileID: 2716063398147163836}
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   targetVehicle: {fileID: 2716063398032871120}
   agentCarVehicle: {fileID: 2716063398147163830}
-  agentCarController: {fileID: 2716063398147163836}
 --- !u!1 &2716063397822313820
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 30
   maxAngularSpeed: 2
-  forwardForce: 35
-  steerForce: 20
+  forwardForce: 55
+  steerForce: 40
 --- !u!54 &2716063398032871122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -319,12 +319,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    vectorObservationSize: 17
+    vectorObservationSize: 19
     numStackedVectorObservations: 1
     vectorActionSize: 02000000
     vectorActionDescriptions: []
     vectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 11400000, guid: df22f7b5d4673694788f5f4f71941674, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: VehicleBrain
@@ -350,6 +350,7 @@ MonoBehaviour:
   maxRotDist: 90
   maxPosDist: 30
   isTraining: 1
+  activateFitnessTimer: 0.5
 --- !u!65 &2716063398147163837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -392,8 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 30
   maxAngularSpeed: 2
-  forwardForce: 35
-  steerForce: 20
+  forwardForce: 55
+  steerForce: 40
 --- !u!1 &2716063398453326238
 GameObject:
   m_ObjectHideFlags: 0

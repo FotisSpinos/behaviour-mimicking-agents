@@ -17,4 +17,8 @@ public interface Vehicle
     float GetMaxSpeed();
 
     GameObject GetGameObject();
+
+    bool IsColliding();
+
+    void ImpactRecorded();
 }

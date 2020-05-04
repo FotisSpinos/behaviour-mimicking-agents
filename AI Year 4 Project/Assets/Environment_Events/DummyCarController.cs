@@ -10,23 +10,31 @@ public class DummyCarController : VehicleController
 {
     private Vehicle vehicle;
 
-    private XmlReadWrite xmlManager;
-
     private int animIndex;
     private int stateIndex;
+
+    private bool enableRandomAnimIndex;
+
+    public bool EnableRandomAnimIndex
+    {
+        set
+        {
+            enableRandomAnimIndex = value;
+        }
+    }
+
 
     public delegate void Reset();
     public event Reset OnReset;
 
-    public void InitController(Vehicle vehicle)
+    public DummyCarController()
     {
-        this.xmlManager = XmlReadWrite.GetInstance();
-        this.vehicle = vehicle;
+        enableRandomAnimIndex = true;
     }
 
-    public void SetXmlManager(XmlReadWrite xmlManager)
+    public void InitController(Vehicle vehicle)
     {
-        this.xmlManager = xmlManager;
+        this.vehicle = vehicle;
     }
 
     public void UpdateController()
@@ -53,12 +61,22 @@ public class DummyCarController : VehicleController
 
     public void ResetVehicleController()
     {
+        if (StatesManager.GetInstance().GetSerializableAgentStates().Count == 0)
+            return;
+
         // choose random animation
         animIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentStates().Count - 1);
 
-        // choose random point in the selected animation
-        stateIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count - 1);
-        
+        if (enableRandomAnimIndex)
+        {
+            // choose random point in the selected animation
+            stateIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count - 1);
+        }
+        else
+        {
+            stateIndex = 0;
+        }
+
         // update controller once a new index is being set
         UpdateController();
     }

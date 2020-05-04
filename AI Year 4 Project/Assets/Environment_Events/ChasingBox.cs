@@ -49,6 +49,7 @@ public class ChasingBox : MonoBehaviour
     public void Create(Vector3 position)
     {
         gameObject.name = "Chasing box";
+        gameObject.transform.position = position;
 
         throwBoxRig = gameObject.GetComponent<Rigidbody>();
 
@@ -58,7 +59,7 @@ public class ChasingBox : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void Update()
+    public void FixedUpdate()
     {
         cleanUpTimer -= Time.deltaTime;
 
