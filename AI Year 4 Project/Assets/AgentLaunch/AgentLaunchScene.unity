@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animDirectories:
   - TrainingAnim1
-  analyticsRefreshRate: 1000
+  analyticsCaptureRate: 0
   training: 0
 --- !u!4 &1049246199
 Transform:
@@ -446,7 +446,7 @@ PrefabInstance:
     - target: {fileID: 2912404353723799113, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2912404353723799114, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
@@ -482,12 +482,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 11400000, guid: 933f57825e39e3c4c81d81b0200e44af,
+      objectReference: {fileID: 11400000, guid: 29141cef0ebc2104e858036d3370d154,
         type: 3}
     - target: {fileID: 5430498186518935674, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5430498186518935675, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
