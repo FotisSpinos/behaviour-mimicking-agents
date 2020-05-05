@@ -1701,8 +1701,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animDirectories:
-  - TrainingSingleAnim
-  analyticsRefreshRate: 1000000
+  - TrainingAnim1
+  analyticsCaptureRate: 10000
   training: 1
 --- !u!4 &592883084
 Transform:
@@ -6611,7 +6611,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Model
       value: 
-      objectReference: {fileID: 11400000, guid: 5b818de30eee5b547a4456ff6958e750,
+      objectReference: {fileID: 11400000, guid: 29141cef0ebc2104e858036d3370d154,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce56bcea7026064a9419fbc8a6f404b, type: 3}

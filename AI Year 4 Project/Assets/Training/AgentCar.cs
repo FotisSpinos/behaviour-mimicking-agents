@@ -95,8 +95,7 @@ public class AgentCar : AgentCarController
         sensor.AddObservation(dummyCar.transform.localPosition);
         sensor.AddObservation(dummyCar.transform.localEulerAngles.y);
 
-        // We definatelly need to add this (It wasn't added for the trained model) - possibly improve training times and rapid changes in the mean fitness 
-        // the mean fitness seems to be unstable
+        // padd the dummy car's velocity
         Vector3 dummyCarVelocity = dummyCarController.GetCurrentVelocity();
         sensor.AddObservation(dummyCarVelocity);
     }

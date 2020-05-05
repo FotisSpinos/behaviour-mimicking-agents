@@ -15,7 +15,6 @@ public class CarVehicle : MonoBehaviour, Vehicle
     [SerializeField] private float steerForce;
 
     private bool isColliding;
-
     public CarVehicle()
     {
 
