@@ -85,7 +85,9 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
     public void OnApplicationQuit()
     {
-        agentRecorder.StoreRecordedData("Agent Launch", "Agent States");
-        agentRecorder.StoreRecordedData("Agent Launch", "Dummy Car States");
+        agentRecorder.StoreStates("Agent States", "Stored States", PathBuilder.FileTypes.OBJ_RECORD_DATA);
+        agentRecorder.StoreStates("Dummy Car States", "Stored States", PathBuilder.FileTypes.OBJ_RECORD_DATA);
+
+        agentRecorder.StoreImpactPoints("Agent Impact Poitns", "Impact Points", PathBuilder.FileTypes.OBJ_RECORD_DATA);
     }
 }

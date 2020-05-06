@@ -76,6 +76,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3c32deeda1599449197fa6df8affbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentCarController: {fileID: 0}
+  directoryInputField: {fileID: 0}
+  fileNameInputField: {fileID: 0}
+  recordButton: {fileID: 0}
+  recordButtonText: {fileID: 0}
   targetRig: {fileID: 460330968926212422}
 --- !u!1 &7301634154791337669
 GameObject:
@@ -189,12 +194,12 @@ PrefabInstance:
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: forwardForce
-      value: 35
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: steerForce
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541242, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}

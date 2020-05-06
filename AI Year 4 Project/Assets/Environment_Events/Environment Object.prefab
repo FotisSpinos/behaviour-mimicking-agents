@@ -43,8 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3c32deeda1599449197fa6df8affbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
-    type: 3}
+  agentCarController: {fileID: 0}
+  directoryInputField: {fileID: 0}
+  fileNameInputField: {fileID: 0}
+  recordButton: {fileID: 0}
+  recordButtonText: {fileID: 0}
   targetRig: {fileID: 6908199604480575794}
 --- !u!1 &486917797
 GameObject:
@@ -89,7 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ff7c331a5ff754d817a1512c806062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  environmentMaster: {fileID: 481604132}
+  animDirectories: []
+  analyticsCaptureRate: 0
+  training: 0
+  description: 
 --- !u!1 &1687741391334711514
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,12 +242,12 @@ PrefabInstance:
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: forwardForce
-      value: 35
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541241, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}
       propertyPath: steerForce
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7149447917630541242, guid: 71de47bb5bbede044bd13b233c5b5aec,
         type: 3}

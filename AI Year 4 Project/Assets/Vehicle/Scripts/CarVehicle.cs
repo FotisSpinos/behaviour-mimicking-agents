@@ -39,14 +39,20 @@ public class CarVehicle : MonoBehaviour, Vehicle
     /// </summary>
     /// <param name="steeringAmount"> the amount the vehicle steers. When the variable is less than 0.5 the agent will steer to the left</param>
     /// <param name="speed"></param>
-    public void SetVehicleInput(float steeringAmount, float speed)
+    public void SetVehicleInput(params float[] parameters)
     {
+        if(parameters == null || parameters.Length != 2)
+        {
+            Debug.LogWarning("Parameter number is incorect");
+            return;
+        }
+
         if (rb.angularVelocity.magnitude < maxAngularSpeed &&
             rb.velocity.magnitude > 0.4f)
-            Steer(steeringAmount);
+            Steer(parameters[0]);
 
         if(rb.velocity.magnitude < maxSpeed)
-            Move(speed);
+            Move(parameters[1]);
     }
 
     /// <summary>

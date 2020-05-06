@@ -17,6 +17,8 @@ public class EnvironmentController : MonoBehaviour
 
     private bool AnalyticsRecorded;
 
+    [SerializeField] private string description;
+
     public static EnvironmentController GetInstance()
     {
         if (instance == null)
@@ -88,8 +90,8 @@ public class EnvironmentController : MonoBehaviour
             bem.UpdateEnvironmentMaster();
         }
 
-        if (!training)
-            return;
+        //if (!training)
+        //    return;
 
         if(analyticsCaptureRate <= 0)
         {
@@ -105,5 +107,15 @@ public class EnvironmentController : MonoBehaviour
     {
         if(AnalyticsRecorded)
             agentAnalytics.StoreToFile();
+    }
+
+    public bool IsTraining()
+    {
+        return training;
+    }
+
+    public string GetDescription()
+    {
+        return description;
     }
 }

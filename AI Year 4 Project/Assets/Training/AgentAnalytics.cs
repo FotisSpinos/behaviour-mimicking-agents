@@ -21,8 +21,14 @@ public class AgentAnalytics
 
     public void StoreToFile()
     {
-        string date = DateTime.Now.ToString("dd-MM-yyyy-HHmm");
-        XmlReadWrite.GetInstance().SaveFitnessValues("Fitness Values", "fitness-"+date, serializableFitnessValues);
+        string path = PathBuilder.CreateXmlFilePath(PathBuilder.FileTypes.OBJ_RECORD_DATA, 
+            "fitness",
+            "Fitness Values",
+            true);
+
+
+        //string date = DateTime.Now.ToString("dd-MM-yyyy-HHmm");
+        XmlReadWrite.GetInstance().SaveFitnessValues(path, serializableFitnessValues);
     }
 
     public void UpdateAnalytics()

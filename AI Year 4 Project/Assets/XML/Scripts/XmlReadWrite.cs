@@ -19,18 +19,18 @@ public class XmlReadWrite
         return manager;
     }
 
-    public void SaveStates(string directory, string fileName, SerializableAgentStates agentStates)
+    public void SaveStates(string path, SerializableAgentStates agentStates)
     {
         XmlSerializer serializer = new XmlSerializer(typeof(SerializableAgentStates));
 
-        FileInfo file = new FileInfo(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml");
+        FileInfo file = new FileInfo(path);
 
         FileMode currentMode = FileMode.CreateNew;
         if (file.Exists)
             currentMode = FileMode.Open;
 
         file.Directory.Create();
-        FileStream stream = new FileStream(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml", currentMode); //Filemode Create ovewrites
+        FileStream stream = new FileStream(path, currentMode); //Filemode Create ovewrites
 
         serializer.Serialize(stream, agentStates);
         stream.Close();
@@ -38,18 +38,37 @@ public class XmlReadWrite
         Debug.Log("Data saved");
     }
 
-    public void SaveFitnessValues(string directory, string fileName, SerializableFitnessValues serializableFitnessValues)
+    public void SaveImpactPoints(string path, SerializableImpactPoints impactPoints)
     {
-        XmlSerializer serializer = new XmlSerializer(typeof(SerializableFitnessValues));
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableImpactPoints));
 
-        FileInfo file = new FileInfo(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml");
+        FileInfo file = new FileInfo(path);
 
         FileMode currentMode = FileMode.CreateNew;
         if (file.Exists)
             currentMode = FileMode.Open;
 
         file.Directory.Create();
-        FileStream stream = new FileStream(Application.dataPath + "/Data/" + directory + "/" + fileName + ".xml", currentMode); //Filemode Create ovewrites
+        FileStream stream = new FileStream(path, currentMode); //Filemode Create ovewrites
+
+        serializer.Serialize(stream, impactPoints);
+        stream.Close();
+
+        Debug.Log("Data saved");
+    }
+
+    public void SaveFitnessValues(string path, SerializableFitnessValues serializableFitnessValues)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableFitnessValues));
+
+        FileInfo file = new FileInfo(path);
+
+        FileMode currentMode = FileMode.CreateNew;
+        if (file.Exists)
+            currentMode = FileMode.Open;
+
+        file.Directory.Create();
+        FileStream stream = new FileStream(path, currentMode); //Filemode Create ovewrites
 
         serializer.Serialize(stream, serializableFitnessValues);
         stream.Close();
@@ -59,7 +78,8 @@ public class XmlReadWrite
 
     public void LoadAllXmlFiles(string directoryName)
     {
-        string[] fileEntries = Directory.GetFiles(Application.dataPath + "/Data/" + directoryName);
+        string path = PathBuilder.CreateDirectoryPath(PathBuilder.FileTypes.ANIMATION_DATA, directoryName);
+        string[] fileEntries = Directory.GetFiles(path);
         foreach (string fileName in fileEntries)
         {
             if(fileName.EndsWith(".xml"))
@@ -100,26 +120,6 @@ public class XmlReadWrite
         Debug.Log("Data loaded from: " + file.FullName);
 
     }
-
-    private void CreateDirectory(string directoryName)
-    {
-        bool directoryExists = System.IO.Directory.Exists(Application.dataPath + "/Data/" + directoryName);
-
-        if (!directoryExists)
-        {
-            Directory.CreateDirectory(Application.dataPath + "/Data/" + directoryName);
-        }
-    }
-
-    private void CreateFile(string directoryName, string fileName)
-    {
-        bool fileExists = System.IO.File.Exists(Application.dataPath + "/Data/" + directoryName + "/" + fileName + ".xml");
-
-        if (!fileExists)
-        {
-            File.Create(Application.dataPath + "/Data/" + directoryName + "/" + fileName + ".xml");
-        }
-    }
 }
 
 
@@ -136,12 +136,18 @@ public class SerializableAgentStates
 {
     public List<AgentState> states = new List<AgentState>();
     public float captureRate = 0.0f;
-    public List<float> impactPoitns = new List<float>();
 }
 
 [Serializable]
 public class SerializableFitnessValues
 {
     public List<float> fitnessValues = new List<float>();
-    public float captureRate;
+    public float captureRate = 0.0f;
+}
+
+[Serializable]
+public class SerializableImpactPoints
+{
+    public List<float> impactPoitns = new List<float>();
+    public float captureRate = 0.0f;
 }

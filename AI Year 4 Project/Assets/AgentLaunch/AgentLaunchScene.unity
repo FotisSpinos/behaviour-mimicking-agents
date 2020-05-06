@@ -143,8 +143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animDirectories:
   - TrainingAnim1
-  analyticsCaptureRate: 0
+  analyticsCaptureRate: 2
   training: 0
+  description: Agent 1 Launch
 --- !u!4 &1049246199
 Transform:
   m_ObjectHideFlags: 0

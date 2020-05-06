@@ -14,9 +14,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 {
     // the instance of the environment master
     private static EnvironmentMaster instance;
-    
-    [SerializeField] private Rigidbody targetRig;
-
+   
     // check if we are recording
     private bool isRecording;
 
@@ -26,10 +24,11 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     // the vehicle controller operated by the user
     private VehicleController userVehicleController;
 
-    [SerializeField] private InputField directoryInputField;
-    [SerializeField] private InputField fileNameInputField;
-    [SerializeField] private Button recordButton;
-    [SerializeField] private Text recordButtonText;
+    [SerializeField] protected InputField directoryInputField;
+    [SerializeField] protected InputField fileNameInputField;
+    [SerializeField] protected Button recordButton;
+    [SerializeField] protected Text recordButtonText;
+    [SerializeField] protected Rigidbody targetRig;
 
     // default constructor
     public RecordingEnvironmentMaster() {}
@@ -70,7 +69,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         userVehicleController.UpdateController();
     }
 
-    private void OnStartRecordingPressed()
+    protected void OnStartRecordingPressed()
     {
         recorder.SetRecording(!recorder.GetRecording());
         Debug.Log("Recorder Started");
@@ -87,7 +86,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
         {
             recordButtonText.text = "Start Recording";
 
-            recorder.StoreRecordedData(GetInputFieldText(directoryInputField), GetInputFieldText(fileNameInputField));
+            recorder.StoreStates(GetInputFieldText(fileNameInputField), GetInputFieldText(directoryInputField), PathBuilder.FileTypes.ANIMATION_DATA);
             recorder.ClearRecordedData();
             Debug.Log("Recorder Stoped");
         }

@@ -7,6 +7,7 @@ public class StateRecorder
     [SerializeField] private Rigidbody recordingObjectRig;
     private bool isRecording;
     private SerializableAgentStates serializableAgentStates;
+    private SerializableImpactPoints serializableImpactPoints;
     private float fixedTimeInterval;
     private float progression;
     private Vehicle recordingVehicle;
@@ -16,11 +17,19 @@ public class StateRecorder
     {
         updateCounter = 0;
         isRecording = false;
+
         this.recordingVehicle = recordingVehicle;
         this.recordingObjectRig = recordingVehicle.GetGameObject().GetComponent<Rigidbody>();
+        
+        // init serializable agent states
         serializableAgentStates = new SerializableAgentStates();
-        this.fixedTimeInterval = fixedTimeInterval;
         serializableAgentStates.captureRate = fixedTimeInterval;
+
+        // init serializable impact points
+        serializableImpactPoints = new SerializableImpactPoints();
+        serializableImpactPoints.captureRate = fixedTimeInterval;
+
+        this.fixedTimeInterval = fixedTimeInterval;
     }
 
     public void SetRecording(bool isRecording)
@@ -56,11 +65,9 @@ public class StateRecorder
         state.rotation = recordingObjectRig.transform.localEulerAngles;
         state.velocity = recordingObjectRig.velocity;
 
-        //StatesManager.GetInstance().AddState(0, state);
-        //xml.AddState(state);
 
         if (recordingVehicle.IsColliding())
-            serializableAgentStates.impactPoitns.Add(updateCounter * fixedTimeInterval);
+            serializableImpactPoints.impactPoitns.Add(Time.realtimeSinceStartup);    //updateCounter * fixedTimeInterval
 
         serializableAgentStates.states.Add(state);
         recordingVehicle.ImpactRecorded();
@@ -78,15 +85,33 @@ public class StateRecorder
         isRecording = false;
     }
 
-    public void StoreRecordedData(string directoryName, string fileName)
+    // stores states and impact points in an xml file
+    public void StoreStates(string directoryName, string fileName, PathBuilder.FileTypes fileType)
     {
         isRecording = false;
-        XmlReadWrite.GetInstance().SaveStates(directoryName, fileName, serializableAgentStates);
+
+        string path = PathBuilder.CreateXmlFilePath(fileType,
+            directoryName,
+            fileName,
+            false);
+
+        XmlReadWrite.GetInstance().SaveStates(path, serializableAgentStates);
+    }
+
+    public void StoreImpactPoints(string directoryName, string fileName, PathBuilder.FileTypes fileType)
+    {
+        isRecording = false;
+
+        string path = PathBuilder.CreateXmlFilePath(fileType,
+            directoryName,
+            fileName,
+            false);
+
+        XmlReadWrite.GetInstance().SaveImpactPoints(path, serializableImpactPoints);
     }
 
     public void ClearRecordedData()
     {
-        //StatesManager.GetInstance().ClearData(0);
         serializableAgentStates.states.Clear();
     }
 

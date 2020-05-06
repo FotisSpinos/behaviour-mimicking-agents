@@ -4,11 +4,7 @@ using UnityEngine;
 
 public interface Vehicle
 {
-    void SetVehicleInput(float steeringAmount, float speed);
-
-    void Steer(float steeringAmount);
-
-    void Move(float forwardAmount);
+    void SetVehicleInput(params float[] list);
 
     Vector3 GetVelocity();
 
