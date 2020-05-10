@@ -9,11 +9,11 @@ public class AgentAnalytics
 
     private SerializableFitnessValues serializableFitnessValues;
 
-    private BaseEnvironmentMaster[] environmentMasters;
+    private AbstractAgentCarController[] abstractAgentCarController;
 
-    public AgentAnalytics(BaseEnvironmentMaster[] environmentMasters, float analyticsCaptureRate)
+    public AgentAnalytics(float analyticsCaptureRate)
     {
-        this.environmentMasters = environmentMasters;
+        abstractAgentCarController = GameObject.FindObjectsOfType<AbstractAgentCarController>();
         serializableFitnessValues = new SerializableFitnessValues();
 
         serializableFitnessValues.captureRate = analyticsCaptureRate;
@@ -33,17 +33,16 @@ public class AgentAnalytics
 
     public void UpdateAnalytics()
     {
-        if (environmentMasters.Length == 0)
+        if (abstractAgentCarController.Length == 0)
             return;
 
         float fitnessSum = 0;
-        foreach(BaseEnvironmentMaster envMast in environmentMasters)
+        foreach (AbstractAgentCarController agent in abstractAgentCarController)
         {
-            if(envMast.GetAgentCarController() != null)
-                fitnessSum += envMast.GetAgentCarController().Fitness;
+            fitnessSum += agent.Fitness;
         }
 
-        avairageFitness = fitnessSum / environmentMasters.Length;
+        avairageFitness = fitnessSum / abstractAgentCarController.Length;
 
         serializableFitnessValues.fitnessValues.Add(avairageFitness);
     }

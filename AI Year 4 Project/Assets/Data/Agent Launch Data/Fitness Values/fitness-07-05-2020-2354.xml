@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<SerializableFitnessValues xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fitnessValues>
+    <float>-0.267749876</float>
+    <float>-0.318249881</float>
+    <float>-0.116249844</float>
+    <float>-0.179374889</float>
+    <float>-0.00262500718</float>
+    <float>-0.103624865</float>
+    <float>-0.242499873</float>
+    <float>-0.128874883</float>
+    <float>-0.204624861</float>
+    <float>-0.0152500067</float>
+    <float>-0.0783748552</float>
+    <float>-0.191999868</float>
+    <float>-0.0405000076</float>
+    <float>-0.154124871</float>
+  </fitnessValues>
+  <captureRate>600</captureRate>
+</SerializableFitnessValues>

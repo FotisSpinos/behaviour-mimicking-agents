@@ -14,12 +14,9 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 {
     // the instance of the environment master
     private static EnvironmentMaster instance;
-   
-    // check if we are recording
-    private bool isRecording;
 
     // a reference to the recorder
-    private StateRecorder recorder;
+    protected StateRecorder recorder;
 
     // the vehicle controller operated by the user
     private VehicleController userVehicleController;
@@ -78,7 +75,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
 
         if(recorder.GetRecording())
         {
-            StatesManager.GetInstance().AddSerializableAgentState(new SerializableAgentStates());
+            LoadedStates.GetInstance().AddSerializableAgentState(new SerializableAgentStates());
         }
 
         // save data if we stop recording

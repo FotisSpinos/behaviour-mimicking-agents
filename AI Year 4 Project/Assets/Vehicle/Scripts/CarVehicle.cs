@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(Rigidbody))]
-public class CarVehicle : MonoBehaviour, Vehicle
+public class CarVehicle : AbstractVehicle  
 {
     private Rigidbody rb;
 
@@ -39,7 +39,7 @@ public class CarVehicle : MonoBehaviour, Vehicle
     /// </summary>
     /// <param name="steeringAmount"> the amount the vehicle steers. When the variable is less than 0.5 the agent will steer to the left</param>
     /// <param name="speed"></param>
-    public void SetVehicleInput(params float[] parameters)
+    public override void SetVehicleInput(params float[] parameters)
     {
         if(parameters == null || parameters.Length != 2)
         {
@@ -79,7 +79,7 @@ public class CarVehicle : MonoBehaviour, Vehicle
 
     // Getters
 
-    public Vector3 GetVelocity()
+    public override Vector3 GetVelocity()
     {
         return rb.velocity;
     }
@@ -89,17 +89,17 @@ public class CarVehicle : MonoBehaviour, Vehicle
         return transform.rotation.eulerAngles;
     }
 
-    public Vector3 GetPosition()
+    public override Vector3 GetPosition()
     {
         return transform.position;
     }
 
-    public float GetMaxSpeed()
+    public override float GetMaxSpeed()
     {
         return maxSpeed;
     }
 
-    public GameObject GetGameObject()
+    public override GameObject GetGameObject()
     {
         return gameObject;
     }
@@ -110,13 +110,18 @@ public class CarVehicle : MonoBehaviour, Vehicle
             isColliding = true;
     }
 
-    public bool IsColliding()
+    public override bool IsColliding()
     {
         return isColliding;
     }
 
-    public void ImpactRecorded()
+    public override void ImpactRecorded()
     {
         isColliding = false;
+    }
+
+    public override void SetVeolcity(Vector3 velocity)
+    {
+        throw new System.NotImplementedException();
     }
 }

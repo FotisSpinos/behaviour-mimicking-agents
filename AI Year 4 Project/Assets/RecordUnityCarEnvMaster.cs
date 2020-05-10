@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecordUnityCarEnvMaster : RecordingEnvironmentMaster
+public class RecordUnityCarEnvMaster : BaseEnvironmentMaster
 {
-    [SerializeField] private UnityCar unityVehicle;
+    [SerializeField] private UnityVehicle unityVehicle;
     private VehicleController carUserController;
+
+    [SerializeField] RecorderUIHandler recorderUIHandler;
+
+    private UnityCarStateRecorder recorder;
 
     public override DummyCarController GetDummyCarController()
     {
@@ -17,12 +21,14 @@ public class RecordUnityCarEnvMaster : RecordingEnvironmentMaster
         carUserController = new UnityCarUserController();
         carUserController.InitController(unityVehicle);
 
-        recordButton.onClick.AddListener(OnStartRecordingPressed);
-        recordButtonText.text = "Start Recording";
+        recorder = new UnityCarStateRecorder(unityVehicle);
+
+        recorderUIHandler.StateRecorder = recorder;
     }
 
     public override void UpdateEnvironmentMaster()
     {
+        recorder.UpdateRecorder(Time.deltaTime);
         carUserController.UpdateController();
     }
 }

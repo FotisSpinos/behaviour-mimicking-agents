@@ -9,7 +9,7 @@ using System;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
-public class AgentCar : AgentCarController
+public class AgentCar : AbstractAgentCarController
 {
     // A reference to the vehicle "driven" by the agent
     private Vehicle car;
@@ -109,6 +109,8 @@ public class AgentCar : AgentCarController
         transform.localPosition = dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
         agentRig.velocity = dummyCarController.GetCurrentVelocity();
+
+        //vehicle should have attribute to set velocity
     }
 
     // Manual control

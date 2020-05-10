@@ -5,16 +5,16 @@ using MLAgents;
 
 public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
 {
+    [SerializeField] protected AbstractAgentCarController agentCarController;
+
     [SerializeField] private GameObject physicsBoxPrefub;
 
-    [SerializeField] private CarVehicle targetVehicle;
+    [SerializeField] private AbstractVehicle targetVehicle;
 
     private EnvironmentActionController actionController;
     private DummyCarController dummyCarController;
 
-    private VehicleController agentVehicleController;
-
-    [SerializeField] private CarVehicle agentCarVehicle;
+    [SerializeField] private AbstractVehicle agentCarVehicle;
 
     override public void InitEnvironmentMaster()
     {
@@ -22,12 +22,13 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
         dummyCarController = new DummyCarController();
         dummyCarController.InitController(targetVehicle);
         dummyCarController.UpdateController();
+        dummyCarController.EnableRandomAnimIndex = true;
 
-        // AutomaticSteppingEnabled 
-        // Academy.Instance.AutomaticSteppingEnabled = false;
+        // init agent 
+        // agentCarControllers = new AbstractAgentCarController[agentCarVehicles.Length];
 
-        // init agent car
         agentCarController.InitController(agentCarVehicle);
+        agentCarVehicle.GetGameObject().SetActive(true);
     }
 
     override public void UpdateEnvironmentMaster()

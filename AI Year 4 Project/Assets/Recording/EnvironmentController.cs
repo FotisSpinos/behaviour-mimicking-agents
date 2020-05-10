@@ -48,7 +48,8 @@ public class EnvironmentController : MonoBehaviour
         // Load animations
         foreach (string directory in animDirectories)
         {
-            XmlReadWrite.GetInstance().LoadAllXmlFiles(directory);
+            XmlReadWrite.GetInstance().LoadAllStates(directory);
+            XmlReadWrite.GetInstance().LoadAllUnityVehicleStates(directory);
         }
 
         // Destroy other environment controllers
@@ -76,7 +77,7 @@ public class EnvironmentController : MonoBehaviour
             bem.InitEnvironmentMaster();
         }
 
-        agentAnalytics = new AgentAnalytics(environmentMasters, analyticsCaptureRate);
+        agentAnalytics = new AgentAnalytics(analyticsCaptureRate);
     }
 
     private void FixedUpdate()

@@ -330,6 +330,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 6466525179308599888, guid: dbcaa7663636fc6459638f164abe6e57,
+        type: 3}
+      propertyPath: directoryInputField
+      value: 
+      objectReference: {fileID: 4092093629100501597}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbcaa7663636fc6459638f164abe6e57, type: 3}
 --- !u!1001 &4092093629100501596
@@ -451,3 +456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37d1d3253b71a0b4c93d5cb3a0968aa3, type: 3}
+--- !u!114 &4092093629100501597 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4092093630419432827, guid: 37d1d3253b71a0b4c93d5cb3a0968aa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4092093629100501596}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -363,5 +363,89 @@ namespace UnityStandardAssets.Vehicles.Car
             }
             return false;
         }
+        [Serializable]
+        public struct Atributes
+        {
+            public Quaternion[] m_WheelMeshLocalRotations;
+            public float m_SteerAngle;
+            public int m_GearNum;
+            public float m_GearFactor;
+            public float m_OldRotation;
+            public float m_CurrentTorque;
+            public Vector3 localPosition;
+            public Vector3 localEulerAngles;
+            public Vector3 velocity;
+            public Vector3 angularVelocity;
+        }
+
+        public void SetCarControllerAtr(Atributes atr)
+        {
+            // Create new m_WheelMeshLocalRotations if the object has not been initialized 
+            if(m_WheelMeshLocalRotations == null)
+            {
+                m_WheelMeshLocalRotations = new Quaternion[4];
+            }
+
+            // apply the rotation of every wheel
+            m_WheelMeshLocalRotations = atr.m_WheelMeshLocalRotations;
+
+            for (int i = 0; i < 4; i++)
+            {
+                m_WheelMeshes[i].transform.localRotation = m_WheelMeshLocalRotations[i];
+            }
+
+            // update car controller attributes 
+            m_SteerAngle = atr.m_SteerAngle;
+            m_GearNum = atr.m_GearNum;
+            m_GearFactor = atr.m_GearFactor;
+            m_OldRotation = atr.m_OldRotation;
+            m_CurrentTorque = atr.m_CurrentTorque;
+
+            // update rigidbody
+            if (m_Rigidbody == null)
+                m_Rigidbody = GetComponent<Rigidbody>();
+            m_Rigidbody.velocity = atr.velocity;
+            m_Rigidbody.angularVelocity = atr.angularVelocity;
+
+            // update transform
+            transform.localPosition = atr.localPosition;
+            transform.localEulerAngles = atr.localEulerAngles;
+        }
+
+        public Atributes GetCarControllerAtr()
+        {
+            Atributes currentAtributes = new Atributes();
+
+            if (m_WheelMeshLocalRotations != null)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    m_WheelMeshLocalRotations[i] = m_WheelMeshes[i].transform.localRotation;
+                }
+            }
+
+            currentAtributes.m_WheelMeshLocalRotations = new Quaternion[4];
+            for (int i = 0; i < 4; i++)
+            {
+                currentAtributes.m_WheelMeshLocalRotations[i] = m_WheelMeshes[i].transform.localRotation;
+            }
+
+
+            currentAtributes.m_SteerAngle = m_SteerAngle;
+            currentAtributes.m_GearNum = m_GearNum;
+            currentAtributes.m_GearFactor = m_GearFactor;
+            currentAtributes.m_OldRotation = m_OldRotation;
+            currentAtributes.m_CurrentTorque = m_CurrentTorque;
+            currentAtributes.localPosition = transform.localPosition;
+            currentAtributes.localEulerAngles = transform.localEulerAngles;
+
+            if (m_Rigidbody == null)
+                m_Rigidbody = GetComponent<Rigidbody>();
+
+            currentAtributes.velocity = m_Rigidbody.velocity;
+            currentAtributes.angularVelocity = m_Rigidbody.angularVelocity;
+
+            return currentAtributes;
+        }
     }
 }

@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateRecorder
+public class StateRecorder : AbstractRecorder
 {
     [SerializeField] private Rigidbody recordingObjectRig;
-    private bool isRecording;
-    private SerializableAgentStates serializableAgentStates;
-    private SerializableImpactPoints serializableImpactPoints;
+
     private float fixedTimeInterval;
     private float progression;
     private Vehicle recordingVehicle;
-    private long updateCounter;
+
+    // Storing data
+    private SerializableAgentStates serializableAgentStates;
+    private SerializableImpactPoints serializableImpactPoints;
 
     public StateRecorder(Vehicle recordingVehicle, float fixedTimeInterval)
     {
-        updateCounter = 0;
         isRecording = false;
 
         this.recordingVehicle = recordingVehicle;
@@ -32,32 +32,11 @@ public class StateRecorder
         this.fixedTimeInterval = fixedTimeInterval;
     }
 
-    public void SetRecording(bool isRecording)
-    {
-        this.isRecording = isRecording;
-    }
-
-    public void UpdateRecorder(float deltaTime)
-    {
-        progression += deltaTime;
-
-        if (progression <= fixedTimeInterval)
-            return;
-        progression = 0;
-
-        if (!isRecording)
-            return;
-
-        RecordState();
-    }
-
-    private void RecordState()
+    protected override void RecordState()
     {
         // check does not allow to record animation states exceeding 10 seconds
-        if (serializableAgentStates.states.Count >= 50 * 10)
+        if (serializableAgentStates.states.Count >= 50 * 60)
             return;
-
-        updateCounter++;
 
         AgentState state = new AgentState();
 
@@ -67,7 +46,7 @@ public class StateRecorder
 
 
         if (recordingVehicle.IsColliding())
-            serializableImpactPoints.impactPoitns.Add(Time.realtimeSinceStartup);    //updateCounter * fixedTimeInterval
+            serializableImpactPoints.impactPoitns.Add(Time.realtimeSinceStartup);
 
         serializableAgentStates.states.Add(state);
         recordingVehicle.ImpactRecorded();
@@ -80,13 +59,8 @@ public class StateRecorder
         */
     }
 
-    public void StopRecorder()
-    {
-        isRecording = false;
-    }
-
     // stores states and impact points in an xml file
-    public void StoreStates(string directoryName, string fileName, PathBuilder.FileTypes fileType)
+    public override void StoreStates(string directoryName, string fileName, PathBuilder.FileTypes fileType)
     {
         isRecording = false;
 
@@ -98,7 +72,7 @@ public class StateRecorder
         XmlReadWrite.GetInstance().SaveStates(path, serializableAgentStates);
     }
 
-    public void StoreImpactPoints(string directoryName, string fileName, PathBuilder.FileTypes fileType)
+    public override void StoreImpactPoints(string directoryName, string fileName, PathBuilder.FileTypes fileType)
     {
         isRecording = false;
 
@@ -110,14 +84,8 @@ public class StateRecorder
         XmlReadWrite.GetInstance().SaveImpactPoints(path, serializableImpactPoints);
     }
 
-    public void ClearRecordedData()
+    public override void ClearRecordedData()
     {
         serializableAgentStates.states.Clear();
-    }
-
-    /* GETTERS */
-    public bool GetRecording()
-    {
-        return isRecording;
     }
 }

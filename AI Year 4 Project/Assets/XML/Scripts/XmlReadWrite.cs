@@ -5,6 +5,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using System;
+using UnityStandardAssets.Vehicles.Car;
 
 public class XmlReadWrite
 {
@@ -57,6 +58,25 @@ public class XmlReadWrite
         Debug.Log("Data saved");
     }
 
+    public void SaveCarControllerAtributes(string path, SerCarControllerAtr atr)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(SerCarControllerAtr));
+
+        FileInfo file = new FileInfo(path);
+
+        FileMode currentMode = FileMode.CreateNew;
+        if (file.Exists)
+            currentMode = FileMode.Open;
+
+        file.Directory.Create();
+        FileStream stream = new FileStream(path, currentMode); //Filemode Create ovewrites
+
+        serializer.Serialize(stream, atr);
+        stream.Close();
+
+        Debug.Log("Data saved");
+    }
+
     public void SaveFitnessValues(string path, SerializableFitnessValues serializableFitnessValues)
     {
         XmlSerializer serializer = new XmlSerializer(typeof(SerializableFitnessValues));
@@ -76,21 +96,31 @@ public class XmlReadWrite
         Debug.Log("Fitness value stored: " + serializableFitnessValues.fitnessValues);
     }
 
-    public void LoadAllXmlFiles(string directoryName)
+    public void LoadAllStates(string directoryName)
     {
         string path = PathBuilder.CreateDirectoryPath(PathBuilder.FileTypes.ANIMATION_DATA, directoryName);
         string[] fileEntries = Directory.GetFiles(path);
         foreach (string fileName in fileEntries)
         {
             if(fileName.EndsWith(".xml"))
-                Load(fileName);
+                LoadStates(fileName);
         }
     }
 
-    public void Load(string path)
+    public void LoadAllUnityVehicleStates(string directoryName)
     {
+        string path = PathBuilder.CreateDirectoryPath(PathBuilder.FileTypes.ANIMATION_DATA, directoryName);
+        string[] fileEntries = Directory.GetFiles(path);
+        foreach (string fileName in fileEntries)
+        {
+            if (fileName.EndsWith(".xml"))
+                LoadUnityVehicleStates(fileName);
+        }
+    }
 
-        XmlSerializer serializer = new XmlSerializer(typeof(SerializableAgentStates));
+    public void LoadUnityVehicleStates(string path)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(SerCarControllerAtr));
 
         FileInfo file = new FileInfo(path);
 
@@ -100,12 +130,11 @@ public class XmlReadWrite
             return;
         }
 
-        //FileStream stream = new FileStream(path, FileMode.Open); //Filemode Create ovewrites
         StreamReader reader = new System.IO.StreamReader(path);
 
         try
         {
-            StatesManager.GetInstance().AddSerializableAgentState(serializer.Deserialize(reader) as SerializableAgentStates);
+            LoadedVehicleStates.GetInstance().AddSerializableAgentState(serializer.Deserialize(reader) as SerCarControllerAtr);
         }
         catch (Exception c)
         {
@@ -118,7 +147,37 @@ public class XmlReadWrite
         reader.Close();
 
         Debug.Log("Data loaded from: " + file.FullName);
+    }
 
+    public void LoadStates(string path)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(SerializableAgentStates));
+
+        FileInfo file = new FileInfo(path);
+
+        if (!file.Exists)
+        {
+            Debug.Log("File does not exist: " + path);
+            return;
+        }
+
+        StreamReader reader = new System.IO.StreamReader(path);
+
+        try
+        {
+            LoadedStates.GetInstance().AddSerializableAgentState(serializer.Deserialize(reader) as SerializableAgentStates);
+        }
+        catch (Exception c)
+        {
+            Debug.LogWarning("Exception occured while reading file: " + path);
+            Debug.LogWarning(c.ToString());
+            reader.Close();
+            return;
+        }
+
+        reader.Close();
+
+        Debug.Log("Data loaded from: " + file.FullName);
     }
 }
 
@@ -150,4 +209,10 @@ public class SerializableImpactPoints
 {
     public List<float> impactPoitns = new List<float>();
     public float captureRate = 0.0f;
+}
+
+[Serializable]
+public class SerCarControllerAtr
+{
+    public List<CarController.Atributes> carContrAtr = new List<CarController.Atributes>();
 }

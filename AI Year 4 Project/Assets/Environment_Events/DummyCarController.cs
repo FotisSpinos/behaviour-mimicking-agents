@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Vehicles.Car;
 
 /*
  * A vehicle controller following a fixed instructions. To be used by the dummy car in the training scene 
@@ -39,13 +40,13 @@ public class DummyCarController : VehicleController
 
     public void UpdateController()
     {
-        int endAnimIndex = StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count;
+        int endAnimIndex = LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states.Count;
 
         if (stateIndex < endAnimIndex)
         {
             stateIndex++;
 
-            AgentState currentState = StatesManager.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1];
+            AgentState currentState = LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1];
 
             // apply the animation state to the agent object
             vehicle.GetGameObject().transform.localPosition = currentState.position;
@@ -61,16 +62,16 @@ public class DummyCarController : VehicleController
 
     public void ResetVehicleController()
     {
-        if (StatesManager.GetInstance().GetSerializableAgentStates().Count == 0)
+        if (LoadedStates.GetInstance().GetSerializableAgentStates().Count == 0)
             return;
 
         // choose random animation
-        animIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentStates().Count - 1);
+        animIndex = Random.Range(0, LoadedStates.GetInstance().GetSerializableAgentStates().Count - 1);
 
         if (enableRandomAnimIndex)
         {
             // choose random point in the selected animation
-            stateIndex = Random.Range(0, StatesManager.GetInstance().GetSerializableAgentState(animIndex).states.Count - 1);
+            stateIndex = Random.Range(0, LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states.Count - 1);
         }
         else
         {
@@ -88,6 +89,6 @@ public class DummyCarController : VehicleController
 
     public Vector3 GetCurrentVelocity()
     {
-        return StatesManager.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1].velocity;
+        return LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1].velocity;
     }
 }

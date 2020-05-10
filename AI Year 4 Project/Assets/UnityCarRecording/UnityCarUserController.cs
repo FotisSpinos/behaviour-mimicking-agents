@@ -31,7 +31,7 @@ public class UnityCarUserController : VehicleController
         float v = CrossPlatformInputManager.GetAxis("Vertical");
 #if !MOBILE_INPUT
         float handbrake = CrossPlatformInputManager.GetAxis("Jump");
-        vehicle.SetVehicleInput(h, v, v, handbrake);
+        vehicle.SetVehicleInput(h, v, handbrake);
 #else
             m_Car.Move(h, v, v, 0f);
 #endif

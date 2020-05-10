@@ -6,6 +6,8 @@ public interface Vehicle
 {
     void SetVehicleInput(params float[] list);
 
+    void SetVeolcity(Vector3 velocity);
+
     Vector3 GetVelocity();
 
     Vector3 GetPosition();

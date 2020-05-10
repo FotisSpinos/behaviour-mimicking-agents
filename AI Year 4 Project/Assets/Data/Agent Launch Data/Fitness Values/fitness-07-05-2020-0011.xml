@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<SerializableFitnessValues xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fitnessValues>
+    <float>-0.07657138</float>
+  </fitnessValues>
+  <captureRate>600</captureRate>
+</SerializableFitnessValues>

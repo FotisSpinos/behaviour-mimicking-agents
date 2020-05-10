@@ -12,14 +12,19 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
     private TeleportAction teleportAction;
     private InvisibleForceAction invisibleForceAction;
 
-    [SerializeField] private DummyCarController dummyCarController;
+    [SerializeField] private UnityDummyCar dummyCarController;
 
-    [SerializeField] private AgentCarController agentCar;
+    [SerializeField] private AbstractAgentCarController agentCar;
 
     private StateRecorder agentRecorder;
     private StateRecorder dummyCarRecorder;
 
     public override DummyCarController GetDummyCarController()
+    {
+        return null;
+    }
+
+    public UnityDummyCar GetUnityDummyCar()
     {
         return dummyCarController;
     }
@@ -29,8 +34,8 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         Rigidbody agentRig = agentCar.GetComponent<Rigidbody>();
 
         // init dummy car controller
-        dummyCarController = new DummyCarController();
-        dummyCarController.InitController(dummyCarRig.GetComponent<CarVehicle>());
+        dummyCarController = new UnityDummyCar(dummyCarRig.GetComponent<UnityVehicle>());
+        dummyCarController.InitController(dummyCarRig.GetComponent<UnityVehicle>());
         dummyCarController.EnableRandomAnimIndex = false;
         dummyCarController.UpdateController();
 

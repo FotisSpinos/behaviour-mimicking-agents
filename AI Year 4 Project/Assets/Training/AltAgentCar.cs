@@ -6,7 +6,7 @@ using System;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
-public class AltAgentCar : AgentCarController
+public class AltAgentCar : AbstractAgentCarController
 {
     // A reference to the vehicle "driven" by the agent
     private Vehicle car;
