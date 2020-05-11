@@ -48,6 +48,9 @@ public class AgentCar : AbstractAgentCarController
 
     public override void AgentAction(float[] vectorAction)
     {
+        if(car == null || dummyCar == null)
+            return;
+            
         // increase velocities so that the agent can catch up to the dummy car
         float forwardAmount = vectorAction[0] * 1.1f;
         float steerAmount = vectorAction[1] * 1.1f;
@@ -77,8 +80,8 @@ public class AgentCar : AbstractAgentCarController
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        //if (sensor == null || agentRig == null)
-        //    return;
+        if (agentRig == null)
+            return;
 
         // pass agent information
         sensor.AddObservation(transform.localPosition);
@@ -109,8 +112,6 @@ public class AgentCar : AbstractAgentCarController
         transform.localPosition = dummyCar.transform.localPosition;
         transform.localRotation = dummyCar.transform.localRotation;
         agentRig.velocity = dummyCarController.GetCurrentVelocity();
-
-        //vehicle should have attribute to set velocity
     }
 
     // Manual control

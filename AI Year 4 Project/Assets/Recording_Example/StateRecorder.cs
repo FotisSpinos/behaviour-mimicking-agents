@@ -64,10 +64,13 @@ public class StateRecorder : AbstractRecorder
     {
         isRecording = false;
 
+        if(serializableAgentStates.states.Count == 0)
+            return;
+
         string path = PathBuilder.CreateXmlFilePath(fileType,
             directoryName,
             fileName,
-            false);
+            true);
 
         XmlReadWrite.GetInstance().SaveStates(path, serializableAgentStates);
     }
@@ -76,10 +79,13 @@ public class StateRecorder : AbstractRecorder
     {
         isRecording = false;
 
+        if(serializableImpactPoints.impactPoitns.Count == 0)
+            return;
+
         string path = PathBuilder.CreateXmlFilePath(fileType,
             directoryName,
             fileName,
-            false);
+            true);
 
         XmlReadWrite.GetInstance().SaveImpactPoints(path, serializableImpactPoints);
     }

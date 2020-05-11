@@ -329,7 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f730b3d371d2d418f76fd176d71eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentCarController: {fileID: 2045751214}
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   dummyCarRig: {fileID: 2102157684}
@@ -359,6 +358,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 396504969900642380, guid: 34ba430e2a060d24aac5592f35052dd1,
+        type: 3}
+      propertyPath: m_Name
+      value: Launch environment master
+      objectReference: {fileID: 0}
     - target: {fileID: 396504969910133961, guid: 34ba430e2a060d24aac5592f35052dd1,
         type: 3}
       propertyPath: animDirectories.Array.size
