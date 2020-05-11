@@ -4,17 +4,16 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Vehicles.Car;
 
-
-public class UnityCarUserController : VehicleController
+public class UserUnityVehicleController : VehicleController
 {
-    private Vehicle vehicle;
+    private AbstractVehicle vehicle;
 
-    public UnityCarUserController()
+    public UserUnityVehicleController()
     {
 
     }
 
-    public void InitController(Vehicle vehicle)
+    public void InitController(AbstractVehicle vehicle)
     {
         this.vehicle = vehicle;
     }
@@ -26,7 +25,6 @@ public class UnityCarUserController : VehicleController
 
     public void UpdateController()
     {
-        // pass the input to the car!
         float h = CrossPlatformInputManager.GetAxis("Horizontal");
         float v = CrossPlatformInputManager.GetAxis("Vertical");
 #if !MOBILE_INPUT

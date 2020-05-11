@@ -478,6 +478,27 @@ MonoBehaviour:
   m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &724629215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1424839145614056830, guid: afbe848825ed3624d9d7dc75d073ad19,
+    type: 3}
+  m_PrefabInstance: {fileID: 6037377714037462448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &724629217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724629215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3c32deeda1599449197fa6df8affbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recorderUIHandler: {fileID: 65831893}
+  recordingVeh: {fileID: 1369665519}
+  userControllerKey: UNITY_CAR_VEHICLE_CONTROLLER
 --- !u!114 &859967345 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4092093629290532463, guid: 37d1d3253b71a0b4c93d5cb3a0968aa3,
@@ -601,7 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animDirectories: []
-  analyticsCaptureRate: 0
+  analyticsCaptureRate: 0.2
   training: 0
   description: Unity Car Controller - Recording
 --- !u!4 &1353713407
@@ -871,5 +892,6 @@ PrefabInstance:
       propertyPath: recorderUIHandler
       value: 
       objectReference: {fileID: 65831893}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1424839145614056831, guid: afbe848825ed3624d9d7dc75d073ad19, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: afbe848825ed3624d9d7dc75d073ad19, type: 3}

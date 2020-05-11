@@ -7,38 +7,21 @@ using UnityStandardAssets.Vehicles.Car;
  * A vehicle controller following a fixed instructions. To be used by the dummy car in the training scene 
  */
 
-public class DummyCarController : VehicleController
+public class SimpleDummyCarController : AbstractDummyCarController
 {
-    private Vehicle vehicle;
+    private AbstractVehicle vehicle;
 
-    private int animIndex;
-    private int stateIndex;
-
-    private bool enableRandomAnimIndex;
-
-    public bool EnableRandomAnimIndex
-    {
-        set
-        {
-            enableRandomAnimIndex = value;
-        }
-    }
-
-
-    public delegate void Reset();
-    public event Reset OnReset;
-
-    public DummyCarController()
+    public SimpleDummyCarController()
     {
         enableRandomAnimIndex = true;
     }
 
-    public void InitController(Vehicle vehicle)
+    public override void InitController(AbstractVehicle vehicle)
     {
         this.vehicle = vehicle;
     }
 
-    public void UpdateController()
+    public override void UpdateController()
     {
         int endAnimIndex = LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states.Count;
 
@@ -55,12 +38,11 @@ public class DummyCarController : VehicleController
         else
         {
             ResetVehicleController();
-
-            OnReset?.Invoke();
+            OnResetOccured();
         }
     }
 
-    public void ResetVehicleController()
+    public override void ResetVehicleController()
     {
         if (LoadedStates.GetInstance().GetSerializableAgentStates().Count == 0)
             return;
@@ -82,12 +64,12 @@ public class DummyCarController : VehicleController
         UpdateController();
     }
 
-    public Vehicle GetVehicle()
+    public override AbstractVehicle GetVehicle()
     {
         return vehicle;
     }
 
-    public Vector3 GetCurrentVelocity()
+    public override Vector3 GetCurrentVelocity()
     {
         return LoadedStates.GetInstance().GetSerializableAgentState(animIndex).states[stateIndex - 1].velocity;
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public interface VehicleController
 {
     void UpdateController();
-    void InitController(Vehicle vehicle);
+    void InitController(AbstractVehicle vehicle);
 
     void ResetVehicleController();
 }

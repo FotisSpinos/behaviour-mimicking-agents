@@ -8,13 +8,13 @@ public class StateRecorder : AbstractRecorder
 
     private float fixedTimeInterval;
     private float progression;
-    private Vehicle recordingVehicle;
+    private AbstractVehicle recordingVehicle;
 
     // Storing data
     private SerializableAgentStates serializableAgentStates;
     private SerializableImpactPoints serializableImpactPoints;
 
-    public StateRecorder(Vehicle recordingVehicle, float fixedTimeInterval)
+    public StateRecorder(AbstractVehicle recordingVehicle, float fixedTimeInterval)
     {
         isRecording = false;
 
@@ -52,11 +52,11 @@ public class StateRecorder : AbstractRecorder
         recordingVehicle.ImpactRecorded();
 
         /* FOR DEBUGGING ONLY - REMOVE LATER */
-        /*
+        
         Debug.Log("position: " + recordingObjectRig.gameObject.transform.position +
             "rotation: " + recordingObjectRig.gameObject.transform.rotation.eulerAngles +
             "velocity: " + recordingObjectRig.velocity);   
-        */
+        
     }
 
     // stores states and impact points in an xml file

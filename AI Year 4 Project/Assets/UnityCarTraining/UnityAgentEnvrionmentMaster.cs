@@ -11,16 +11,16 @@ public class UnityAgentEnvrionmentMaster : BaseEnvironmentMaster
     [SerializeField] private UnityVehicle targetVehicle;
 
     private EnvironmentActionController actionController;
-    private UnityDummyCar dummyCarController;
+    private UnityDummyCarController dummyCarController;
 
     [SerializeField] private AbstractVehicle agentCarVehicle;
 
-    public override DummyCarController GetDummyCarController()
+    public override AbstractDummyCarController GetDummyCarController()
     {
         throw new System.NotImplementedException();
     }
 
-    public UnityDummyCar GetUnityDummyCar()
+    public UnityDummyCarController GetUnityDummyCar()
     {
         return dummyCarController;
     }
@@ -28,7 +28,7 @@ public class UnityAgentEnvrionmentMaster : BaseEnvironmentMaster
     override public void InitEnvironmentMaster()
     {
         // init dummy car
-        dummyCarController = new UnityDummyCar(targetVehicle);
+        dummyCarController = new UnityDummyCarController();
         dummyCarController.InitController(targetVehicle);
         dummyCarController.UpdateController();
         dummyCarController.EnableRandomAnimIndex = true;

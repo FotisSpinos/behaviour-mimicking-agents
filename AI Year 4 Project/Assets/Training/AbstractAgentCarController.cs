@@ -11,7 +11,7 @@ public abstract class AbstractAgentCarController : Agent, VehicleController
     {
         get { return fitness; }
     }
-    public virtual void InitController(Vehicle vehicle)
+    public virtual void InitController(AbstractVehicle vehicle)
     {
         throw new NotImplementedException();
     }

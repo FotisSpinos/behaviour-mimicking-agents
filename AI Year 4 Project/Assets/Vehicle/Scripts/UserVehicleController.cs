@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class UserVehicleController : MonoBehaviour, VehicleController
 {
-    private Vehicle vehicle;
+    private AbstractVehicle vehicle;
 
-    public UserVehicleController(Vehicle vehicle)
+    public void InitController(AbstractVehicle vehicle)
     {
         this.vehicle = vehicle;
-    }
-
-    public void InitController(Vehicle vehicle)
-    {
-        
     }
 
     public void ResetVehicleController()

@@ -24,6 +24,7 @@ public class RecorderUIHandler : MonoBehaviour
     public void Start()
     {
         recordButton.onClick.AddListener(OnStartRecordingPressed);
+        recordButtonText.text = "Start Recording";
     }
 
     protected void OnStartRecordingPressed()
@@ -35,14 +36,10 @@ public class RecorderUIHandler : MonoBehaviour
         }
 
         stateRecorder.SetRecording(!stateRecorder.GetRecording());
+        
         Debug.Log("Recorder Started");
 
         recordButtonText.text = "Stop Recording";
-
-        if (stateRecorder.GetRecording())
-        {
-            LoadedStates.GetInstance().AddSerializableAgentState(new SerializableAgentStates());
-        }
 
         // save data if we stop recording
         if (!stateRecorder.GetRecording())

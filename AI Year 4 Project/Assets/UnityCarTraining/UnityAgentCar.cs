@@ -8,13 +8,13 @@ using UnityStandardAssets.Vehicles.Car;
 public class UnityAgentCar : AbstractAgentCarController
 {
     // A reference to the vehicle "driven" by the agent
-    private Vehicle agentVehicle;
+    private AbstractVehicle agentVehicle;
 
     // a reference to the dummy car
-    private UnityDummyCar unityDummyCarController;
+    private UnityDummyCarController unityDummyCarController;
 
     // a reference to the environment
-    [SerializeField] private UnityAgentEnvrionmentMaster environment;
+    [SerializeField] private TrainingEnvironmnetMaster environment;
 
     // the agent's rigidbody
     private Rigidbody agentRig;
@@ -33,12 +33,12 @@ public class UnityAgentCar : AbstractAgentCarController
     [SerializeField] CarController agentCarController;
     private CarController.Atributes carControllerAtr;
 
-    public override void InitController(Vehicle vehicle)
+    public override void InitController(AbstractVehicle vehicle)
     {
         // Set class attributes
         this.agentVehicle = GetComponent<UnityVehicle>();
 
-        unityDummyCarController = environment.GetUnityDummyCar();
+        unityDummyCarController = (UnityDummyCarController) environment.GetDummyCarController();
         dummyCar = unityDummyCarController.GetVehicle().GetGameObject();
 
         transform.localPosition = dummyCar.transform.position;
@@ -49,7 +49,7 @@ public class UnityAgentCar : AbstractAgentCarController
         carControllerAtr = agentCarController.GetCarControllerAtr();
 
         // subscribe to the animation reset event
-        environment.GetUnityDummyCar().OnReset += AgentReset;
+        unityDummyCarController.ResetOccuredEvent += AgentReset;
     }
 
     public override void ResetVehicleController(){}
@@ -81,6 +81,8 @@ public class UnityAgentCar : AbstractAgentCarController
 
     public override void AgentAction(float[] vectorAction)
     {
+        if(agentVehicle == null)
+            return;
         agentVehicle.SetVehicleInput(vectorAction); 
 
         // measure the distance in position and rotation
@@ -105,7 +107,8 @@ public class UnityAgentCar : AbstractAgentCarController
     {
         if(agentRig == null)
         {
-            this.InitController(null);
+            //this.InitController(null);
+            return;
         }
 
         carControllerAtr = agentCarController.GetCarControllerAtr();

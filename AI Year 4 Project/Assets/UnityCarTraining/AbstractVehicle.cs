@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AbstractVehicle : MonoBehaviour, Vehicle
+public abstract class AbstractVehicle : MonoBehaviour
 {
     public AbstractVehicle() { }
 

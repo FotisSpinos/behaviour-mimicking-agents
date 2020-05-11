@@ -7,26 +7,23 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
 {
     [SerializeField] protected AbstractAgentCarController agentCarController;
 
-    [SerializeField] private GameObject physicsBoxPrefub;
-
     [SerializeField] private AbstractVehicle targetVehicle;
 
-    private EnvironmentActionController actionController;
-    private DummyCarController dummyCarController;
+    private AbstractDummyCarController dummyCarController;
 
     [SerializeField] private AbstractVehicle agentCarVehicle;
+
+    [SerializeField] private string dummyCarKey; 
 
     override public void InitEnvironmentMaster()
     {
         // init dummy car
-        dummyCarController = new DummyCarController();
+        dummyCarController = VehicleControllerFactory.CreateDummyCar(dummyCarKey);
         dummyCarController.InitController(targetVehicle);
         dummyCarController.UpdateController();
         dummyCarController.EnableRandomAnimIndex = true;
 
         // init agent 
-        // agentCarControllers = new AbstractAgentCarController[agentCarVehicles.Length];
-
         agentCarController.InitController(agentCarVehicle);
         agentCarVehicle.GetGameObject().SetActive(true);
     }
@@ -40,7 +37,7 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
         // Academy.Instance.EnvironmentStep();
     }
 
-    override public DummyCarController GetDummyCarController()
+    override public AbstractDummyCarController GetDummyCarController()
     {
         return dummyCarController;
     }

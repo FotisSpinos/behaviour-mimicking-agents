@@ -11,14 +11,14 @@ public class RecordUnityCarEnvMaster : BaseEnvironmentMaster
 
     private UnityCarStateRecorder recorder;
 
-    public override DummyCarController GetDummyCarController()
+    public override AbstractDummyCarController GetDummyCarController()
     {
         throw new System.NotImplementedException();
     }
 
     public override void InitEnvironmentMaster()
     {
-        carUserController = new UnityCarUserController();
+        carUserController = new UserUnityVehicleController();
         carUserController.InitController(unityVehicle);
 
         recorder = new UnityCarStateRecorder(unityVehicle);

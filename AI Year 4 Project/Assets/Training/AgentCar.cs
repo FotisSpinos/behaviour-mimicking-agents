@@ -12,10 +12,10 @@ using System;
 public class AgentCar : AbstractAgentCarController
 {
     // A reference to the vehicle "driven" by the agent
-    private Vehicle car;
+    private AbstractVehicle car;
 
     // a reference to the dummy car
-    private DummyCarController dummyCarController;
+    private AbstractDummyCarController dummyCarController;
 
     /*
      * It was noted that the update and AgentAction were not synchronized
@@ -129,7 +129,7 @@ public class AgentCar : AbstractAgentCarController
         throw new NotImplementedException();
     }
 
-    public override void InitController(Vehicle vehicle)
+    public override void InitController(AbstractVehicle vehicle)
     {
         // add car vehicle to this game object
         car = vehicle;
@@ -144,7 +144,7 @@ public class AgentCar : AbstractAgentCarController
         agentRig = GetComponent<Rigidbody>();
 
         // subscribe to the animation reset event
-        environment.GetDummyCarController().OnReset += AgentReset;
+        environment.GetDummyCarController().ResetOccuredEvent += AgentReset;
     }
 
     public override void ResetVehicleController()

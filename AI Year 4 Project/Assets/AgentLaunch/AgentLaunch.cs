@@ -9,11 +9,11 @@ public class AgentLaunch : Agent
     [SerializeField] private TrainingEnvironmnetMaster environment;
 
     // A reference to the vehicle "driven" by the agent
-    private Vehicle car;
+    private AbstractVehicle car;
 
     [SerializeField] private GameObject dummyCar;
 
-    private DummyCarController dummyCarController;
+    private AbstractDummyCarController dummyCarController;
 
     private Rigidbody agentRig;
 
@@ -30,7 +30,7 @@ public class AgentLaunch : Agent
 
         dummyCarController = environment.GetDummyCarController();
 
-        environment.GetDummyCarController().OnReset += AgentReset;
+        environment.GetDummyCarController().ResetOccuredEvent += AgentReset;
     }
 
     public override void AgentAction(float[] vectorAction)

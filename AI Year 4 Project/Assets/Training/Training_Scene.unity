@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -303,6 +308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -409,6 +419,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -513,6 +528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -619,6 +639,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -723,6 +748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -833,6 +863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608297744866958, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -953,6 +988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -1128,6 +1168,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -1232,6 +1277,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -1338,6 +1388,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -1442,6 +1497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -1548,6 +1608,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -1652,6 +1717,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -1806,6 +1876,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -1910,6 +1985,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -2016,6 +2096,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -2120,6 +2205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -2226,6 +2316,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -2330,6 +2425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -2436,6 +2536,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -2540,6 +2645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -2646,6 +2756,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -2750,6 +2865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -2856,6 +2976,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -2960,6 +3085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -3066,6 +3196,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -3171,6 +3306,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -3275,6 +3415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -3463,6 +3608,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -3567,6 +3717,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -3673,6 +3828,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -3777,6 +3937,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -3883,6 +4048,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -3987,6 +4157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -4093,6 +4268,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -4197,6 +4377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -4303,6 +4488,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -4407,6 +4597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -4513,6 +4708,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -4617,6 +4817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -4723,6 +4928,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -4827,6 +5037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -4933,6 +5148,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -5037,6 +5257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -5143,6 +5368,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -5247,6 +5477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -5353,6 +5588,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -5457,6 +5697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -5563,6 +5808,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -5667,6 +5917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -5773,6 +6028,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -5877,6 +6137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -5983,6 +6248,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -6087,6 +6357,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -6193,6 +6468,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -6297,6 +6577,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
@@ -6403,6 +6688,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -6508,6 +6798,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}
       propertyPath: DecisionPeriod
@@ -6592,6 +6887,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Training Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437608297744866945, guid: 3ce56bcea7026064a9419fbc8a6f404b,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 1437608298611389232, guid: 3ce56bcea7026064a9419fbc8a6f404b,
         type: 3}

@@ -174,6 +174,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -277,6 +282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -382,6 +392,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -485,6 +500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -590,6 +610,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -693,6 +718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -798,6 +828,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -901,6 +936,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -1006,6 +1046,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -1109,6 +1154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -1214,6 +1264,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -1317,6 +1372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -1422,6 +1482,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -1525,6 +1590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -1630,6 +1700,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -1733,6 +1808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -1838,6 +1918,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -1941,6 +2026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -2046,6 +2136,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -2149,6 +2244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -2254,6 +2354,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -2357,6 +2462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -2462,6 +2572,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -2565,6 +2680,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -2670,6 +2790,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -2773,6 +2898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -2878,6 +3008,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -2981,6 +3116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -3086,6 +3226,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -3189,6 +3334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -3294,6 +3444,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -3398,6 +3553,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -3501,6 +3661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -3654,6 +3819,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -3758,6 +3928,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -3861,6 +4036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -4048,6 +4228,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -4151,6 +4336,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -4256,6 +4446,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -4359,6 +4554,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -4464,6 +4664,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -4567,6 +4772,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -4672,6 +4882,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -4775,6 +4990,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -4880,6 +5100,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -4983,6 +5208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -5088,6 +5318,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -5191,6 +5426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -5296,6 +5536,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -5399,6 +5644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -5504,6 +5754,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -5607,6 +5862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -5712,6 +5972,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -5816,6 +6081,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -5919,6 +6189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -6093,6 +6368,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -6196,6 +6476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
@@ -6301,6 +6586,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -6405,6 +6695,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
+      objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}
       propertyPath: m_Name
@@ -6508,6 +6803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2716063397536947763, guid: bb98cf97f4f372b4b9b4138282389220,
+        type: 3}
+      propertyPath: dummyCarKey
+      value: SIMPLE_DUMMY_CAR_CONTROLLER
       objectReference: {fileID: 0}
     - target: {fileID: 2716063397822313820, guid: bb98cf97f4f372b4b9b4138282389220,
         type: 3}

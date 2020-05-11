@@ -3,36 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
 
-public class UnityDummyCar : VehicleController
+public class UnityDummyCarController : AbstractDummyCarController
 {
     private UnityVehicle vehicle;
 
-    private int animIndex;
-    private int stateIndex;
-
-    private bool enableRandomAnimIndex;
-
-    public delegate void Reset();
-    public event Reset OnReset;
-
-    public bool EnableRandomAnimIndex
+    public override void InitController(AbstractVehicle vehicle)
     {
-        set
-        {
-            enableRandomAnimIndex = value;
-        }
+        //this.vehicle = vehicle;
+        this.vehicle = (UnityVehicle) vehicle;
     }
 
-    public UnityDummyCar(UnityVehicle vehicle)
-    {
-        this.vehicle = vehicle;
-    }
+    public UnityDummyCarController(){}
 
-    public void InitController(Vehicle vehicle)
-    {
-    }
-
-    public void UpdateController()
+    public override void UpdateController()
     {
         int endAnimIndex = LoadedVehicleStates.GetInstance().GetSerCarControllerAtrs()[animIndex].carContrAtr.Count;
 
@@ -40,16 +23,17 @@ public class UnityDummyCar : VehicleController
         {
             stateIndex++;
             CarController.Atributes currentState = LoadedVehicleStates.GetInstance().GetSerCarControllerAtrs()[animIndex].carContrAtr[stateIndex - 1];
+
             vehicle.CarController.SetCarControllerAtr(currentState);
         }
         else
         {
             ResetVehicleController();
-            OnReset?.Invoke();
+            OnResetOccured();
         }
     }
 
-    public void ResetVehicleController()
+    public override void ResetVehicleController()
     {
         if (LoadedVehicleStates.GetInstance().GetSerCarControllerAtrs().Count == 0)
             return;
@@ -71,7 +55,7 @@ public class UnityDummyCar : VehicleController
         UpdateController();
     }
 
-    public Vehicle GetVehicle()
+    public override AbstractVehicle GetVehicle()
     {
         return vehicle;
     }
@@ -81,7 +65,7 @@ public class UnityDummyCar : VehicleController
         return LoadedVehicleStates.GetInstance().GetSerCarControllerAtrs()[animIndex].carContrAtr[stateIndex - 1];
     }
 
-    public Vector3 GetCurrentVelocity()
+    public override Vector3 GetCurrentVelocity()
     {
         //return LoadedVehicleStates.GetInstance().GetSerCarControllerAtrs()[animIndex].carContrAtr[stateIndex - 1].;
         return Vector3.zero;
