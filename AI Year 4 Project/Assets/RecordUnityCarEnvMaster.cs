@@ -9,7 +9,9 @@ public class RecordUnityCarEnvMaster : BaseEnvironmentMaster
 
     [SerializeField] RecorderUIHandler recorderUIHandler;
 
-    private UnityCarStateRecorder recorder;
+    private AbstractRecorder recorder;
+
+    [SerializeField] private string vehicleControllerKey;
 
     public override AbstractDummyCarController GetDummyCarController()
     {
@@ -21,7 +23,7 @@ public class RecordUnityCarEnvMaster : BaseEnvironmentMaster
         carUserController = new UserUnityVehicleController();
         carUserController.InitController(unityVehicle);
 
-        recorder = new UnityCarStateRecorder(unityVehicle);
+        recorder = RecroderFactory.CreateRecorder(vehicleControllerKey, unityVehicle, 0.02f); //new UnityCarStateRecorder(unityVehicle, 0.02f);
 
         recorderUIHandler.StateRecorder = recorder;
     }

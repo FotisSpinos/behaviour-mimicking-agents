@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<SerializableFitnessValues xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <fitnessValues>
-    <float>-0.16674982</float>
-    <float>-0.204624847</float>
-    <float>-0.0531249531</float>
-  </fitnessValues>
-  <captureRate>600</captureRate>
-</SerializableFitnessValues>

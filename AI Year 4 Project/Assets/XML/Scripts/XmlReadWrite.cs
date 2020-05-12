@@ -214,5 +214,6 @@ public class SerializableImpactPoints
 [Serializable]
 public class SerCarControllerAtr
 {
+    public float timeInterval = 0.0f;
     public List<CarController.Atributes> carContrAtr = new List<CarController.Atributes>();
 }

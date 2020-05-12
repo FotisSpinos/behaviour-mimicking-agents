@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class VehicleControllerFactory
 {
-    public static AbstractDummyCarController CreateDummyCar(string dummyCarKey)
+    public static AbstractDummyCarController CreateDummyCarController(string dummyCarKey)
     {
         switch(dummyCarKey)
         {

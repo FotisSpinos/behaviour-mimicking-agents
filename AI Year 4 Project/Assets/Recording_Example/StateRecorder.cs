@@ -6,8 +6,6 @@ public class StateRecorder : AbstractRecorder
 {
     [SerializeField] private Rigidbody recordingObjectRig;
 
-    private float fixedTimeInterval;
-    private float progression;
     private AbstractVehicle recordingVehicle;
 
     // Storing data
@@ -28,8 +26,6 @@ public class StateRecorder : AbstractRecorder
         // init serializable impact points
         serializableImpactPoints = new SerializableImpactPoints();
         serializableImpactPoints.captureRate = fixedTimeInterval;
-
-        this.fixedTimeInterval = fixedTimeInterval;
     }
 
     protected override void RecordState()

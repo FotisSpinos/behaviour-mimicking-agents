@@ -18,7 +18,7 @@ public class TrainingEnvironmnetMaster : BaseEnvironmentMaster
     override public void InitEnvironmentMaster()
     {
         // init dummy car
-        dummyCarController = VehicleControllerFactory.CreateDummyCar(dummyCarKey);
+        dummyCarController = VehicleControllerFactory.CreateDummyCarController(dummyCarKey);
         dummyCarController.InitController(targetVehicle);
         dummyCarController.UpdateController();
         dummyCarController.EnableRandomAnimIndex = true;

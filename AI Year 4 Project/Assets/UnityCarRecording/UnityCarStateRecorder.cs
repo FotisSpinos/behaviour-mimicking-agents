@@ -8,10 +8,12 @@ public class UnityCarStateRecorder : AbstractRecorder
     private SerCarControllerAtr data;
     private CarController carController;
 
-    public UnityCarStateRecorder(UnityVehicle car)
+    public UnityCarStateRecorder(UnityVehicle car, float fixedTimeInterval)
     {
         this.carController = car.CarController;
         data = new SerCarControllerAtr();
+
+        data.timeInterval = fixedTimeInterval;
     }
 
     public override void ClearRecordedData()

@@ -16,7 +16,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     private static EnvironmentMaster instance;
 
     // a reference to the recorder
-    protected StateRecorder recorder;
+    protected AbstractRecorder recorder;
 
     // the vehicle controller operated by the user
     private VehicleController userVehicleController;
@@ -40,7 +40,7 @@ public class RecordingEnvironmentMaster : BaseEnvironmentMaster
     override public void InitEnvironmentMaster()
     {
         // make a recorder instance
-        recorder = new StateRecorder(recordingVeh, 0.02f);
+        recorder = RecroderFactory.CreateRecorder(userControllerKey, recordingVeh, 0.02f); //new StateRecorder(recordingVeh, 0.02f);
 
         userVehicleController = VehicleControllerFactory.CreateUserVehicleController(userControllerKey);
         userVehicleController.InitController(recordingVeh);

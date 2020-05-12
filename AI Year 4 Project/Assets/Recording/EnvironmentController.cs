@@ -13,16 +13,20 @@ public class EnvironmentController : MonoBehaviour
     private float analyticsCaptureRateStore;
     private AgentAnalytics agentAnalytics;
 
-    [SerializeField]private bool training;
+    [SerializeField] private bool training;
 
     private bool AnalyticsRecorded;
 
     [SerializeField] private string description;
 
+
     public static EnvironmentController GetInstance()
     {
         if (instance == null)
-            instance = new EnvironmentController();
+        {
+            GameObject go = new GameObject("Environment Controller");
+            instance = go.AddComponent<EnvironmentController>();
+        }
         return instance;
     }
 
@@ -32,6 +36,9 @@ public class EnvironmentController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        if(instance != null)
+            Destroy(this);
+
         instance = this;
 
         valid = true;
