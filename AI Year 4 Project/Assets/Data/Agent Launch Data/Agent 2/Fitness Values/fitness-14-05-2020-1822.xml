@@ -46,15 +46,6 @@
     <float>0.01</float>
     <float>0.01</float>
     <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
-    <float>0.01</float>
   </fitnessValues>
   <captureRate>2</captureRate>
 </SerializableFitnessValues>

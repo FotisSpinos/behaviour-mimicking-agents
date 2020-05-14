@@ -112,6 +112,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!54 &1027662069 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2912404353723799119, guid: 34ba430e2a060d24aac5592f35052dd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1543714753190852752}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1049246197
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +338,8 @@ MonoBehaviour:
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   dummyCarRig: {fileID: 2102157684}
-  agentCar: {fileID: 2045751214}
+  agentRig: {fileID: 1027662069}
+  agentCarController: {fileID: 2045751214}
 --- !u!114 &2045751214 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5430498186518935672, guid: 34ba430e2a060d24aac5592f35052dd1,
