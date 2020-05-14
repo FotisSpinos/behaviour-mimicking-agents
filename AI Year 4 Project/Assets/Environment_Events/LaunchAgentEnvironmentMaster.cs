@@ -6,9 +6,9 @@ using UnityEngine;
 public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 {
     [SerializeField] private GameObject physicsBoxPrefub;
-    [SerializeField] private Rigidbody dummyCarRig;
+    [SerializeField] private AbstractVehicle dummyCarVeh;
 
-    [SerializeField] private Rigidbody agentRig;
+    [SerializeField] private AbstractVehicle agentVeh;
 
     private ThrowBoxAction throwBoxAction;
     private TeleportAction teleportAction;
@@ -33,11 +33,12 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
     public override void InitEnvironmentMaster()
     {
-        Rigidbody agentRig = agentCarController.GetComponent<Rigidbody>();
+        // define agent rigidbody
+        Rigidbody agentRig = agentVeh.GetComponent<Rigidbody>();
 
         // init dummy car controller
         dummyCarController = new SimpleDummyCarController();
-        dummyCarController.InitController(dummyCarRig.GetComponent<CarVehicle>());
+        dummyCarController.InitController(dummyCarVeh);
         dummyCarController.EnableRandomAnimIndex = false;
         dummyCarController.UpdateController();
 
@@ -51,16 +52,16 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
         invisibleForceAction = new InvisibleForceAction(1000.0f, agentRig);
 
         // initialize agent recorder and start recording
-        agentRecorder = new StateRecorder(agentRig.GetComponent<CarVehicle>(), 0.02f);
+        agentRecorder = new StateRecorder(agentVeh, 0.02f);
         agentRecorder.SetRecording(true);
 
         // initialize dummy recorder and start recording
-        dummyCarRecorder = new StateRecorder(dummyCarRig.GetComponent<CarVehicle>(), 0.02f);
+        dummyCarRecorder = new StateRecorder(dummyCarVeh, 0.02f);
         dummyCarRecorder.SetRecording(true);
 
         // activate agent car
         agentCarController.gameObject.SetActive(true);
-        agentCarController.InitController(agentRig.GetComponent<CarVehicle>());
+        agentCarController.InitController(agentVeh);
     }
 
     public override void UpdateEnvironmentMaster()
@@ -91,9 +92,11 @@ public class LaunchAgentEnvironmentMaster : BaseEnvironmentMaster
 
     public void OnApplicationQuit()
     {
+        // store agent and dummy car states 
         agentRecorder.StoreStates("Agent States", "Stored States", PathBuilder.FileTypes.OBJ_RECORD_DATA);
         dummyCarRecorder.StoreStates("Dummy Car States", "Stored States", PathBuilder.FileTypes.OBJ_RECORD_DATA);
 
+        // store agent impact poitns
         agentRecorder.StoreImpactPoints("Agent Impact Poitns", "Impact Points", PathBuilder.FileTypes.OBJ_RECORD_DATA);
     }
 }
