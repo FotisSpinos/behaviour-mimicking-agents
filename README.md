@@ -1,4 +1,4 @@
-# Year-4-AI
+# Behaviour mimicking agents
 
 ![Screenshot of the agent during training](https://github.com/FotisSpinos/Year-4-AI/blob/master/Recordings/Recording%20picture%202.png)
 
