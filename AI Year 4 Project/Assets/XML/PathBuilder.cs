@@ -36,20 +36,14 @@ public class PathBuilder
         {
             if (EnvironmentController.GetInstance().IsTraining())
             {
-                directoryPath = AnimationDirectories.TRAINING_DATA_DIR; 
-                    //+
-                    //EnvironmentController.GetInstance().GetDescription() + 
-                    //"-" + 
-                    //System.DateTime.Now.ToString("dd-MM-yyyy-HHmm");
+                directoryPath = AnimationDirectories.TRAINING_DATA_DIR;
             }
             else
             {
                 directoryPath = AnimationDirectories.AGENT_LAUNCH_DATA_DIR; 
-                    //+
-                    //EnvironmentController.GetInstance().GetDescription() +
-                    //"-" + 
-                    //System.DateTime.Now.ToString("dd-MM-yyyy-HHmm"); ;
             }
+            string description = EnvironmentController.GetInstance().GetDescription();
+            directoryPath += description;
         }
         else if(type == FileTypes.ANIMATION_DATA)
         {

@@ -49,9 +49,9 @@ public class StateRecorder : AbstractRecorder
 
         /* FOR DEBUGGING ONLY - REMOVE LATER */
         
-        Debug.Log("position: " + recordingObjectRig.gameObject.transform.position +
-            "rotation: " + recordingObjectRig.gameObject.transform.rotation.eulerAngles +
-            "velocity: " + recordingObjectRig.velocity);   
+        Debug.Log("position: " + state.position +
+            "rotation: " + state.rotation +
+            "velocity: " + state.velocity);   
         
     }
 
@@ -68,7 +68,7 @@ public class StateRecorder : AbstractRecorder
             fileName,
             true);
 
-        XmlReadWrite.GetInstance().SaveStates(path, serializableAgentStates);
+        XmlReadWrite.GetInstance().SaveStates(path, this.serializableAgentStates);
     }
 
     public override void StoreImpactPoints(string directoryName, string fileName, PathBuilder.FileTypes fileType)

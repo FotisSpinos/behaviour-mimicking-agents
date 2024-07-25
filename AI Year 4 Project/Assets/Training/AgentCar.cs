@@ -4,9 +4,6 @@ using UnityEngine;
 using MLAgents;
 using System;
 
-// TODO: test out the behaviour minimising the difference in position and rotation
-// TODO: Give some reward depending on the distances in their state 
-
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CarVehicle))]
 public class AgentCar : AbstractAgentCarController
@@ -61,9 +58,6 @@ public class AgentCar : AbstractAgentCarController
         // culculate the distances in position and rotations
         float positionDifference = (dummyCar.transform.localPosition - transform.localPosition).magnitude;
         float rotationDifference = Vector3.Angle(dummyCar.transform.right, transform.right);
-
-
-        //(dummyCar.transform.localEulerAngles - transform.localEulerAngles).magnitude;//Vector3.Angle(dummyCar.transform.right, transform.right);
 
         // give a small reward on each frame
         fitness = 0.01f;

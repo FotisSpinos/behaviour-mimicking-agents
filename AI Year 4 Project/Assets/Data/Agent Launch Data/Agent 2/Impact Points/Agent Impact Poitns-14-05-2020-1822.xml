@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<SerializableImpactPoints xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <impactPoitns>
+    <float>17.3214626</float>
+    <float>18.3421555</float>
+    <float>18.3805256</float>
+    <float>18.4337082</float>
+    <float>18.4601727</float>
+    <float>18.4736271</float>
+    <float>19.0822468</float>
+    <float>19.47916</float>
+    <float>22.23278</float>
+    <float>25.5728416</float>
+    <float>28.0917625</float>
+    <float>28.5717735</float>
+    <float>30.6794586</float>
+    <float>35.4998131</float>
+    <float>38.9351921</float>
+    <float>39.05444</float>
+    <float>47.5968323</float>
+    <float>47.67451</float>
+    <float>48.0979</float>
+    <float>48.217495</float>
+    <float>48.2700577</float>
+    <float>50.23168</float>
+    <float>58.4106369</float>
+    <float>59.4717</float>
+    <float>60.4393044</float>
+    <float>60.45227</float>
+  </impactPoitns>
+  <captureRate>0.02</captureRate>
+</SerializableImpactPoints>

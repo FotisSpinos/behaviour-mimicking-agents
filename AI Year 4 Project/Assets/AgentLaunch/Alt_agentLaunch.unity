@@ -144,7 +144,8 @@ MonoBehaviour:
   animDirectories:
   - TrainingSingleAnim
   analyticsCaptureRate: 0.02
-  training: 1
+  training: 0
+  description: Agent 1
 --- !u!4 &164198079
 Transform:
   m_ObjectHideFlags: 0
@@ -177,11 +178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f730b3d371d2d418f76fd176d71eb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agentCarController: {fileID: 2009750200}
   physicsBoxPrefub: {fileID: 618167516294953301, guid: 49f80e2d9719ddd4da2502df9d669795,
     type: 3}
   dummyCarRig: {fileID: 1142662616}
-  agentCar: {fileID: 2009750200}
+  agentRig: {fileID: 1343453912}
+  agentCarController: {fileID: 2009750200}
 --- !u!1001 &966570006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -270,6 +271,12 @@ PrefabInstance:
 --- !u!54 &1142662616 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2716063398032871122, guid: bb98cf97f4f372b4b9b4138282389220,
+    type: 3}
+  m_PrefabInstance: {fileID: 966570006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1343453912 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 2716063398147163825, guid: bb98cf97f4f372b4b9b4138282389220,
     type: 3}
   m_PrefabInstance: {fileID: 966570006}
   m_PrefabAsset: {fileID: 0}
